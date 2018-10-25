@@ -128,7 +128,7 @@ Now let's break it down:
 1. The `<head>` element contains meta information about our web page that helps the browser figure out how to read it. Nothing inside the `<head>` tags will be displayed on the web page.
 1. The `<body>` element contains everything you'll see on the page. All the HTML you write should go between the `body` tags.
 
-## Practice
+# Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```

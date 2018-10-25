@@ -10,3 +10,5 @@ In the last chapter, we talked about how to style elements. Now let's talk about
 #### Inline, Block, and Inline-Block
 #### Absolute and Relative Positioning
 #### Flexbox 
+
+# Practice

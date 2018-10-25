@@ -59,5 +59,8 @@ h3{
 
 ## Understanding the Cascade 
 
+# Practice
+get exercises from Jumpstart
+
 
 
