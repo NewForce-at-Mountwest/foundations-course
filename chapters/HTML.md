@@ -5,7 +5,7 @@ HTML stands for __Hyper Text Markup Language__. It defines the structure and con
 ## The Building Blocks of HTML
 
 __Elements__ are the building blocks of HTML pages. This is an HTML element representing a page heading:
-```
+```html
 <h1> My Awesome Website </h1>
 ```
 
@@ -14,33 +14,33 @@ Elements are labeled with __tags__. In the example above, `<h1>` is the opening 
 Here's a few basic HTML tags to take for a spin:
 
 Headings
-```
+```html
 <h1>, <h1>, <h3> ... <h6>
 ```
 
 Text
-```
+```html
 <p>, <section>, <article>
 ```
 
 Images
-```
+```html
 <img src="path/to/image" alt="Alternate text">
 ```
 
 Links
-```
+```html
 <a href="www.spacejam.com"> Click Here </a>
 ```
 
 All-purpose container:
-```
+```html
 <div>
 ```
 
 ## Nesting HTML Elements
 When we do nest HTML elements inside each other, we talk about the relationships in terms of parents and children. Unordered and ordered lists are a good example of this:
-```
+```html
 <ul>
   <li> I'm one bulleted item</li>
   <li> I'm another bulleted item </li>
@@ -55,7 +55,7 @@ In the first example above, the `<li>` elements are children of the `<ul>` eleme
 
 In the example below, the article element is a child of the section element. It's also the parent of the two paragraph elements. 
 
-```
+```html
 <h1> How To Wrestle Gators </h1>
 
 <section>
@@ -78,7 +78,7 @@ In the example above, imagine you needed to tell the difference between the two 
 - Ids have to be unique.
 - Classes can be used for multiple elemenents 
 
-```
+```html
 <p id="firstParagraph" class="background-blue">
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 </p>
@@ -90,7 +90,7 @@ In the example above, imagine you needed to tell the difference between the two 
 
 Remember our friends the ```<img>``` and ```<a>``` tags? 
 
-```
+```html
 <img src="path/to/image" alt="Alternate text">
 
 <a href="www.spacejam.com"> Click Here </a>
@@ -105,7 +105,7 @@ We'll use ids and classes a lot when we get to CSS and JavaScript.
 
 Here's an example of an HTML document:
 
-```
+```html
 
 <!DOCTYPE html>
 <html lang="en">
