@@ -28,18 +28,18 @@ By the end of this course, you should be able to:
   - Objects and Methods
 
 ## Table of Contents
-1. Setting Up Your Environment
-1. The Big Picture
-1. Intro to HTML
-1. Intro to Git
-1. Intro to CSS
-1. CSS Page Layout
-1. JavaScript Variables and Data Types
-1. JavaScript Conditionals
-1. JavaScript Loops
-1. JavaScript Functions
-1. JavaScript Functions - Parameters and Return Statements
-1. JavaScript Objects and Methods
+1. [Setting Up Your Environment](chapters/ENVIRONMENT.md)
+1. [The Big Picture](chapters/THE_BIG_PICTURE.md)
+1. [Intro to HTML](chapters/HTML.md)
+1. [Intro to Git](chapters/GIT.md)
+1. [Intro to CSS](chapters/CSS.md)
+1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
+1. [JavaScript Variables and Data Types](chapters/)
+1. [The DOM](chapters/THE_DOM.md)
+1. [Conditionals](chapters/CONDITIONALS.md)
+1. [Loops](chapters/LOOPS.md)
+1. [Functions](chapters/FUNCTIONS.md)
+1. [Objects and Methods](chapters/METHODS.md)
 
 
 

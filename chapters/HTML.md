@@ -140,10 +140,16 @@ touch index.html
 1. Create a web page describing yourself as a superhero. The web page should have:
   1. An `<h1>` element with your superhero name
   1. An `<h2>` element with a dramatic tagline
-  1. Three `<section>` elements representing your mild-mannered alter ego, your superpowers, and your arch nemeses. 
-  1. The Alter Ego section should contain: an `<h3>` with your alter ego's name, a paragraph element with their bio, and a picture of yourself
-  1. The Superpowers section should contain an `<h3>` heading and a bulleted list of superpowers 
-  1. The Arch Nemesis section should contain an `<h3>` heading and as many `article` elements as you want describing your local villains.
+  1. 1. An `<aside>` element with info about your mild-mannered alter ego. This section should contain:
+      - An `<h3>` with your alter ego's name
+      - A `<p>` element with their bio
+      - An `<img>` element with a picture of yourself
+  1. A `<section>` element for your superpowers. It should contain: 
+      -  An `<h3>` heading
+      - A bulleted list of at least three superpowers 
+  1. A `<section>` element about your arch nemeses. It should contain:
+      - An `<h3>` heading
+      - As many `<article>` elements as you want describing your local villains
 
 Your website will look pretty bad right now, but that's okay! CSS is up next.
 

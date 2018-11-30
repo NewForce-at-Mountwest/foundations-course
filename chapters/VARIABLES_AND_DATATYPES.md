@@ -3,6 +3,8 @@
 [ WHAT IS JS??]
 [HOW TO LINK A JS FILE INTO YOUR HTML]
 
+[SHOW THEM HOW TO PRINT TO THE DOM IN THIS CHAPTER]
+
 ## Variales
 A variable is a little box to store information that you want to reference or modify later. Let's start by declaring a simple variable to hold a name:
 
@@ -10,7 +12,7 @@ A variable is a little box to store information that you want to reference or mo
 var myName = "Dwayne The Rock Johnson";
 ```
 
-We can also declare the variable first and then assign it later. (This is like setting up an empty box and then putting something in it later.)
+We can also instantiate the variable first and then assign it later. (This is like setting up an empty box and then putting something in it later.)
 ```js
 var myName;
 
@@ -102,6 +104,10 @@ var firstItem = gradesArray[0] // 97
 var secondItem = gradesArray[1] // 55
 var thirdItem = gradesArray[2] // 62
 ```
+You can find out how many items are in an array with the `.length` property. (We won't use this very much right now, but it'll come in very handy later when we cover loops.)
+```js
+console.log(gradesArray.length); // 8
+```
 We can add items to an array with the `.push()` method.
 
 ```js
@@ -161,4 +167,47 @@ console.log(studentsArray[0].firstName); // "Leah"
 ```
 
 # Practice
-1. 
+*Instructions*
+[create an html document and a javascript file. you can do all of these exercies in the same directory]
+#### 1. All About Me
+1. In your JavaScript file, instantiate and assign the following variables with information about yourself:
+  - `firstName` should hold a string of your first name
+  - `lastName` should hold a string of your last name
+  - `age` should hold a number of your age
+  - `likesTravle` should hold a boolean representing whether or not you like to travel 
+
+#### 2. Favorite Movies
+1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
+1. Log each movie in the array to the console.
+
+#### 3. Movie Star
+In your JavaScript file, use the following code as an example to create an object that represents a famous movie star.
+```js
+var dwayneObject = {
+  firstName: "Dwayne",
+  lastName: "Johnson",
+  favoriteFood: "Eggs",
+  age: 46
+}
+```
+1. Log the movie star's favorite food to the console.
+1. Use string template literals to log their full name to the console.
+
+
+**Bonus**
+Refactor your movie star object to add their hobbies. Now your object should look something like this: 
+```js
+var dwayneObject = {
+  firstName: "Dwayne",
+  lastName: "Johnson",
+  favoriteFood: "Eggs",
+  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
+}
+```
+1. Log each one of their hobbies individually to the console.
+1. Use string template literals to create a sentence about their hobbies. You should include how many hobbies they have in your sentence. (Hint: use the `.length` property.) Example output: "They have three main hobbies: jumping out of planes, personally holding the San Andreas fault together, and building muscle mass.") Store your new setnence in a variable called `hobbiesSentence` then log it to the console.
+
+
+
+
+

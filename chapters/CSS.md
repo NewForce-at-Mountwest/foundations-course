@@ -131,7 +131,21 @@ As a rule of thumb, you should default to using class selectors for your custom 
 As we mentioned briefly above, the cascade also takes into account order. When two selectors have the same specificity, the declaration that comes last wins.
 
 # Practice
-get exercises from Jumpstart
+Revisit your superhero website from the previous chapter. 
 
+1. In the superhero website directory, create a new file: 
+```
+touch style.css
+```
+1. Link your new CSS file to the HTML file you made last time.
+
+1. Give your elements appropriate classnames and apply the following styles:
+    - Pick a font from [Google Fonts](https://fonts.google.com/) and apply it to the `<h1>` title element that says your superhero name. The font color should be a shade of blue and the text should be centered.
+    - Your dramatic tagline should be size `1.2em` and should be bold.
+    - The `<aside>` with information about your alter ego should have a light gray background color. It should be `30vw` wide and `60vh` tall.
+    - Both of the `section` elements should have light blue backgrounds. They should be `60vw` wide and `30vh` tall.
+  
+Commit your changes and then feel free to mess around with any other styles you like! 
+  
 
 
