@@ -59,7 +59,7 @@ document.querySelector("#daily-special").innerHTML = htmlString;
 Now, when the daily specia changes, we only need to change the contents of the object.
 
 # Practice
-#### 4. Movie Poster
+#### 1. Movie Poster
 1. In your HTML document, create the following elements. Don't add any text yet.
     - An `h1` element with an id of "title"
     - An `h3` element with an id of "genre"
@@ -71,5 +71,38 @@ Now, when the daily specia changes, we only need to change the contents of the o
     - Release date
 3. Use `document.querySelector()` to grab a reference to each element in your HTML. Use the `.innerHTML` property to set the text of each element to the matching value in your object. (For example, the `h1` with the id of "title" should contain the title from your object, etc). 
 
-### Challenge: Movie Schedule
-You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. Here's some sample data to 
+#### 2. Challenge: Movie Schedule
+You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
+
+Start with some basic HTML: 
+```html
+<body>
+  <div id="movie-schedule"></div>
+</body>
+```
+In your JavaScript file, copy and paste the following array of objects: 
+```js
+var movieSchedule = [
+  {
+    title: "Ralph Breaks the Internet",
+    rating: "PG",
+    poster: "https://lumiere-a.akamaihd.net/v1/images/r_ralphbreakstheinternet_header_ddt-17403_08ef6d92.jpeg?region=0,0,1024,1274&optimize=true"
+  }, 
+  {
+    title: "The Grinch",
+    rating: "G",
+    poster: "https://images-na.ssl-images-amazon.com/images/I/71vgX4VFdiL._SY679_.jpg"
+  },
+  {
+    title: "Fantastic Beasts: The Crimes of Grindlewald",
+    rating: "PG-13",
+    poster: "https://images-na.ssl-images-amazon.com/images/I/716fk%2BBZ-NL._SY606_.jpg"
+  }
+]
+```
+- In your JavaScript file, use the `movieSchedule` data to build up an HTML string like the one in the "daily special" example above. 
+- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included. It'll probably look pretty similar to the movie poster you made in the first exercise.
+- (*Hint: if you want to take advantage of VS Code's autocomplete features, you can type most of this in your HTML document and then cut and paste it into your JavaScript file.*)
+- Use `document.querySelector` to select the element in your HTML file with an id of `"movie-schedule"`
+- Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.
+

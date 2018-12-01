@@ -62,7 +62,7 @@ Flexbox is a very efficient tool for building responsive layouts that look great
 
 
 # Practice
-
+1. Continue to build out your superhero web page, this time focusing on page layout instead of styling specific elements. Here's an example:
 
 ## Supplemental Material
 [How to center anything with CSS](http://howtocenterincss.com/)

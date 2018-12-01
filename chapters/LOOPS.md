@@ -1,6 +1,6 @@
 # Loops
 
-In the previous chapter, we dealt with a few situations where we wanted to do something to every item in an array (log it to the console, print it to the DOM, etc). We purposefully kept our arrays short, but we won't always have that luxury. Let's revisit the first practice exercise from the last chapter:
+We've dealt with a few situations where we wanted to do something to every item in an array (log it to the console, print it to the DOM, etc). We purposefully kept our arrays short, but we won't always have that luxury. Let's revisit one of the practice exercises from the [Variables and Data Types](./VARIABLES_AND_DATATYPES.md) Chapter:
 
 ```
 1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
@@ -8,11 +8,15 @@ In the previous chapter, we dealt with a few situations where we wanted to do so
 1. Log each movie in the array to the console.
 ```
 
-What if, instead of making your own array of favorite movies, you were given an array with 50 movies in it and told to log each one the console. You'd probably want to throw your computer out the window after a few seconds of this:
+What if, instead of making your own array of favorite movies, you were given an array with 200 movies in it and told to log each one the console. You'd probably want to throw your computer out the window after a few seconds of this:
 ```js
 console.log(movieArray[0])
 console.log(movieArray[1])
 console.log(movieArray[2])
+.
+.
+.
+console.log(movieArray[200])
 ```
 Fortunately, computers are really good at doing repetitve tasks quickly. Whenever we want to repeat an action multiple times, we use a loop to do the grunt work for us.
 ## While Loops
@@ -34,7 +38,7 @@ Let's break it down:
 - The second time the loop runs, `i` will be 2. Is `2` less than `20`? Yep! The code block runs again.
 - This process keeps going until `i` is no longer less than `20`. As soon as that expression evaluates to `false`, the loop stops.
 
-Let's look at a more practical example. Remember our `moviesArray`?
+Let's look at a more practical example. 
 ```js
 var moviesArray = ["Casablanca", "Star Wars", "Singing in the Rain", "The Wizard of Oz", "Die Hard"];
 
@@ -70,3 +74,104 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 
 
 # Practice
+#### 1. Psychotic Bird
+In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
+
+#### 2. Psychotic Bird: For Loop Edition
+In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
+
+#### 3. Favorite Foods
+- In your JavaScript array, create a new variable called `favoriteFoods`. It should store an array of strings representing five of your favorite foods.
+- Loop through the array and print each food item to the console.
+
+#### 4. Harry Potter Titles
+- Copy and paste the following array into your JavaScript file: 
+```js
+var harryPotterTitles = ["and the Sorcerer's Stone", "and the Chamber of Secrets", "and the Prisoner of Azkaban", "and the Goblet of Fire", "and the Order of the Phoenix", "and the Half-Blood Prince", "and the Deathly Hallows"];
+```
+- Use a for loop to output the complete titles to the console. Expected output: 
+```
+"Harry Potter and the Sorcerer's Stone"
+"Harry Potter and the Chamber of Secrets"
+.
+.
+.
+"Harry Potter and the Deathly Hallows"
+```
+
+#### 5. Student Grades Take Two
+- Copy and paste the following array of grades into your JavaScript file:
+```js
+var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
+```
+- Loop through the grades with a for loop
+    - If the current grade is greater than or equal to 0 and less than or equal to 69, log "You got an F" to the console.
+    - If it's between 70 and 76, log "You got a D" to the console.
+    - If it's between 77 and 84, log "You got a C" to the console.
+    - If it's between 84 and 92, log "You got a B" to the console.
+    - If it's between 93 and 100, log "You got an A" to the console.
+
+#### 6. Movie Schedule Take Two
+
+You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
+
+Start with some basic HTML: 
+```html
+<body>
+  <div id="movie-schedule"></div>
+</body>
+```
+In your JavaScript file, copy and paste the following array of objects: 
+```js
+var movieSchedule = [
+  {
+    title: "Ralph Breaks the Internet",
+    rating: "PG",
+    currentlyPlaying: true,
+    poster: "https://lumiere-a.akamaihd.net/v1/images/r_ralphbreakstheinternet_header_ddt-17403_08ef6d92.jpeg?region=0,0,1024,1274&optimize=true"
+  }, 
+  {
+    title: "The Grinch",
+    rating: "G",
+    currentlyPlaying: true,
+    poster: "https://images-na.ssl-images-amazon.com/images/I/71vgX4VFdiL._SY679_.jpg"
+  },
+  {
+    title: "A Star is Born",
+    rating: "R",
+    currentlyPlaying: false,
+    poster: "https://images-na.ssl-images-amazon.com/images/I/718zWbDKmvL._SY606_.jpg"
+  },
+  {
+    title: "Fantastic Beasts: The Crimes of Grindlewald",
+    rating: "PG-13",
+    currentlyPlaying: true,
+    poster: "https://images-na.ssl-images-amazon.com/images/I/716fk%2BBZ-NL._SY606_.jpg"
+  },
+  {
+    title: "Robin Hood",
+    rating: "PG-13",
+    currentlyPlaying: false,
+    poster: "https://images-na.ssl-images-amazon.com/images/I/61K%2BTyGjsCL.jpg"
+  },
+]
+```
+- Use a for loop to loop through the movies and build up an HTML string to represent the data. 
+- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included. It'll probably look pretty similar to the movie poster you made in the chapter on [The DOM](./THE_DOM.md).
+- (*Hint: if you want to take advantage of VS Code's autocomplete features, you can type most of this in your HTML document and then cut and paste it into your JavaScript file.*)
+- Use `document.querySelector` to select the element in your HTML file with an id of `"movie-schedule"`
+- Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.
+
+**Extra Practice:**
+- Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
+- Add another conditinal to exclude R-rated movies.
+
+
+#### 7. Student Grades - Challenge
+ Revisit the students grade exercise. Use JavaScript to answer the following questions:
+  1. How many students got A's?
+  1. Which was the most common grade?
+  1. What was the average grade in the class?
+
+
+

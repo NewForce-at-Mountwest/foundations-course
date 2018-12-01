@@ -134,14 +134,11 @@ Arrays are great if we want to store data in order, but they have one big limita
 var leahObject = {
   firstName: "Leah",
   lastName: "Gwin",
-  age: 27,
-  hobbies: ["travel", "cycling", "reading"],
-  grades: [97, 85, 76, 92]
+  age: 27
 }
 
 console.log(leahObject.firstName); // "Leah"
 console.log(leahObject.age); // 27
-console.log(leahObject.hobbies[0]) // "travel"
 ```
 Just like arrays, objects can hold any other data type- including arrays and objects. 
 
@@ -150,8 +147,7 @@ var robertObject = {
   firstName: "Robert",
   lastName: "Leedy",
   age: 32,
-  hobbies: ["cooking", "rock climbing"],
-  grades: [91, 85, 79, 82]
+  hobbies: ["cooking", "rock climbing"]
 }
 
 var williamObject = {
@@ -161,7 +157,9 @@ var williamObject = {
   hobbies: ["calligraphy", "travel", "banjo"]
 }
 
-//Aaaah! An array of objects! Actually, this is a really common data structure and we'll see it a lot. 
+console.log(williamObject.hobbies[0]) // "calligraphy"
+
+// We can also have arrays of objects! Aaah!
 var studentsArray = [leahObject, robertObject, williamObject];
 console.log(studentsArray[0].firstName); // "Leah"
 ```
