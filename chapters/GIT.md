@@ -76,14 +76,6 @@ git push -u origin master
 Refresh the page on GitHub. You should see your empty `index.html` file!
 
 
-## Supplemental Material
-
-[ link to visual studio code tutorial]
-
-[link to git/ github tutorial]
-
-[]
-
 ## Practice
 
 1. Go through the steps above on your own, with a brand new directory. (The more you practice, the sooner this process will become muscle memory!)
