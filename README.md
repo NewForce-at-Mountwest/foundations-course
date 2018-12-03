@@ -21,11 +21,11 @@ By the end of this course, you should be able to:
 1. Apply basic styles to your web page with CSS
 1. Open your web page in Google Chrome and inspect it with Chrome's built-in developer tools
 1. Apply foundational JavaScript concepts including:
-  - Assigning and using variables
-  - Conditionals logic 
-  - Loops
-  - Functions
-  - Objects and Methods
+   - Assigning and using variables
+    - Conditionals logic 
+    - Loops
+    - Functions
+    - Objects and Methods
 
 ## Table of Contents
 1. [Setting Up Your Environment](chapters/ENVIRONMENT.md)
