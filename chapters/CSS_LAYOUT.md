@@ -59,5 +59,5 @@ Once you've followed the steps above, feel free to change anything!
 
 
 ## Supplemental Material
-[How to center anything with CSS](http://howtocenterincss.com/)
-[Master list of CSS Properties](http://overapi.com/css)
+- [How to center anything with CSS](http://howtocenterincss.com/)
+- [Master list of CSS Properties](http://overapi.com/css)
