@@ -33,36 +33,31 @@ h3 {
 }
 
 ```
-#### Absolute and Relative Positioning
-The `position` property determines where the element sits in relation to other elements.
-```css
-/*Elements with relative position appear relative to the their original position. Elements with this class will be 6px to the left of where they would normally sit. Other elements will not shift to make space for them.  */
-.headshot{
-  position: relative;
-  left: 6px;
-}
 
-/*Elements with fixed position appear relative to the viewport (a.k.a the screen). Elements with this class will appear 1px away from the top of the screen and 1px away from the left side of the screen, and will stay there as the user scrolls.*/
-.logo{
-  position: fixed;
-  top: 1px;
-  left: 1px;
-}
-
-/*Elements with absolute position appear relative to their nearest positioned ancestor. Elements with this class will be positioned in the top right corner of their parent, so long as their parent has a position of anything other than static. (You usually see the parent with a position of "relative"). */
-.x-btn{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-```
 
 #### Flexbox 
 Flexbox is a very efficient tool for building responsive layouts that look great on any screen size. Start by giving the parent container a rule of `display: flex`. All of the children will line up inside it. You have complete control over how they line up and in what order. [Here's a great resource for working with flexbox.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 
 # Practice
-1. Continue to build out your superhero web page, this time focusing on page layout instead of styling specific elements. Here's an example:
+Continue to build your personal website, this time focusing on layout. [Here's an example of the finished product.](https://jordan-castelloe.github.io/onboarding-personal-website-demo/) Yours doesn't have to look exactly like this- it's just to give you a starting point. 
+
+1. In your HTML, add a new `div` around your name and job title. This new `div` should be `30vw` wide with `4rem` of padding and should be centered both vertically and horizontally inside the `header` element. *(Hint: flexbox is great for centering!)*
+1. Use flexbox to create a two-column layout for the page content: 
+    - The left-hand column should be your bio `aside` element.
+    - The right-hand column should contain your tech stack section and your work experience section. These sections should be stacked on top of each other.
+    - Each column should have a padding of `1rem`.
+    - You will need to add new elements to your HTML to make flexbox work correctly.
+1. Each `article` element in your work experience section should have a top margin of `2em`.
+1. Your `footer` element should have a top padding of `15vh` and a height of `20vh`. 
+
+
+
+Once you've followed the steps above, feel free to alter or change anything! 
+
+
+
 
 ## Supplemental Material
 [How to center anything with CSS](http://howtocenterincss.com/)
+[Master list of CSS Properties](http://overapi.com/css)

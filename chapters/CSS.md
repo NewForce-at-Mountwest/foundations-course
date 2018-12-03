@@ -140,10 +140,15 @@ touch style.css
 1. Link your new CSS file to the HTML file you made last time.
 
 1. Give your elements appropriate classnames and apply the following styles:
-    - Pick a font from [Google Fonts](https://fonts.google.com/) and apply it to the `<h1>` title element that says your superhero name. The font color should be a shade of blue and the text should be centered.
-    - Your dramatic tagline should be size `1.2em` and should be bold.
-    - The `<aside>` with information about your alter ego should have a light gray background color. It should be `30vw` wide and `60vh` tall.
-    - Both of the `section` elements should have light blue backgrounds. They should be `60vw` wide and `30vh` tall.
+    - Turn your `header` element into a splash page that takes up `100vw` and `100vh`. (Users should be able to scroll down to see the rest of your content.)
+    - Give your `header` splash page a [background image](http://www.htmldog.com/guides/css/intermediate/backgroundimages/) of your choice.
+    - All headings should be centered.
+    - Pick two fonts from [Google Fonts](https://fonts.google.com/). Apply one of them to all the heading elements and the other  to all non-heading text.
+    - Your name should have a font size of `2em`.
+    - The `<aside>` should be `35vw` wide.
+    - The entire page should have a background color of `#494949`
+    - All text should be `#f4c20c`.
+    - The text in your `footer` should be centered.
   
 Commit your changes and then feel free to mess around with any other styles you like! 
   
