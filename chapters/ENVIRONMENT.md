@@ -119,5 +119,5 @@ rm index.html
 
 ## Supplemental Material
 
-[Visual Studio Code Tutorial](https://www.youtube.com/watch?v=VqCgcpAypFQ)
-[A Gentle Introduction to the Terminal](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)
+- [Visual Studio Code Tutorial](https://www.youtube.com/watch?v=VqCgcpAypFQ)
+- [A Gentle Introduction to the Terminal](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)

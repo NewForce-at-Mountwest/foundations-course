@@ -8,7 +8,7 @@ We've dealt with a few situations where we wanted to do something to every item 
 1. Log each movie in the array to the console.
 ```
 
-What if, instead of making your own array of favorite movies, you were given an array with 200 movies in it and told to log each one the console. You'd probably want to throw your computer out the window after a few seconds of this:
+What if, instead of making your own array of favorite movies, you were given an array with 200 movies in it and told to log each one the console? You'd probably want to throw your computer out the window after a few seconds of this:
 ```js
 console.log(movieArray[0])
 console.log(movieArray[1])

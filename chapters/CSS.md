@@ -137,9 +137,9 @@ Revisit your superhero website from the previous chapter.
 ```
 touch style.css
 ```
-1. Link your new CSS file to the HTML file you made last time.
+2. Link your new CSS file to the HTML file you made last time.
 
-1. Give your elements appropriate classnames and apply the following styles:
+3. Give your elements appropriate classnames and apply the following styles:
     - Turn your `header` element into a splash page that takes up `100vw` and `100vh`. (Users should be able to scroll down to see the rest of your content.)
     - Give your `header` splash page a [background image](http://www.htmldog.com/guides/css/intermediate/backgroundimages/) of your choice.
     - All headings should be centered.

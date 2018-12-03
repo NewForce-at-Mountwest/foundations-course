@@ -55,7 +55,7 @@ greetAFriend("Hannah", "afternoon"); // Good afternoon, Hannah!
 greetAFriend("Norman", "midnight"); // Hello, Norman!
 ```
 ## Return Statements
-Functions have their own scope, which means variales we declare inside the function can't be accessed outside of it. 
+Functions have their own scope, which means variales we declare inside the function can't be accessed outside of it. **The following code won't work:** 
 ```js
 function makeAPizza(crustType, size, toppingsArray){
   var finishedPizza = `A ${size} pizza with ${crustType} crust and ${toppingsArray.join(", ")} on top.`
@@ -63,7 +63,8 @@ function makeAPizza(crustType, size, toppingsArray){
 
 makeAPizza("wheat", "large", ["green peppers", "onions", "pepperoni"]);
 
-// if we try to access finishedPizza out here, it will be undefined-- it only exists inside the function
+console.log(finishedPizza) // this will be undefined!
+
 ```
 
 If we want to use the `finishedPizza` variable anywhere outside the function, we need a `return` statement.

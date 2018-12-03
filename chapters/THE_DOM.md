@@ -1,4 +1,4 @@
-The DOM
+# The DOM
 
 So far we've only dealt with JavaScript in isolation. Let's learn how to use JavaScript to print data directly to our web page. 
 
@@ -13,13 +13,15 @@ Say you had the following HTML:
 </body>
 ```
 
-Let's fill in that empty `h1` element. First, we need to get a reference to it. With CSS, it's best practice to target elements with classes. With JavaScript, it's best to target them with id's. 
+Let's use JavaScript to put some text in that empty `h1` element. 
+
+First, we need to get a reference to it. With CSS, it's best practice to target elements with classes. With JavaScript, it's best to target them with id's. 
 
 ```js
 var headingElement = document.querySelector("#main-heading");
 ```
 
-Cool! We have a reference to our DOM element. Now let's put some text in it:
+Cool! We have a reference to our DOM element in our JavaScrpt file. It's stored in a variable called `headingElement`. Now let's put some text in it:
 ```js
 headingElement.innerHTML = "Hello, world!";
 ```
@@ -60,16 +62,27 @@ Now, when the daily specia changes, we only need to change the contents of the o
 
 # Practice
 #### 1. Movie Poster
-1. In your HTML document, create the following elements. Don't add any text yet.
+1. Copy and paste the following code into your HTML document:
     - An `h1` element with an id of "title"
     - An `h3` element with an id of "genre"
     - Another `h3` element with an id of "release-date"
+```html
+<section id="movie-poster">
+  <h1 id="title"></h1>
+  <h2 id="genre"></h2>
+  <h3 id="release-date"></h3>
+</section>
+```
 
-2. In your JavaScript file, create an object that represents a movie. Your object should include the following data:
-    - Title
-    - Genre
-    - Release date
-3. Use `document.querySelector()` to grab a reference to each element in your HTML. Use the `.innerHTML` property to set the text of each element to the matching value in your object. (For example, the `h1` with the id of "title" should contain the title from your object, etc). 
+2. In your JavaScript file, copy and paste the following object:
+```js
+var movieObject = {
+  title: "Star Wars: A New Hope",
+  genre: "Science Fiction",
+  release-date: "May 25, 1977"
+}
+```
+3. Use `document.querySelector()` to grab a reference to each element in your HTML. Use the `.innerHTML` property to set the text of each element to the matching value in your object. (For example, the `h1` with the id of "title" should contain the `title` property of your `movieObject`, etc). 
 
 #### 2. Challenge: Movie Schedule
 You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
@@ -101,7 +114,7 @@ var movieSchedule = [
 ]
 ```
 - In your JavaScript file, use the `movieSchedule` data to build up an HTML string like the one in the "daily special" example above. 
-- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included. It'll probably look pretty similar to the movie poster you made in the first exercise.
+- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included. 
 - (*Hint: if you want to take advantage of VS Code's autocomplete features, you can type most of this in your HTML document and then cut and paste it into your JavaScript file.*)
 - Use `document.querySelector` to select the element in your HTML file with an id of `"movie-schedule"`
 - Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.

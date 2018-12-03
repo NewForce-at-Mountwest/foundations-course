@@ -6,10 +6,6 @@ Git is the most popular version control system. It allows you to track and annot
 ## Git vs. GitHub
 Git and GitHub are two completely seperate systems. Git repositories exist on your computer. You can track your changes locally and never push them up to GitHub. However, if you decide you want to share your project with the world (or with teammates), you can push your Git repo up to GitHub. GitHub hosts your entire commit history so you (and anyone else) can access it from any computer.
 
-[Go ahead and create a GitHub account here](https://github.com/).
-
-[DO WE NEED TO WORRY ABOUT SSH KEYS?]
-
 ## A few commands to git you started locally (har har har)
 
 If you're not already in your `workspace` folder, go there now. To figure out where you are and change directories, see the [Environment](ENVIRONMENT.md) chapter.

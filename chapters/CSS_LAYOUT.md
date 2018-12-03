@@ -53,7 +53,7 @@ Continue to build your personal website, this time focusing on layout. [Here's a
 
 
 
-Once you've followed the steps above, feel free to alter or change anything! 
+Once you've followed the steps above, feel free to change anything! 
 
 
 

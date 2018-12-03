@@ -26,6 +26,8 @@ if (time === "morning"){
 } else {
   console.log("Hello!");
 }
+
+// Expected output: "Good afternoon!"
 ```
 
 
@@ -75,7 +77,6 @@ if(fullMoon || isWolf){
 ```
 
 # Practice
-[ create a new project instructions ]
 
 #### 1. Fried Pickles are the Best 
 1. In your JavaScript file, declare a new variable called `favoriteFood` and set it equal to your favorite food. 
