@@ -66,7 +66,7 @@ Suggested extensions to install
 
 Even though it looks like something out of the Matrix, the terminal will become your best friend over the next six months. It's a way to move around your computer, set up projects, and modify files quickly without taking your hands off your keyboard. From here on out, you should use your terminal instead of your file explorer.
 
-Here are some terminal commands to get you started:
+Open up Git Bash! Let's run some commands to get you started:
 
 *Note: from here on out, we'll use the word "diectory" instead of "folder" in reference to file structure.*
 

@@ -1,9 +1,34 @@
 # JavaScript Variables and Data Types
 
-[ WHAT IS JS??]
-[HOW TO LINK A JS FILE INTO YOUR HTML]
+JavaScript is the programming language of the web. This is how we'll make our web pages *do* things:
+- Respond to clicks
+- Log in users
+- Show us our saved information
+- Keep track of our friend's information
+- And pretty much everything else you can think of that happens on the web
 
-[SHOW THEM HOW TO PRINT TO THE DOM IN THIS CHAPTER]
+But before we can do any of that cool stuff, we need to learn the basic building blocks of JavaScript. 
+
+First, create two new files: an HTML document and a JavaScript file.
+```
+touch index.html script.js
+```
+
+In `index.html`, add the following code right before the closing body tag:
+```html
+<body>
+  <!-- All your HTML goes here -->
+  <script src='script.js'></script>
+</body>
+
+```
+
+To make sure it works, add the following code to `script.js`:
+```js
+alert("Hello, world")
+```
+
+Open `index.html` in your web browser. If your script tag is linked correctly, you should see an alert box pop up immediately with the text you entered.
 
 ## Variales
 A variable is a little box to store information that you want to reference or modify later. Let's start by declaring a simple variable to hold a name:
