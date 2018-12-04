@@ -1,4 +1,4 @@
-# Pre Work Course
+# On-Ramp Curriculum
 
 Congratulations! You've begun your journey to become a professional developer. This course is designed to prepare you for the NewForce curriculum so that you can hit the ground running on day one of class.
 
@@ -34,7 +34,7 @@ By the end of this course, you should be able to:
 1. [Intro to HTML](chapters/HTML.md)
 1. [Intro to CSS](chapters/CSS.md)
 1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
-1. [JavaScript Variables and Data Types](chapters/)
+1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.MD)
 1. [The DOM](chapters/THE_DOM.md)
 1. [Conditionals](chapters/CONDITIONALS.md)
 1. [Loops](chapters/LOOPS.md)
