@@ -45,7 +45,7 @@ npm i -g http-server
 
 ### Slack Desktop Client
 
-Do not use the browser-based interface for Slack. Download and [install the client](https://slack.com/downloads). Let us know if you did not get an invitation to the Nashville Software School Slack organization, and we'll send you one immediately.
+Do not use the browser-based interface for Slack. Download and [install the client](https://slack.com/downloads). Let us know if you did not get an invitation to the NewForce Slack organization, and we'll send you one immediately.
 
 ### Visual Studio Code
 
@@ -57,15 +57,9 @@ Suggested extensions to install
 
 1. [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 1. [FontSize Shortcuts](https://marketplace.visualstudio.com/items?itemName=fosshaas.fontsize-shortcuts)
-1. [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+1. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 1. [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
 1. [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
-
-### Command Line Launcher
-
-Set up VS Code to be [launched from the command line](https://code.visualstudio.com/docs/setup/mac).
-
----
 
 
 ## Welcome to the Terminal

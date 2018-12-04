@@ -76,7 +76,7 @@ HTML elements can have attributes that distinguish them from other elements or t
 In the example above, imagine you needed to tell the difference between the two paragraphs. You could give them a `class` and/or an  `id`.
 
 - Ids have to be unique.
-- Classes can be used for multiple elemenents 
+- Classes can be used for multiple elements
 
 ```html
 <p id="firstParagraph" class="background-blue">
