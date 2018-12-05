@@ -34,7 +34,7 @@ By the end of this course, you should be able to:
 1. [Intro to HTML](chapters/HTML.md)
 1. [Intro to CSS](chapters/CSS.md)
 1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
-1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.MD)
+1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.md)
 1. [The DOM](chapters/THE_DOM.md)
 1. [Conditionals](chapters/CONDITIONALS.md)
 1. [Loops](chapters/LOOPS.md)
