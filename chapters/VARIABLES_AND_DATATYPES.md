@@ -47,7 +47,7 @@ Variable values can change. For example, lets' say we want to change our name to
 
 ```js
 // We declare the variable just like we did before
-var myName = "Dwayne The Rock Johnson";
+var myName = "Dwayne Johnson";
 
 // Except this time we reassign it to hold a different value. Notice we don't have to use the var keyword for reassignments.
 myName = "The Rock";
