@@ -30,7 +30,7 @@ alert("Hello, world")
 
 Open `index.html` in your web browser. If your script tag is linked correctly, you should see an alert box pop up immediately with the text you entered.
 
-## Variales
+## Variables
 A variable is a little box to store information that you want to reference or modify later. Let's start by declaring a simple variable to hold a name:
 
 ```js
@@ -101,7 +101,7 @@ var lastName = "Johnson";
 // Option A: String Concatenation with the + symbol
 var fullName = firstName + " " + lastName;
 
-// Option B: String template literals
+// Option B: String template literals (probably easier once you get used to them)
 fullName = `${firstName} ${lastName}`;
 ```
 
