@@ -87,6 +87,13 @@ console.log(yourPizza);
 
 ```
 # Practice
+
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/functions && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 #### 1. I Love JavaScript
 - Write a function that logs the string `"I love JavaScript!"` to the console.
 - Call the function. 
