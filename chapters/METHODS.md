@@ -68,6 +68,14 @@ jisieObject.greetSomeone(emilyObject.firstName);
 ```
 
 # Practice
+
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/methods && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
+
 #### Pet Store
 Using the above example, create three new objects to represent different pets in a pet store. Each pet should have:
 - A name

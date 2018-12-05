@@ -74,6 +74,13 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 
 
 # Practice
+
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/loops && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 #### 1. Psychotic Bird
 In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
 

@@ -141,7 +141,6 @@ touch style.css
 
 3. Give your elements appropriate classnames and apply the following styles:
     - Turn your `header` element into a splash page that takes up `100vw` and `100vh`. (Users should be able to scroll down to see the rest of your content.)
-    - Give your `header` splash page a [background image](http://www.htmldog.com/guides/css/intermediate/backgroundimages/) of your choice.
     - All headings should be centered.
     - Pick two fonts from [Google Fonts](https://fonts.google.com/). Apply one of them to all the heading elements and the other  to all non-heading text.
     - Your name should have a font size of `2em`.
@@ -149,6 +148,9 @@ touch style.css
     - The entire page should have a background color of `#494949`
     - All text should be `#f4c20c`.
     - The text in your `footer` should be centered.
+
+**Challenge:**
+ Give your `header` splash page a [background image](http://www.htmldog.com/guides/css/intermediate/backgroundimages/) of your choice.
   
 Commit your changes and then feel free to mess around with any other styles you like! 
   

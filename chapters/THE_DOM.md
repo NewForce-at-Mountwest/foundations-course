@@ -61,11 +61,16 @@ document.querySelector("#daily-special").innerHTML = htmlString;
 Now, when the daily specia changes, we only need to change the contents of the object.
 
 # Practice
+
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/the_dom && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 #### 1. Movie Poster
-1. Copy and paste the following code into your HTML document:
-    - An `h1` element with an id of "title"
-    - An `h3` element with an id of "genre"
-    - Another `h3` element with an id of "release-date"
+
+1. Copy and paste the following code between the `<body>` tags of your HTML document:
 ```html
 <section id="movie-poster">
   <h1 id="title"></h1>

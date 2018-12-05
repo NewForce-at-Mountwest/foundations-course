@@ -78,6 +78,12 @@ if(fullMoon || isWolf){
 
 # Practice
 
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/conditionals && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 #### 1. Fried Pickles are the Best 
 1. In your JavaScript file, declare a new variable called `favoriteFood` and set it equal to your favorite food. 
 1. Write a conditional that checks to see if the `favoriteFood` variable is equal to `"fried pickles"`. If so, log `"Congratulations! You have excellent taste!"` to the console. Otherwise, log `"But have you tried fried pickles?"` to the console. 

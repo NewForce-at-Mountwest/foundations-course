@@ -190,14 +190,20 @@ console.log(studentsArray[0].firstName); // "Leah"
 ```
 
 # Practice
-*Instructions*
-[create an html document and a javascript file. you can do all of these exercies in the same directory]
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/variables_and_datatypes && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
+
 #### 1. All About Me
 1. In your JavaScript file, instantiate and assign the following variables with information about yourself:
   - `firstName` should hold a string of your first name
   - `lastName` should hold a string of your last name
   - `age` should hold a number of your age
   - `likesTravle` should hold a boolean representing whether or not you like to travel 
+  - Log each variable to the console.
 
 #### 2. Favorite Movies
 1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
@@ -209,7 +215,7 @@ In your JavaScript file, use the following code as an example to create an objec
 var dwayneObject = {
   firstName: "Dwayne",
   lastName: "Johnson",
-  favoriteFood: "Eggs",
+  favoriteFood: "Raw meat",
   age: 46
 }
 ```
@@ -217,7 +223,7 @@ var dwayneObject = {
 1. Use string template literals to log their full name to the console.
 
 
-**Bonus**
+**Challenge**
 Refactor your movie star object to add their hobbies. Now your object should look something like this: 
 ```js
 var dwayneObject = {
