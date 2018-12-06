@@ -209,18 +209,26 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
 1. Log each movie in the array to the console.
 
-#### 3. Movie Star
-In your JavaScript file, use the following code as an example to create an object that represents a famous movie star.
+### 3. Student Grades
+In your JavaScript file, copy and paste the following array:
 ```js
-var dwayneObject = {
-  firstName: "Dwayne",
-  lastName: "Johnson",
-  favoriteFood: "Raw meat",
-  age: 46
-}
+var williamGrades = [62, 97, 99, 85, 73, 97];
 ```
+1. Print the first grade in the array to the console.
+1. Print the last grade in the array to the console.
+1. Use JavaScript to find William's average grade.
+
+
+#### 4. Movie Star
+1. In your JavaScript file, create an object that represents a famous movie star. Your object should have the following properties:
+    - `firstName`
+    - `lastName`
+    - `age`
+    - `favoriteFood`
+
 1. Log the movie star's favorite food to the console.
 1. Use string template literals to log their full name to the console.
+1. Use string template literals to log a sentence or two about your movie star to the console. (Example: "Dwayne The Rock Johnson is 46 years old. His favorite food is raw meat.")
 
 
 **Challenge**
