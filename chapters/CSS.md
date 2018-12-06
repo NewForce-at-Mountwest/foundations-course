@@ -133,7 +133,7 @@ As we mentioned briefly above, the cascade also takes into account order. When t
 # Practice
 Revisit your superhero website from the previous chapter. 
 
-1. In the superhero website directory, create a new file: 
+1. In your personal website directory, create a new file: 
 ```
 touch style.css
 ```
