@@ -106,7 +106,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 ```html
 <h3 id="personal-greeting"></h3>
 ```
-1. Write a conditional that checks for the following:
+2. Write a conditional that checks for the following:
     - If the person's preferred language is English, print "Hello, [name]!" to the `"#personal-greeting"` element.
     - If the person's preferred language is Spanish print "Hola, [name]!" to the `"#personal-greeting"` element.
     - If their preferred language is French, print "Bonjour, [name]!" to the `"#personal-greeting"` element.
