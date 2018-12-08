@@ -84,7 +84,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 var movieObject = {
   title: "Star Wars: A New Hope",
   genre: "Science Fiction",
-  release-date: "May 25, 1977"
+  releaseDate: "May 25, 1977"
 }
 ```
 3. Use `document.querySelector()` to grab a reference to each element in your HTML. Use the `.innerHTML` property to set the text of each element to the matching value in your object. (For example, the `h1` with the id of "title" should contain the `title` property of your `movieObject`, etc). 
