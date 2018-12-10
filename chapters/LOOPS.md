@@ -91,6 +91,19 @@ In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 t
 - In your JavaScript array, create a new variable called `favoriteFoods`. It should store an array of strings representing five of your favorite foods.
 - Loop through the array and print each food item to the console.
 
+#### 4. Interests
+- In your JavaScript file, create an array of 5 of your interests.
+- Loop through the interests and console log the phrase "One of my interests is: [your interest]." for each of the interests in your array.
+- Pick your favorite interest. Add an if statement in your loop that checks each time if the interest is your favorite interest. For the one item that is your favorite, console log "My absolute favorite interest is: [your favorite interest]." Still console log the message for each of your other interests from the step above.
+##### Output:
+```
+One of my interests is: hiking. 
+My absolute favorite interest is: coding. 
+One of my interests is: math. 
+One of my interests is: 30 Rock. 
+One of my interests is: pizza.
+```
+
 #### 4. Harry Potter Titles
 - Copy and paste the following array into your JavaScript file: 
 ```js
@@ -169,7 +182,7 @@ var movieSchedule = [
 - Use `document.querySelector` to select the element in your HTML file with an id of `"movie-schedule"`
 - Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.
 
-**Extra Practice:**
+**Challenge:**
 - Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
 - Add another conditinal to exclude R-rated movies.
 
