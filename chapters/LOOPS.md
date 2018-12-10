@@ -104,7 +104,7 @@ One of my interests is: 30 Rock.
 One of my interests is: pizza.
 ```
 
-#### 4. Harry Potter Titles
+#### 5. Harry Potter Titles
 - Copy and paste the following array into your JavaScript file: 
 ```js
 var harryPotterTitles = ["and the Sorcerer's Stone", "and the Chamber of Secrets", "and the Prisoner of Azkaban", "and the Goblet of Fire", "and the Order of the Phoenix", "and the Half-Blood Prince", "and the Deathly Hallows"];
@@ -119,8 +119,8 @@ var harryPotterTitles = ["and the Sorcerer's Stone", "and the Chamber of Secrets
 "Harry Potter and the Deathly Hallows"
 ```
 
-#### 5. Student Grades Take Two
-- Copy and paste the following array of grades into your JavaScript file:
+#### 6. Student Grades Take Two
+- Copy and paste the folowing array of grades into your JavaScript file:
 ```js
 var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
 ```
@@ -131,7 +131,7 @@ var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 9
     - If it's between 84 and 92, log "You got a B" to the console.
     - If it's between 93 and 100, log "You got an A" to the console.
 
-#### 6. Movie Schedule Take Two
+#### 7. Movie Schedule Take Two
 
 You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
 
@@ -187,7 +187,7 @@ var movieSchedule = [
 - Add another conditinal to exclude R-rated movies.
 
 
-#### 7. Student Grades - Challenge
+#### 8. Student Grades - Challenge
  Revisit the students grade exercise. Use JavaScript to answer the following questions:
   1. How many students got A's?
   1. Which was the most common grade?
