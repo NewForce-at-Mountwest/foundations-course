@@ -218,7 +218,7 @@ var mySum = addThemUp(outsideArray);
 console.log(mySum); // 8038
 ```
 
-#### 7. Challenge: Cohort Website
+#### 9. Challenge: Cohort Website
 1. Copy and paste the following code inside the `body` tags of your HTML file:
 ```html
 <div id = "cohort-container">
