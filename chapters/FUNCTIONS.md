@@ -103,12 +103,12 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 2. The function should log a sentence to the console about where that person wants to go.
 3. Call the function three different times with different parameters.
 *Example: if you pass in `"Jessica"` and `"Mount Fuji"` as parameters, you should see the sentence `"Jessica would love to visit Mount Fuji."` logged to the console.*
+
 #### 3. Sandwich Maker
 1. Write a function that accepts three parameters: `breadType` (a string), `sandwichName`, and `toasted` (a boolean). 
 1. The function should check whether `toasted` is true or false and build a sentence about the sandwich order accordingly. 
-1. Return the sandwich sentence. 
+1. Log the sentence to the console.
 1. Call the function three times, passing in three different sets of parameters.
-1. Log each sandwich to the console. (Since you're returning it, your `console.log` should be outside the sandiwch maker function.) 
 
 Example output:
 ```
@@ -119,7 +119,8 @@ Example output:
 ```js
 var sandwichToppings = ["pickles", "extra cheese", "lettuce", "tomatoes", "avocado", "bacon", "mayo", "mustard"]
 ```
-1. Write a function that loops through the `sandwichToppings` array and builds a sentence about all the toppings the sandwich shops offers.
+1. Write a function that loops through the `sandwichToppings` array and builds a sentence about all the toppings the sandwich shops offers. The function should log the sandwich sentence to the console.
+1. Call the function.
 
 Expected output:
 ```
@@ -157,8 +158,12 @@ function ageChecker(){
 }
 ```
 1. The `ageChecker` function should loop through the `partyGuests` and determine if each guest is of legal drinking age.
-1. When called, the `ageChecker` function should return a sentence that tells us which guests are of drinking age and which ones are too young to drink. 
+1. When called, the `ageChecker` function should return a string that tells us which guests are of drinking age and which ones are too young to drink. 
 1. Log the returned sentence to the console.
+Example output:
+```
+"Jery, Lila, and Mary can drink. Sam and Todd are too young."
+```
 
 #### 6. The Rock's Hobbies
 1. Copy and paste the following object into your JavaScript file:
@@ -177,6 +182,41 @@ function printHobbies(){
 ```
 2. The `printHobbies` function should loop through the array of Dwayne The Rock Johnson's hobbies and print each one to the console.
 3. Call the `printHobbies` function.
+
+#### 7. Celsius to Fahrenheit
+You'll be writing two functions: one that converts Celsius to Fahrenheit and the other, vice versa.
+- Write a function that takes the temperature in Celsius as the parameter
+- The function should do the following calculation to get the temperature in Fahrenheit: T(F) = T(C) * 1.8 + 32
+- Output the temperature in Fahrenheit to the console
+- Write a second function that takes the temperature in Fahrenheit as the parameter
+- The function should do the following calculation to get the temperature in Celsius: T(C) = (T(F) - 32) / 1.8
+- Output the temperature in Celsius to the console
+Example output:
+```
+"You entered [degrees in Celsius] Celsius. That converts to [degrees in Fahrenheit] Fahrenheit." "You entered [degrees in Fahrenheit] Fahrenheit. That converts to [degrees in Celsius] Celsius."
+```
+
+#### 8. It All Adds Up!
+
+- Create a variable that holds an array of numbers.
+- Create (declare) a function named `addThemUp`.
+- The function should accept one argument: an array of numbers.
+- Inside the function, loop over the array of numbers parameter and add them up to a running sum.
+- The `addThemUp` function should return the sum.
+- Call the function and pass in the array variable from step 1.
+- Save the results of the step above to a variable named `mySum`.
+- Console log the variable mySum.
+Example:
+```js
+var outsideArray =  [4, 7, 8008, 11, 9, -1]
+
+function addThemUp(arrayParameter){
+// YOUR CODE GOES HERE!!
+}
+
+var mySum = addThemUp(outsideArray);
+console.log(mySum); // 8038
+```
 
 #### 7. Challenge: Cohort Website
 1. Copy and paste the following code inside the `body` tags of your HTML file:
