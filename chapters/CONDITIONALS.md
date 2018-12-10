@@ -15,7 +15,7 @@ In the example above, the first thing JavaScript does is evaluate the code insid
 You can add as many conditions as you want with `else if`. In the following example, JavaScript will try each condition in order. As soon as one of them evaluates to `true`, it will run that code block and skip the rest. 
 
 ```js
-var time == "afternoon";
+var time ="afternoon";
 
 if (time === "morning"){
   console.log("Good morning!");
