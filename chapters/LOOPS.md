@@ -162,6 +162,11 @@ var movieSchedule = [
     currentlyPlaying: false,
     poster: "https://images-na.ssl-images-amazon.com/images/I/718zWbDKmvL._SY606_.jpg"
   },
+   {
+    title: "Bohemian Rhapsody",
+    rating: "PG-13",
+    currentlyPlaying: true
+  },
   {
     title: "Fantastic Beasts: The Crimes of Grindlewald",
     rating: "PG-13",
@@ -174,6 +179,11 @@ var movieSchedule = [
     currentlyPlaying: false,
     poster: "https://images-na.ssl-images-amazon.com/images/I/61K%2BTyGjsCL.jpg"
   },
+  {
+    title: "Spider-Man: Into the Spider-Verse",
+    rating: "PG-13",
+    currentlyPlaying: true,
+  }
 ]
 ```
 - Use a for loop to loop through the movies and build up an HTML string to represent the data. 
@@ -182,16 +192,44 @@ var movieSchedule = [
 - Use `document.querySelector` to select the element in your HTML file with an id of `"movie-schedule"`
 - Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.
 
-**Challenge:**
-- Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
-- Add another conditinal to exclude R-rated movies.
+
+#### Interrupting Cow
+Copy and paste the following array into your JavaScript file:
+```js
+var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+```
+Write a loop that builds `sentenceArray` into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the [modulus operator](https://www.w3schools.com/js/js_arithmetic.asp). 
+
+Expected output:
+```
+"the cow danced MOOOOOOOO through the trees MOOOOOOOO in the light MOOOOOOOO of the moon"
+```
 
 
-#### 8. Student Grades - Challenge
- Revisit the students grade exercise. Use JavaScript to answer the following questions:
+#### Challenge: Student Grades
+Take the following array from the student grades exercise above. Each entry in the array represents a different student's percentage grade for the entire course:
+```js
+var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
+```
+Use JavaScript to answer the following questions:
   1. How many students got A's?
-  1. Which was the most common grade?
-  1. What was the average grade in the class?
+  1. How many students got B's?
+  1. Which was the most common letter grade?
+  1. What was the average percentage grade in the class?
+  
+ 
+ #### Challenge: Movie Schedule
+ - Revisit your movie schedule exercise from above.
+ - Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
+ - Use flexbox to arrange your movie schedule side by side on your web page.
+ - If a movie does not have a `poster` property, give it a [placeholder image like this](https://www.snhrc.com/wp-content/uploads/2018/09/Image-Coming-Soon.png)
+ - Give all G-rated movies a dotted green border that's 2px wide.
+ - Give all PG-rated movies a dotted yellow border that's 2px wide.
+ - Give all PG-13 movies a dotted orange border that's 2px wide.
+ - Give all R-rated movies a dotted red border that's 2px wide.
+
+  
+
 
 
 
