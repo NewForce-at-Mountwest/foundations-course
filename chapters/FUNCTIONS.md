@@ -55,7 +55,7 @@ greetAFriend("Hannah", "afternoon"); // Good afternoon, Hannah!
 greetAFriend("Norman", "midnight"); // Hello, Norman!
 ```
 ## Return Statements
-Functions have their own scope, which means variales we declare inside the function can't be accessed outside of it. **The following code won't work:** 
+Functions have their own scope, which means variales we declare inside the function can't be accessed outside of it. **The following code won't work!!!!** 
 ```js
 function makeAPizza(crustType, size, toppingsArray){
   var finishedPizza = `A ${size} pizza with ${crustType} crust and ${toppingsArray.join(", ")} on top.`
@@ -63,7 +63,7 @@ function makeAPizza(crustType, size, toppingsArray){
 
 makeAPizza("wheat", "large", ["green peppers", "onions", "pepperoni"]);
 
-console.log(finishedPizza) // this will be undefined!
+console.log(finishedPizza) // THIS LIL BOOGER WILL BE UNDEFINED! Right now, the finishedPizza variable ONLY exists inside the function.
 
 ```
 
@@ -105,8 +105,8 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 *Example: if you pass in `"Jessica"` and `"Mount Fuji"` as parameters, you should see the sentence `"Jessica would love to visit Mount Fuji."` logged to the console.*
 
 #### 3. Sandwich Maker
-1. Write a function that accepts three parameters: `breadType` (a string), `sandwichName`, and `toasted` (a boolean). 
-1. The function should check whether `toasted` is true or false and build a sentence about the sandwich order accordingly. 
+1. Write a function that accepts three parameters: `breadType` (a string), `sandwichName`, and `isToasted` (a boolean). 
+1. The function should check whether `isToasted` is true or false and build a sentence about the sandwich order accordingly. 
 1. Log the sentence to the console.
 1. Call the function three times, passing in three different sets of parameters.
 
@@ -114,19 +114,41 @@ Example output:
 ```
 "You ordered a toasted meatball sub sandwich on wheat."
 ```
-#### 4. Sandwich Toppings
+
+#### 4. The Rock's Hobbies
+1. Copy and paste the following object into your JavaScript file:
+```js
+var dwayneObject = {
+  firstName: "Dwayne",
+  nickName: "The Rock",
+  lastName: "Johnson",
+  favoriteFood: "Eggs",
+  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
+}
+
+function printHobbies(){
+// YOUR CODE GOES HERE
+}
+```
+2. The `printHobbies` function should loop through the array of Dwayne The Rock Johnson's hobbies and print each one to the console.
+3. Call the `printHobbies` function.
+
+#### 5. Sandwich Toppings
 1. Copy and paste the following array into your JavaScript file:
 ```js
 var sandwichToppings = ["pickles", "extra cheese", "lettuce", "tomatoes", "avocado", "bacon", "mayo", "mustard"]
 ```
-1. Write a function that loops through the `sandwichToppings` array and builds a sentence about all the toppings the sandwich shops offers. The function should log the sandwich sentence to the console.
-1. Call the function.
+2. Copy and paste the following code into your `index.html` file:
+```html
+<ul id="sandwich-container"></ul>
+```
+3. Write a function that does the following things:
+    - Loop through `sandwichToppings`
+    - Build up an  HTML string with an `<li>` element for each item in the array.
+    - Use `document.querySelector` and `.innerHTML` to print your HTML string to the `"#sandwich-container"`.
+4. Call the function. You should see a bulleted list of all the sandwich toppings in the DOM.
 
-Expected output:
-```
-"Our topping choices are pickles, extra cheese, lettuce, tomatoes, avocado, bacon, mayo, and mustard."
-```
-#### 5. New Years Eve Party
+#### 6. New Years Eve Party
 Copy and paste the following array into your JavaScript file:
 ```js
 var partyGuests = [
@@ -157,31 +179,18 @@ function ageChecker(){
   // YOUR CODE GOES HERE
 }
 ```
-1. The `ageChecker` function should loop through the `partyGuests` and determine if each guest is of legal drinking age.
-1. When called, the `ageChecker` function should return a string that tells us which guests are of drinking age and which ones are too young to drink. 
-1. Log the returned sentence to the console.
-Example output:
-```
-"Jery, Lila, and Mary can drink. Sam and Todd are too young."
-```
 
-#### 6. The Rock's Hobbies
-1. Copy and paste the following object into your JavaScript file:
-```js
-var dwayneObject = {
-  firstName: "Dwayne",
-  nickName: "The Rock",
-  lastName: "Johnson",
-  favoriteFood: "Eggs",
-  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
-}
-
-function printHobbies(){
-// YOUR CODE GOES HERE
-}
+Copy and paste the following HTML into your `index.html` file:
+```html
+<div id="party-guests"></div>
 ```
-2. The `printHobbies` function should loop through the array of Dwayne The Rock Johnson's hobbies and print each one to the console.
-3. Call the `printHobbies` function.
+1. Fill in the `ageChecker` function so that it does the following things:
+    - Loop through the `partyGuests` and check if each guest is at least 21.
+    - Build a sentence or two about who can drink and who can't. (Example: `"
+"Jery, Lila, and Mary can drink. Sam and Todd are too young."`)
+    - Use `document.querySelector` and `.innerHTML` to print the sentence(s) to the `"#party-guests"` container in the DOM.
+2. Call the function.
+
 
 #### 7. Celsius to Fahrenheit
 You'll be writing two functions: one that converts Celsius to Fahrenheit and the other, vice versa.
@@ -197,31 +206,43 @@ Example output:
 ```
 
 #### 8. It All Adds Up!
+Copy and paste the following code into your JavaScript file:
+```js
+var outsideArray =  [4, 7, 8008, 11, 9, -1];
+```
 
-- Create a variable that holds an array of numbers.
-- Create (declare) a function named `addThemUp`.
+- In your JavaScript file, create (declare) a function named `addThemUp`.
 - The function should accept one argument: an array of numbers.
 - Inside the function, loop over the array of numbers parameter and add them up to a running sum.
 - The `addThemUp` function should return the sum.
-- Call the function and pass in the array variable from step 1.
-- Save the results of the step above to a variable named `mySum`.
-- Console log the variable mySum.
-Example:
+- Call `addThemUp` and pass in `outsideArray` as an argument.
+- Save the returned value in a variable called `mySum`.
+- Log `mySum` to the console.
+- Try changing the numbers in the array or adding new numbers. 
+
+#### 9. Law of Averages
+Copy and paste the following code into your JavaScript file:
 ```js
-var outsideArray =  [4, 7, 8008, 11, 9, -1]
-
-function addThemUp(arrayParameter){
-// YOUR CODE GOES HERE!!
-}
-
-var mySum = addThemUp(outsideArray);
-console.log(mySum); // 8038
+var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 98, 84];
 ```
+
+- In your JavaScript file, create (declare) a function named `findAverage`.
+- The function should accept one argument: an array of numbers.
+- Inside the function, loop over the array of numbers parameter and find their average.
+- The `findAverage` function should return the average of all the numbers.
+- Call `findAverage` and pass in `scoresToAverage` as an argument.
+- Save the returned value in a variable called `myAverage`.
+- Log `myAverage` to the console.
+- Try adding new numbers to the `outsideArray`. Your function should still return the correct average no matter how many items are in the array.
 
 #### 9. Challenge: Cohort Website
 1. Copy and paste the following code inside the `body` tags of your HTML file:
 ```html
-<div id = "cohort-container">
+<div id = "cohort-one-container">
+</div>
+<div id = "cohort-two-container">
+</div>
+<div id = "cohort-three-container">
 </div>
 ```
 2. Copy and paste the following code in your JavaScript file:
@@ -229,25 +250,54 @@ console.log(mySum); // 8038
 var cohort1 = {
   name: "Cohort One",
   startDate: "January 15, 2018",
-  endDate: "July 12, 2018",
-  instructors: ["Jordan", "Josh", "Kim"],
+  endDate: "July 12, 2019",
+  instructors: ["Kim", "Josh", "Jordan"],
   techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
 }
 
-function printCohort(cohortObject){
+var cohort2 = {
+ name: "Cohort Two",
+ startDate: "August 15, 2019",
+ endDate: "Feb 12, 2020",
+ instructors: ["Kim", "Josh", "Jordan"],
+ techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
+}
+
+var cohort3 = {
+ name: "Cohort Three",
+ startDate: "September 15, 2020",
+ endDate: "March 12, 2021",
+ instructors: ["Kim", "Josh", "Jordan"],
+ techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
+}
+
+function buildHtmlString(cohortObjectParameter){
+  // YOUR CODE GOES HERE
+}
+
+function printCohort(htmlStringParameter, elementIdParameter){
   // YOUR CODE GOES HERE
 }
 
 ```
-3. The `printCohort` function should take in the `cohort1` object as a parameter and return a HTML string with the following elements:
+3. The `buildHtmlString` function should take an cohort object as a parameter and return a HTML string with the following elements:
     - An `h1` of the cohort's name
     - An `h3` for the start date
     - An `h3` for the end date
     - An unordered list of instructors
     - An unordered list of technologies learned
-4. Call the `printCohort` function.
-5. Use the `document.querySelector` method to grab a reference to the `div` with the id of `"cohort-container"` in the DOM
-6. Use the `innerHTML` property to insert your returned HTML string into the DOM
+4. The `printCohort` function should take two parameters:
+    - An HTML string
+    - The `id` of the element to which you want to print your HTML string
+5. The `printCohort` function should do the following things:
+    - Use `document.querySelector` to get a reference to the element in the DOM with whatever id you passed in.
+    - Use `innerHTML` to print the HTML string you passed in to the DOM.
+    
+6. Call the `buildHTMLString` function and pass in `cohort1` as an example.
+7. Store the returned value in a new variable called `cohort1HTML`.
+8. Call the `printCohort` function and pass in your `cohort1HTML` variable and the id of the element you want to print to (`"cohort-one-container"`).
+9. Repeat steps 6-8 for `cohort2` and `cohort3`
+
 
  
 
