@@ -180,9 +180,9 @@ Copy and paste the following code into your `index.html` file:
 ```html
 <div id="shopping-cart"></div>
 ```
-Your job is to fill in the three empty methods in the `shoppingCart` object:
+Your job is to fill in the three empty methods in the `shoppingCart` object. *(Hint: you can access the `items` array from inside the object with `this.items`.)*
 1. The `addToCard` method should take in a parameter of an object that represents a new item and add it to the shopping cart array. *Hint: look up [.push()](https://www.w3schools.com/jsref/jsref_push.asp)*
 1. The `calcualteTotal` method to loop over all the items in your shopping cart, add up a total, and return it.
 1. The `printShoppingCart` method should loop over all the items in the cart, build up an HTML string, and print them to the `"#shopping-cart"` element in the DOM. 
 1. Call each method.
-*(Hint: you can access the `items` array from inside the object with `this.items`.)*
+
