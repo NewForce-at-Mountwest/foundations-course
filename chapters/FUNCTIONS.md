@@ -235,7 +235,7 @@ var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 
 - Log `myAverage` to the console.
 - Try adding new numbers to the `outsideArray`. Your function should still return the correct average no matter how many items are in the array.
 
-#### 9. Challenge: Cohort Website
+#### Challenge: Cohort Website
 1. Copy and paste the following code inside the `body` tags of your HTML file:
 ```html
 <div id = "cohort-one-container">
