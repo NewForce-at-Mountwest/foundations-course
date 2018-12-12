@@ -17,7 +17,6 @@ Github is the primary site that software developers throughout the world use to 
 
 ---
 
-
 ## Software
 
 ### Google Chrome
