@@ -130,8 +130,58 @@ var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 9
     - If it's between 77 and 84, log "You got a C" to the console.
     - If it's between 84 and 92, log "You got a B" to the console.
     - If it's between 93 and 100, log "You got an A" to the console.
+    
+    
+    
+#### 7. Interrupting Cow
+1. Copy and paste the following array into your JavaScript file:
+```js
+var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+```
+2. Copy and paste the following code into your HTML document:
+```html
+<span id="cow-sentence"></span>
+```
+3. Write a loop that builds `sentenceArray` into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the [modulus operator](https://www.w3schools.com/js/js_arithmetic.asp). 
+4. Use `document.querySelector` and `.innerHTML` to print your sentence to the DOM.
 
-#### 7. Movie Schedule Take Two
+Expected output:
+```
+the cow danced MOOOOOOOO through the trees MOOOOOOOO in the light MOOOOOOOO of the moon
+```
+
+#### 8. Downtown Restaurants
+1. Copy and paste the following array into your JavaScript file:
+```js
+var HTMLString = "";
+
+var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of Thailand", "Bahnhof", "Jim's Steak and Spaghetti House", "The Peddler", "Jewel City Seafood Market", "Black Sheep Burritos & Brews", "La Famiglia", "Le Bistro", "Charlie Graingers", "The Cellar Door"];
+```
+2. Copy and paste the following code into your `index.html` file:
+```html
+<ul id="restaurants-list"></ul>
+```
+3. Loop over the `downtownRestaurants` array.
+4. Inside the loop, build up your `HTMLString` with an `<li>` element for each item in the array.
+5. Use `document.querySelector` and `.innerHTML` to print your `HTMLString` to the DOM.
+6. Here's an example of what you should see on the DOM when you're done:
+<ul>
+ <li>Backyard Pizza and Raw Bar</li>
+  <li>The Bodega</li>
+  <li>Surin of Thailand</li>
+  <li>Bahnhof</li>
+  <li>Jim's Steak and Spaghetti House</li>
+  <li>The Peddler</li>
+  <li>Jewel City Seafood Market</li>
+  <li>Black Sheep Burritos & Brews</li>
+  <li>La Famiglia</li>
+  <li>Le Bistro</li>
+  <li>Charlie Graingers</li>
+  <li>The Cellar Door</li>
+</ul>
+
+
+#### 9. Movie Schedule Take Two
 
 You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
 
@@ -193,18 +243,6 @@ var movieSchedule = [
 - Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.
 
 
-#### Interrupting Cow
-Copy and paste the following array into your JavaScript file:
-```js
-var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
-```
-Write a loop that builds `sentenceArray` into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the [modulus operator](https://www.w3schools.com/js/js_arithmetic.asp). 
-
-Expected output:
-```
-"the cow danced MOOOOOOOO through the trees MOOOOOOOO in the light MOOOOOOOO of the moon"
-```
-
 
 #### Challenge: Student Grades
 Take the following array from the student grades exercise above. Each entry in the array represents a different student's percentage grade for the entire course:
@@ -218,7 +256,7 @@ Use JavaScript to answer the following questions:
   1. What was the average percentage grade in the class?
   
  
- #### Challenge: Movie Schedule
+ #### Challenge: Movie Schedule Take Three
  - Revisit your movie schedule exercise from above.
  - Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
  - Use flexbox to arrange your movie schedule side by side on your web page.
