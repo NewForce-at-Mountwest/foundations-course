@@ -30,7 +30,7 @@ while(i < 20){
 }
 ```
 Let's break it down:
-- `var i = 0` declares `i` as our counter variable and sets it equal to 0.
+- `var i = 1` declares `i` as our counter variable and sets it equal to 1.
 - The code inside the curly braces will run *while* the expression in the parentehses evaluates to true.
 - The first time the loop runs, `i` is `1`. Is `1` less than `20`? Yep, that's true! The code between the parentheses can run. It does two things:
     - Log `"Hello, world"` to the console
