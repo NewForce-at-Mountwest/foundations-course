@@ -164,21 +164,7 @@ var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of
 3. Loop over the `downtownRestaurants` array.
 4. Inside the loop, build up your `HTMLString` with an `<li>` element for each item in the array.
 5. Use `document.querySelector` and `.innerHTML` to print your `HTMLString` to the DOM.
-6. Here's an example of what you should see on the DOM when you're done:
-<ul>
- <li>Backyard Pizza and Raw Bar</li>
-  <li>The Bodega</li>
-  <li>Surin of Thailand</li>
-  <li>Bahnhof</li>
-  <li>Jim's Steak and Spaghetti House</li>
-  <li>The Peddler</li>
-  <li>Jewel City Seafood Market</li>
-  <li>Black Sheep Burritos & Brews</li>
-  <li>La Famiglia</li>
-  <li>Le Bistro</li>
-  <li>Charlie Graingers</li>
-  <li>The Cellar Door</li>
-</ul>
+6. When you're done, you should see a bulleted list of all the items in `downtownRestaurants` on the DOM.
 
 
 #### 9. Movie Schedule Take Two
