@@ -68,7 +68,7 @@ Even though it looks like something out of the Matrix, the terminal will become 
 
 Open up Git Bash! Let's run some commands to get you started:
 
-*Note: from here on out, we'll use the word "diectory" instead of "folder" in reference to file structure.*
+*Note: from here on out, we'll use the word "directory" instead of "folder" in reference to file structure.*
 
 1. Make a new directory called `workspace`. 
 ```
@@ -80,7 +80,7 @@ mkdir workspace
 cd workspace
 ```
 
-1. Get in the habit of checking to make sure you're in the right place. `pwd` stands for "print working direcotry" and will show you the filepath to your current location.
+1. Get in the habit of checking to make sure you're in the right place. `pwd` stands for "print working directory" and will show you the filepath to your current location.
 ```
 pwd
 ```
