@@ -275,7 +275,7 @@ function buildHtmlString(cohortObjectParameter){
   // YOUR CODE GOES HERE
 }
 
-function printCohort(htmlStringParameter, elementIdParameter){
+function printHtmlString(htmlStringParameter, elementIdParameter){
   // YOUR CODE GOES HERE
 }
 
@@ -286,16 +286,16 @@ function printCohort(htmlStringParameter, elementIdParameter){
     - An `h3` for the end date
     - An unordered list of instructors
     - An unordered list of technologies learned
-4. The `printCohort` function should take two parameters:
+4. The `printHtmlString` function should take two parameters:
     - An HTML string
-    - The `id` of the element to which you want to print your HTML string
+    - The `id` of the element into which you want to print your HTML string
 5. The `printCohort` function should do the following things:
     - Use `document.querySelector` to get a reference to the element in the DOM with whatever id you passed in.
     - Use `innerHTML` to print the HTML string you passed in to the DOM.
     
 6. Call the `buildHTMLString` function and pass in `cohort1` as an example.
 7. Store the returned value in a new variable called `cohort1HTML`.
-8. Call the `printCohort` function and pass in your `cohort1HTML` variable and the id of the element you want to print to (`"cohort-one-container"`).
+8. Call the `printHtmlString` function and pass in your `cohort1HTML` variable and the id of the element you want to print to (`"cohort-one-container"`).
 9. Repeat steps 6-8 for `cohort2` and `cohort3`
 
 
