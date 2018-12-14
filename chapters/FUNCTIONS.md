@@ -290,7 +290,7 @@ function printHtmlString(htmlStringParameter, elementIdParameter){
 4. The `printHtmlString` function should take two parameters:
     - An HTML string
     - The `id` of the element into which you want to print your HTML string
-5. The `printCohort` function should do the following things:
+5. The `printHtmlString` function should do the following things:
     - Use `document.querySelector` to get a reference to the element in the DOM with whatever id you passed in.
     - Use `innerHTML` to print the HTML string you passed in to the DOM.
     
