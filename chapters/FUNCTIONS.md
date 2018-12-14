@@ -33,9 +33,10 @@ greetAFriend("Dwayne");
 Functions can take more than one parameter.
 
 ```js
-var greeting;
+
 
 function greetAFriend(friendName, timeOfDay){
+  var greeting;
   if(timeOfDay === "morning"){
     greeting = "Good morning";
   } else if (timeOfDay === "afternoon"){
@@ -45,8 +46,8 @@ function greetAFriend(friendName, timeOfDay){
   } else {
     greeting = "Hello";
   }
-  greeting = `${greeting}, ${friendName}!`;
-  console.log(greeting);
+  var personalGgreeting = `${greeting}, ${friendName}!`;
+  console.log(personalGreeting);
 }
 
 greetAFriend("Todd", "evening"); // Good evening, Todd!
