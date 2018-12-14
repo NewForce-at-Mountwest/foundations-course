@@ -95,49 +95,10 @@ console.log(sum); // Expected output: 4
 - Add three more methods to the `calculator` object for subtraction, division, and multiplication. Each method should return the result of the calculation.
 - Call each method at least twice, passing in different parameters. (Hint: you'll need to store the returned values in variables.)
 
-#### 2. Address Book
-1. Create an object that represents your contact information. Use the code below as an example:
-```js
-var jordanContactInfo = {
-  name: "Jordan Castelloe",
-  cell: "(999) 999-9999",
-  email: "jordan.123@gmail.com",
-  address: "123 Sesame St"
-}
-```
-2. Create another object that represents your one of your friend's contact information. Example: 
-```js
-var emilyContactInfo = {
-  name: "Emily Lemmon",
-  cell: "(888) 888-8888",
-  email: "eclair@gmail.com",
-  address: "124 Sesame St"
-}
-```
-1. Now give each of your objects a method called `callCellPhone`. It should accept a parameter of `phoneNumber`. For example, my object would now look like this: 
-```js
-var jordanContactInfo = {
-  name: "Jordan Castelloe",
-  cell: "(999) 999-9999",
-  email: "jordan.123@gmail.com",
-  address: "123 Sesame St",
-  callCellPhone: function(phoneNumberParameter){
-    console.log(`${this.name} is now calling ${phoneNumberParameter}`);
-  }
-}
-```
-1. Give each object two more methods: 
-  - A method called `sendEmail` (which should accept a parameter of `emailAddress`)
-  - A method called `sendMail` (which should accept a parameter called `mailingAddress`)
-  - Don't worry to much about what the methods do- just logging something to the console is fine.
-2. Invoke your `callCellPhone` method and pass in your friend's phone number as a parameter. (In this example, my expected output would be `"Jordan Castelloe is now calling (888) 888-8888"`).
-3. Invoke your friend's `sendEmail` method and pass in your email address as a parameter.
-4. Invoke your `sendMail` method and pass in your friend's mailing address as a parameter.
-
-#### 4. Movie Poster
+#### 3. Movie Poster
 Copy and paste the following object into your JavaScript file:
 ```js
-var movieObject = {
+var starWarsObject = {
   title: "Star Wars: A New Hope",
   genre: "Science Fiction",
   releaseDate: "May 25, 1977"
@@ -158,6 +119,44 @@ Copy and paste the following code into your `index.html` file:
     - Use `document.querySelector` and `.innerHTML` to print your HTML string to the `"#movie-poster"` element in the DOM.
 2. Call the `printMoviePoster` method.
 
+#### 4. Address Book
+1. Create an object that represents your contact information. Use the code below as an example:
+```js
+var jordanContactInfo = {
+  name: "Jordan Castelloe",
+  cell: "(999) 999-9999",
+  email: "jordan.123@gmail.com",
+  address: "123 Sesame St"
+}
+```
+2. Create another object that represents your one of your friend's contact information. Example: 
+```js
+var emilyContactInfo = {
+  name: "Emily Lemmon",
+  cell: "(888) 888-8888",
+  email: "eclair@gmail.com",
+  address: "124 Sesame St"
+}
+```
+3. Now give each of your objects a method called `callCellPhone`. It should accept a parameter of `phoneNumber`. For example, my object would now look like this: 
+```js
+var jordanContactInfo = {
+  name: "Jordan Castelloe",
+  cell: "(999) 999-9999",
+  email: "jordan.123@gmail.com",
+  address: "123 Sesame St",
+  callCellPhone: function(phoneNumberParameter){
+    console.log(`${this.name} is now calling ${phoneNumberParameter}`);
+  }
+}
+```
+4. Give each object two more methods: 
+  - A method called `sendEmail` (which should accept a parameter of `emailAddress`)
+  - A method called `sendMail` (which should accept a parameter called `mailingAddress`)
+  - Don't worry to much about what the methods do- just logging something to the console is fine.
+5. Invoke your `callCellPhone` method and pass in your friend's phone number as a parameter. (In this example, my expected output would be `"Jordan Castelloe is now calling (888) 888-8888"`).
+6. Invoke your friend's `sendEmail` method and pass in your email address as a parameter.
+7. Invoke your `sendMail` method and pass in your friend's mailing address as a parameter.
 #### Challenge: Shopping Cart
 
 Copy and paste the following code into your JavaScript file: 
