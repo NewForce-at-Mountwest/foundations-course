@@ -195,7 +195,7 @@ Copy and paste the following code into your `index.html` file:
 ```
 Your job is to fill in the three empty methods in the `shoppingCart` object. *(Hint: you can access the `items` array from inside the object with `this.items`.)*
 1. The `addToCard` method should take in a parameter of an object that represents a new item and add it to the shopping cart array. *Hint: look up [.push()](https://www.w3schools.com/jsref/jsref_push.asp)*
-1. The `calcualteTotal` method to loop over all the items in your shopping cart, add up a total, and return it.
-1. The `printShoppingCart` method should loop over all the items in the cart, build up an HTML string, and print them to the `"#shopping-cart"` element in the DOM. 
+1. The `calcualteTotal` method should calculate and return a total for all the items in your shopping cart.
+1. The `printShoppingCart` method should loop over all the items in the cart, build up an HTML string that represents the data, and print them to the `"#shopping-cart"` element in the DOM. You can use any HTML elements you want as long as all of the data is represented. 
 1. Call each method.
 
