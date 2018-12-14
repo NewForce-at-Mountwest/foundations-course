@@ -79,47 +79,60 @@ Create three new objects. Each object should represent a pet at a pet store. Eac
 - A method called `vocalize` that logs to the console whatever sound you think that animal would make.
 - Call the `vocalize` method for each animal.
 
-#### 2. Address Book
-1. Create an object that represents your contact information. Use the code below as an example:
-```js
-var jordanContactInfo = {
-  cell: "(999) 999-9999",
-  email: "jordan.castelloe@gmail.com",
-  address: "123 Sesame St"
-}
-```
-2. Create two more objects that represent two of your friends' contact information.
-1. Now give each of your three objects a method called `callCellPhone`. It should accept a parameter of `phoneNumber`. For example, my object would now look like this: 
-```js
-var jordanContactInfo = {
-  cell: "(999) 999-9999",
-  email: "jordan.castelloe@gmail.com",
-  address: "123 Sesame St",
-  callCellPhone: function(phoneNumber){
-    console.log(`Now calling ${phoneNumber}`);
-  }
-}
-```
-1. Give each object a couple more methods: 
-  - A method called `sendEmail` (which should accept a parameter of `emailAddress`)
-  - A method called `sendMail` (which should accept a parameter called `mailingAddress`)
-  - Don't worry to much about what the methods do- just logging something to the console is fine.
-2. Now invoke some of the methods. Have one friend "call" another friend's cell phone number, etc.
 
-#### 3. Calculator
+#### 2. Calculator
 Copy and paste the following code into your JavaScript file:
 ```js
 var calculator = {
   add: function(x, y) {
-    return x + y;
+    // YOUR CODE GOES HERE
   }
 }
 
 var sum = calculator.add(2, 2);
 console.log(sum); // Expected output: 4
 ```
-- Add three more methods to the `calculator` object for subtraction, division, and multiplication.
-- Call each method at least twice, passing in different parameters.
+- Add three more methods to the `calculator` object for subtraction, division, and multiplication. Each method should return the result of the calculation.
+- Call each method at least twice, passing in different parameters. (Hint: you'll need to store the returned values in variables.)
+
+#### 2. Address Book
+1. Create an object that represents your contact information. Use the code below as an example:
+```js
+var jordanContactInfo = {
+  name: "Jordan Castelloe",
+  cell: "(999) 999-9999",
+  email: "jordan.123@gmail.com",
+  address: "123 Sesame St"
+}
+```
+2. Create another object that represents your one of your friend's contact information. Example: 
+```js
+var emilyContactInfo = {
+  name: "Emily Lemmon",
+  cell: "(888) 888-8888",
+  email: "eclair@gmail.com",
+  address: "124 Sesame St"
+}
+```
+1. Now give each of your objects a method called `callCellPhone`. It should accept a parameter of `phoneNumber`. For example, my object would now look like this: 
+```js
+var jordanContactInfo = {
+  name: "Jordan Castelloe",
+  cell: "(999) 999-9999",
+  email: "jordan.123@gmail.com",
+  address: "123 Sesame St",
+  callCellPhone: function(phoneNumberParameter){
+    console.log(`${this.name} is now calling ${phoneNumberParameter}`);
+  }
+}
+```
+1. Give each object two more methods: 
+  - A method called `sendEmail` (which should accept a parameter of `emailAddress`)
+  - A method called `sendMail` (which should accept a parameter called `mailingAddress`)
+  - Don't worry to much about what the methods do- just logging something to the console is fine.
+2. Invoke your `callCellPhone` method and pass in your friend's phone number as a parameter. (In this example, my expected output would be `"Jordan Castelloe is now calling (888) 888-8888"`).
+3. Invoke your friend's `sendEmail` method and pass in your email address as a parameter.
+4. Invoke your `sendMail` method and pass in your friend's mailing address as a parameter.
 
 #### 4. Movie Poster
 Copy and paste the following object into your JavaScript file:
@@ -138,12 +151,12 @@ Copy and paste the following code into your `index.html` file:
 <section id="movie-poster"></section>
 ```
 1. Fill in the `printMoviePoster` method to do the following things:
-    - Create an HTML string that represents the movie's title, genere, and release date in HTML elements. (You can use any elements you want.)
+    - Create an HTML string with the following elements: 
+          - An `h2` for the movie's title
+          - A `p` for the movie's genre
+          - A `p` for the movie's release date
     - Use `document.querySelector` and `.innerHTML` to print your HTML string to the `"#movie-poster"` element in the DOM.
-    
-#### 5. Movie Schedule
-
-
+2. Call the `printMoviePoster` method.
 
 #### Challenge: Shopping Cart
 
