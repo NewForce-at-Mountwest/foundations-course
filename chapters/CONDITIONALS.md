@@ -75,6 +75,14 @@ if(fullMoon || isWolf){
 }
 
 ```
+# Lightning Exercises (as a group)
+#### 1. Bon Voyage!
+1. In your JavaScript file, declare a new variable called `likesToTravel` and set it equal to `true` or `false`.
+1. If `likesToTravel` is true, log "Bon voyage!" to the console. If not, log "Enjoy your couch!" to the console.
+
+#### 2. Fried Pickles are the Best 
+1. In your JavaScript file, declare a new variable called `favoriteFood` and set it equal to your favorite food. 
+1. Write a conditional that checks to see if the `favoriteFood` variable is equal to `"fried pickles"`. If so, log `"Congratulations! You have excellent taste!"` to the console. Otherwise, log `"But have you tried fried pickles?"` to the console. 
 
 # Practice
 
@@ -85,34 +93,22 @@ touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 
-#### 1. Bon Voyage!
-1. In your JavaScript file, declare a new variable called `likesToTravel` and set it equal to `true` or `false`.
-1. If `likesToTravel` is true, log "Bon voyage!" to the console. If not, log "Enjoy your couch!" to the console.
-
-
-#### 2. Fried Pickles are the Best 
-1. In your JavaScript file, declare a new variable called `favoriteFood` and set it equal to your favorite food. 
-1. Write a conditional that checks to see if the `favoriteFood` variable is equal to `"fried pickles"`. If so, log `"Congratulations! You have excellent taste!"` to the console. Otherwise, log `"But have you tried fried pickles?"` to the console. 
-
-#### 3. Check Your Math
+#### 1. Check Your Math
 1. Use JavaScript to check and see if the following comparisons are true. For each of the following, log `"True fact!"` to the console if the condition evaluates to true and `"LIES!"` to the console if it doesn't.
     - Is the sum of 1 and 1 greater than 5?  
     - Is the product of 4 and 5 less than our equal to 20?
     - Is the difference between 6 and 2 greater than or equal to 0?
 
-#### 4. Greetings
+#### 2. Greetings
 1. In your JavaScript file, create a new object representing a person. Your object should have at least two properties: one for the person's name and one for their preferred language.
-1. In `index.html`, copy and paste the following code:
-```html
-<h3 id="personal-greeting"></h3>
-```
-2. Write a conditional that checks for the following:
-    - If the person's preferred language is English, print "Hello, [name]!" to the `"#personal-greeting"` element.
-    - If the person's preferred language is Spanish print "Hola, [name]!" to the `"#personal-greeting"` element.
-    - If their preferred language is French, print "Bonjour, [name]!" to the `"#personal-greeting"` element.
-*(Hint: use `document.querySelector` and `.innerHTML`)*
 
-#### 5. Grandma's Kitchen
+2. Write a conditional that checks for the following:
+    - If the person's preferred language is English, print "Hello, [name]!" to the console.
+    - If the person's preferred language is Spanish print "Hola, [name]!" to the console.
+    - If their preferred language is French, print "Bonjour, [name]!" to the console.
+
+
+#### 3. Grandma's Kitchen
 - In your JavaScript file, declare two new variables:
     - A variable called `time` that should store a string that represents a time of day (`"1:00 PM"`, `"2:00 PM"`, etc)
     - A variable called `isHungry` that stores a boolean representing whether or not you're hungry
@@ -124,8 +120,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - If none of the above are true, log `"Have a cookie anyway!"` to the console.
 - Try changing the values of your variables. You should get different results every time you change them.
   
-
-#### 6. Student Grades
+#### 4. Student Grades
 - In your JavaScript file, declare a new variable called `grade` and give it a number value between 0 and 100.
 - Write a conditional that converts the number grade to a letter grade:
     - If the value of `grade` is greater than or equal to 0 and less than or equal to 69, log "You got an F" to the console.
