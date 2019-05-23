@@ -72,15 +72,7 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 1. The second expression (`i < moviesArray.length`) is the condition that must be `true` for the code block to run. In this case, the loop will keep going as long as `i` is less than `moviesArray.length`. 
 1. The third expression (`i++`) tells the counter varaible how to increment. Each time the loop runs, `i` will increase by 1.
 
-
-# Practice
-
-These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
-```
-mkdir -p ~/workspace/on-boarding/exercises/javascript/loops && cd $_
-touch index.html script.js
-```
-Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
+# Lightning Exercises (as a group)
 #### 1. Psychotic Bird
 In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
 
@@ -91,10 +83,36 @@ In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 t
 - In your JavaScript array, create a new variable called `favoriteFoods`. It should store an array of strings representing five of your favorite foods.
 - Loop through the array and print each food item to the console.
 
-#### 4. Interests
+# Practice
+
+These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
+```
+mkdir -p ~/workspace/on-boarding/exercises/javascript/loops && cd $_
+touch index.html script.js
+```
+Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
+#### 1. Student Names
+- In your JavaScript file, copy and paste the following array:
+```js
+var cohortOneStudents = [Sable, David, Joey, Nick, Tommy, Connor, Charles, Russ, Bobby, Josh, Nikki, Matt, Dale]
+```
+- Use a for loop to print each student's name to the console. 
+
+#### 2. Interests
 - In your JavaScript file, create an array of 5 of your interests.
 - Loop through the interests and console log the phrase "One of my interests is: [your interest]." for each of the interests in your array.
-- Pick your favorite interest. Add an if statement in your loop that checks each time if the interest is your favorite interest. For the one item that is your favorite, console log "My absolute favorite interest is: [your favorite interest]." Still console log the message for each of your other interests from the step above.
+
+##### Output:
+```
+One of my interests is: hiking. 
+One of my interests is: coding. 
+One of my interests is: math. 
+One of my interests is: 30 Rock. 
+One of my interests is: pizza.
+```
+
+#### 3. Favorite Interest
+- Refactor your loop from the previous exercise. Pick one of your interests as your absolute favorite interest. Add a conditional to your loop to check if each interest in the array is your favorite. When the loop gets to your favorite interest, it should print `"My absolute favorite interest is:"` followed by the name of your interest. Any other interests can be printed the same way that they were in the previous exercise.
 ##### Output:
 ```
 One of my interests is: hiking. 
@@ -102,14 +120,15 @@ My absolute favorite interest is: coding.
 One of my interests is: math. 
 One of my interests is: 30 Rock. 
 One of my interests is: pizza.
-```
+``` 
 
 #### 5. Harry Potter Titles
 - Copy and paste the following array into your JavaScript file: 
 ```js
 var harryPotterTitles = ["and the Sorcerer's Stone", "and the Chamber of Secrets", "and the Prisoner of Azkaban", "and the Goblet of Fire", "and the Order of the Phoenix", "and the Half-Blood Prince", "and the Deathly Hallows"];
 ```
-- Use a for loop to output the complete titles to the console. Expected output: 
+- Use a for loop to output the complete titles to the console. 
+##### Output:
 ```
 "Harry Potter and the Sorcerer's Stone"
 "Harry Potter and the Chamber of Secrets"
@@ -138,23 +157,34 @@ var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 9
 ```js
 var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
 ```
-2. Copy and paste the following code into your HTML document:
-```html
-<span id="cow-sentence"></span>
-```
-3. Write a loop that builds `sentenceArray` into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the [modulus operator](https://www.w3schools.com/js/js_arithmetic.asp). 
-4. Use `document.querySelector` and `.innerHTML` to print your sentence to the DOM.
 
-Expected output:
+3. Write a loop that builds `sentenceArray` into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the [modulus operator](https://www.w3schools.com/js/js_arithmetic.asp). 
+4. Print your sentence ot the console.
+
+##### Output:
 ```
 the cow danced MOOOOOOOO through the trees MOOOOOOOO in the light MOOOOOOOO of the moon
 ```
 
+#### Student Grades
+Take the following array from the student grades exercise above. Each entry in the array represents a different student's percentage grade for the entire course:
+```js
+var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
+```
+Use JavaScript to answer the following questions:
+  1. How many students got A's?
+  1. How many students got B's?
+  1. Which was the most common letter grade?
+  1. What was the average percentage grade in the class?
+
+# Advanced Challenges 
+You should only attempt these if you've completed everything else. Don't hesitate to ask your instructor for help!
+
+For the following challenges, you'll need to skip ahead to the chapter on [printing to the DOM](./THE_DOM). You can read over it and then try these, or go ahead and do the exercises in that chapter and then come back. 
+
 #### 8. Downtown Restaurants
 1. Copy and paste the following array into your JavaScript file:
 ```js
-var HTMLString = "";
-
 var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of Thailand", "Bahnhof", "Jim's Steak and Spaghetti House", "The Peddler", "Jewel City Seafood Market", "Black Sheep Burritos & Brews", "La Famiglia", "Le Bistro", "Charlie Graingers", "The Cellar Door"];
 ```
 2. Copy and paste the following code into your `index.html` file:
@@ -162,12 +192,12 @@ var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of
 <ul id="restaurants-list"></ul>
 ```
 3. Loop over the `downtownRestaurants` array.
-4. Inside the loop, build up your `HTMLString` with an `<li>` element for each item in the array.
-5. Use `document.querySelector` and `.innerHTML` to print your `HTMLString` to the DOM.
-6. When you're done, you should see a bulleted list of all the items in `downtownRestaurants` on the DOM.
+4. Use the loop to create an `<li>` element for each item in the array.
+5. Use `document.querySelector` and `.innerHTML` to add each new `<li>` element to the `#restaurants-list` container.
+6. You should see a bulleted list of restaurants in the DOM.
 
 
-#### 9. Movie Schedule Take Two
+#### 9. Movie Schedule 
 
 You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
 
@@ -222,25 +252,10 @@ var movieSchedule = [
   }
 ]
 ```
-- Use a for loop to loop through the movies and build up an HTML string to represent the data. 
-- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included. It'll probably look pretty similar to the movie poster you made in the chapter on [The DOM](./THE_DOM.md).
-- (*Hint: if you want to take advantage of VS Code's autocomplete features, you can type most of this in your HTML document and then cut and paste it into your JavaScript file.*)
-- Use `document.querySelector` to select the element in your HTML file with an id of `"movie-schedule"`
-- Use the `.innerHTML` property to set the contents of the `"movie-schedule"` container equal to the HTML string you just created.
+- Use a for loop to loop through the movies, build an HTML representation of each movie, and insert it into the `#movie-schedule` container in the DOM.
+- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included.
 
 
-
-#### Challenge: Student Grades
-Take the following array from the student grades exercise above. Each entry in the array represents a different student's percentage grade for the entire course:
-```js
-var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
-```
-Use JavaScript to answer the following questions:
-  1. How many students got A's?
-  1. How many students got B's?
-  1. Which was the most common letter grade?
-  1. What was the average percentage grade in the class?
-  
  
  #### Challenge: Movie Schedule Take Three
  - Revisit your movie schedule exercise from above.
