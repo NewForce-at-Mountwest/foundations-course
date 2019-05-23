@@ -154,7 +154,7 @@ var jordanContactInfo = {
 7. Invoke your `sendMail` method and pass in your friend's mailing address as a parameter.
 
 
-# Challenge
+## Challenges
 
 #### Shopping Cart
 
