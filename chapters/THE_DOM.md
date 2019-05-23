@@ -309,9 +309,9 @@ function printHtmlString(htmlStringParameter, elementIdParameter){
 8. Call the `printHtmlString` function and pass in your `cohort1HTML` variable and the id of the element you want to print to (`"cohort-one-container"`).
 9. Repeat steps 6-8 for `cohort2` and `cohort3`
 
-# The DOM Challenge Exercise
+#### Challenge: Weather Data 
 
-1. Copy and paste the data from the [Yahoo Weather API](https://gist.github.com/jordan-castelloe/565f27683a5d33a4ce9b85471530eea0) into your JavaScript file.
+1. Copy and paste the data from the Yahoo Weather API into your JS file. You can find it at the bottom of the [variables and data types chapter](./VARIABLES_AND_DATATYPES.md).
 
 1. Copy and paste the following HTML anywhere between the `<body>` tags of your `index.html` file.
 ```html
@@ -335,6 +335,10 @@ function printHtmlString(htmlStringParameter, elementIdParameter){
 3. If you don't already have one, create a CSS stylesheet in your directory.
 4. Use flexbox to arrange your `.forecast-day` elements side by side on the page. They should be spaced evenly and wrap when the screen is resized.
 5. Each `.forecast-day` element should have a padding of `1rem`;
+6. If *all* the high temperatures in the three day forecast are above 85, the background color of the page should be light red.
+7. If *all* of the high temperatures in the three day forecast are below 40, the background color of the page should be light blue.
+8. If *any* of the low temperatures are below 20, the background of each individual `".forecast-day"` element should be dark blue. 
+9. If *any* of the high temperatures are above 95, the background of each individual `".forecast-day"` element should be dark red.
 
 
  
