@@ -107,7 +107,7 @@ console.log(yourPizza);
 
 ***
 ## Lightning Exercise
-#### 3. Taco Truck
+#### Taco Truck
 1. Write a function to represent a taco truck's ordering system. The function should accept two parameters: `typeOfShell` and `topping`. (Both will be strings.)
 1. Inside the function, use string interpolation to build a sentence that announces the taco is ready. Use the information the customer passed in. For example: `"Your soft shell taco with chicken is ready!"`
 1. Return the taco sentence.
