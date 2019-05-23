@@ -58,6 +58,12 @@ What's going on here?
 - Now, on the second iteration, `i` is `1`. We do the whole process again. Is `1` less than `5`? Yep, true! The code inside the curly braces runs again, except this time it prints `moviesArray[1]` to the console, so we see `"Star Wars"`.
 - This process continues and `i` keeps incrementing until it's no longer less than 5. (At that point, we've gotten to the end of the array.) 
 
+***
+## Lightning Exercise
+#### Psychotic Bird
+In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
+***
+
 ## For Loop
 While loops are great for learning how loops work, but we won't actually use them very much. The for loop is much more common. It works the exact same way, but the syntax is different.
 
@@ -72,16 +78,18 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 1. The second expression (`i < moviesArray.length`) is the condition that must be `true` for the code block to run. In this case, the loop will keep going as long as `i` is less than `moviesArray.length`. 
 1. The third expression (`i++`) tells the counter varaible how to increment. Each time the loop runs, `i` will increase by 1.
 
-# Lightning Exercises (as a group)
-#### 1. Psychotic Bird
-In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
-
-#### 2. Psychotic Bird: For Loop Edition
+***
+## Lightning Exercise
+#### Psychotic Bird: For Loop Edition
 In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
+***
 
-#### 3. Favorite Foods
+***
+## Lightning Exercise
+#### Favorite Foods
 - In your JavaScript array, create a new variable called `favoriteFoods`. It should store an array of strings representing five of your favorite foods.
 - Loop through the array and print each food item to the console.
+***
 
 # Practice
 
@@ -177,97 +185,29 @@ Use JavaScript to answer the following questions:
   1. Which was the most common letter grade?
   1. What was the average percentage grade in the class?
 
-# Advanced Challenges 
-You should only attempt these if you've completed everything else. Don't hesitate to ask your instructor for help!
+## Challenges
 
-For the following challenges, you'll need to skip ahead to the chapter on [printing to the DOM](./THE_DOM). You can read over it and then try these, or go ahead and do the exercises in that chapter and then come back. 
+#### Use the data from the [Yahoo weather API](./VARIABLES_AND_DATATYPES.md) to print a ten day forecast. 
 
-#### 8. Downtown Restaurants
-1. Copy and paste the following array into your JavaScript file:
-```js
-var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of Thailand", "Bahnhof", "Jim's Steak and Spaghetti House", "The Peddler", "Jewel City Seafood Market", "Black Sheep Burritos & Brews", "La Famiglia", "Le Bistro", "Charlie Graingers", "The Cellar Door"];
-```
-2. Copy and paste the following code into your `index.html` file:
-```html
-<ul id="restaurants-list"></ul>
-```
-3. Loop over the `downtownRestaurants` array.
-4. Use the loop to create an `<li>` element for each item in the array.
-5. Use `document.querySelector` and `.innerHTML` to add each new `<li>` element to the `#restaurants-list` container.
-6. You should see a bulleted list of restaurants in the DOM.
+- In your JavaScript file, copy and paste the weather data.
+- Use a for loop to loop through the forecast data.
+- Inside the for loop, create a string for each day in the forecast. The string should say something like: "On Thursday, 06 Dec 2018, the low will be 25 and the high will be 29. The forecast calls for snow." Print the string to the console,.
+- If the high is above 85, add the phrase: "Stay cool out there, folks!"
+- If the high is below 40, add the phrase: "Don't forget to bundle up!"
+- If the low is below 20, add the phrase: "Temperatures will be dangerously low!"
 
 
-#### 9. Movie Schedule 
+## Challenge #2
+What is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder? (Hint: you might need the [modulus operator](https://www.w3schools.com/js/js_arithmetic.asp).)
 
-You've been hired to build an app for a movie theater. You need to list all of the movies that are currently playing. 
-
-Start with some basic HTML: 
-```html
-<body>
-  <div id="movie-schedule"></div>
-</body>
-```
-In your JavaScript file, copy and paste the following array of objects: 
-```js
-var movieSchedule = [
-  {
-    title: "Ralph Breaks the Internet",
-    rating: "PG",
-    currentlyPlaying: true,
-    poster: "https://lumiere-a.akamaihd.net/v1/images/r_ralphbreakstheinternet_header_ddt-17403_08ef6d92.jpeg?region=0,0,1024,1274&optimize=true"
-  }, 
-  {
-    title: "The Grinch",
-    rating: "G",
-    currentlyPlaying: true,
-    poster: "https://images-na.ssl-images-amazon.com/images/I/71vgX4VFdiL._SY679_.jpg"
-  },
-  {
-    title: "A Star is Born",
-    rating: "R",
-    currentlyPlaying: false,
-    poster: "https://images-na.ssl-images-amazon.com/images/I/718zWbDKmvL._SY606_.jpg"
-  },
-   {
-    title: "Bohemian Rhapsody",
-    rating: "PG-13",
-    currentlyPlaying: true
-  },
-  {
-    title: "Fantastic Beasts: The Crimes of Grindlewald",
-    rating: "PG-13",
-    currentlyPlaying: true,
-    poster: "https://images-na.ssl-images-amazon.com/images/I/716fk%2BBZ-NL._SY606_.jpg"
-  },
-  {
-    title: "Robin Hood",
-    rating: "PG-13",
-    currentlyPlaying: false,
-    poster: "https://images-na.ssl-images-amazon.com/images/I/61K%2BTyGjsCL.jpg"
-  },
-  {
-    title: "Spider-Man: Into the Spider-Verse",
-    rating: "PG-13",
-    currentlyPlaying: true,
-  }
-]
-```
-- Use a for loop to loop through the movies, build an HTML representation of each movie, and insert it into the `#movie-schedule` container in the DOM.
-- You can use any elements you like in your HTML string as long as all the data in the `movieSchedule` object is included.
+## Challenge #3
+Write a [Fibonacci number generator](https://en.wikipedia.org/wiki/Fibonacci_number) that outputs the numbers in the series that are less than 500.
 
 
- 
- #### Challenge: Movie Schedule Take Three
- - Revisit your movie schedule exercise from above.
- - Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
- - Use flexbox to arrange your movie schedule side by side on your web page.
- - If a movie does not have a `poster` property, give it a [placeholder image like this](https://www.snhrc.com/wp-content/uploads/2018/09/Image-Coming-Soon.png)
- - Give all G-rated movies a dotted green border that's 2px wide.
- - Give all PG-rated movies a dotted yellow border that's 2px wide.
- - Give all PG-13 movies a dotted orange border that's 2px wide.
- - Give all R-rated movies a dotted red border that's 2px wide.
 
-  
+
+
+
 
 
 

@@ -29,7 +29,12 @@ if (time === "morning"){
 
 // Expected output: "Good afternoon!"
 ```
-
+***
+## Lightning Exercise
+#### Bon Voyage!
+1. In your JavaScript file, declare a new variable called `likesToTravel` and set it equal to `true` or `false`.
+1. If `likesToTravel` is true, log "Bon voyage!" to the console. If not, log "Enjoy your couch!" to the console.
+***
 
 ### Comparison Operators
 Did you notice the weird looking triple equals sign up there?  That wasn't a typo; that's how we compare two values in JavaScript to see if they're equal. Comparison operators always evaluate to `true` or `false`. 
@@ -75,14 +80,13 @@ if(fullMoon || isWolf){
 }
 
 ```
-# Lightning Exercises (as a group)
-#### 1. Bon Voyage!
-1. In your JavaScript file, declare a new variable called `likesToTravel` and set it equal to `true` or `false`.
-1. If `likesToTravel` is true, log "Bon voyage!" to the console. If not, log "Enjoy your couch!" to the console.
 
-#### 2. Fried Pickles are the Best 
+***
+## Lightning Exercise
+#### Fried Pickles are the Best 
 1. In your JavaScript file, declare a new variable called `favoriteFood` and set it equal to your favorite food. 
-1. Write a conditional that checks to see if the `favoriteFood` variable is equal to `"fried pickles"`. If so, log `"Congratulations! You have excellent taste!"` to the console. Otherwise, log `"But have you tried fried pickles?"` to the console. 
+1. Write a conditional that checks to see if the `favoriteFood` variable is equal to `"fried pickles"` OR "pepperoni rolls". If so, log `"Congratulations! You have excellent taste!"` to the console. Otherwise, log `"Clearly you have not tried fried pickles or pepperoni rolls."` to the console. 
+***
 
 # Practice
 
@@ -99,7 +103,18 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - Is the product of 4 and 5 less than our equal to 20?
     - Is the difference between 6 and 2 greater than or equal to 0?
 
-#### 2. Greetings
+#### 2. Dog People vs. Cat People
+1. In your JavaScript file, declare a new variable called `likesDogs` and set it equal to `true` or `false`.
+1. If `likesDogs` is true, log "You're a dog person!" to the console. If not, log "You're a cat person!" to the console.
+
+#### 3. Generation Gaps
+1. Declare a variable called `birthYear` and set it equal to your birth year.
+1. Write a conditional statement that checks to see [which generation you're part of](http://socialmarketing.org/archives/generations-xy-z-and-the-others/) and log a sentence about that generation to the console.
+1. Try changing the value of `birthYear` and see what happens.
+
+
+
+#### 4. Greetings
 1. In your JavaScript file, create a new object representing a person. Your object should have at least two properties: one for the person's name and one for their preferred language.
 
 2. Write a conditional that checks for the following:
@@ -108,7 +123,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - If their preferred language is French, print "Bonjour, [name]!" to the console.
 
 
-#### 3. Grandma's Kitchen
+#### 5. Grandma's Kitchen
 - In your JavaScript file, declare two new variables:
     - A variable called `time` that should store a string that represents a time of day (`"1:00 PM"`, `"2:00 PM"`, etc)
     - A variable called `isHungry` that stores a boolean representing whether or not you're hungry
@@ -120,7 +135,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - If none of the above are true, log `"Have a cookie anyway!"` to the console.
 - Try changing the values of your variables. You should get different results every time you change them.
   
-#### 4. Student Grades
+#### 6. Student Grades
 - In your JavaScript file, declare a new variable called `grade` and give it a number value between 0 and 100.
 - Write a conditional that converts the number grade to a letter grade:
     - If the value of `grade` is greater than or equal to 0 and less than or equal to 69, log "You got an F" to the console.
@@ -129,5 +144,11 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - If it's between 84 and 92, log "You got a B" to the console.
     - If it's between 93 and 100, log "You got an A" to the console.
 
- 
+ ## Challenge
+
+Use the weather data from the challenge at the bottom of the [the variables and data types chapter](./VARIABLES_AND_DATATYPES.md).
+1. If *all* the high temperatures in the three day forecast are above 85, log, "It's going to be hot as heck all week!" to the console.
+1. If *all* of the high temperatures in the three day forecast are below 40, log "It's going to be cold as heck all week!" to the console.
+1. If *any* of the low temperatures are below 20, log a sentence about the specific day. (Example: "Wednesday will be cold as heck!")
+1. If *any* of the high temperatures are above 95, log a sentence about the specific day. (Example: "Thursday will be hot as heck!")
 

@@ -68,6 +68,16 @@ In the example below, the article element is a child of the section element. It'
 </section>
 
 ```
+***
+## Lightning Exercise
+
+#### HTML Elements
+1. In your `index.html` file, create the following elements:
+    - An `h1` element with your name in it.
+    - A `p` element with some copy-and-pasted text from the [Bob Ross Lorem Ipsum Generator](https://www.bobrosslipsum.com/)
+    - An `img` element with the `src` value of `"https://media.giphy.com/media/Z3ChoP3rZewhy/giphy.gif"` and any `"alt"` value you like.
+
+*** 
 
 ## Attributes
 
@@ -98,8 +108,19 @@ Remember our friends the ```<img>``` and ```<a>``` tags?
 
 Both `src` and `href` are attributes. The `src` attribute tells the browser where to look for the image file. The `href` attribute tells the browser where to go when the user clicks on the hyperlink. 
 
-
 We'll use ids and classes a lot when we get to CSS and JavaScript.
+
+***
+## Lightning Exercise
+#### Classes and Ids
+1. In your `index.html` file, create the following elements:
+  - A `section` element with a class of `"bio"`
+  - Inside the `"bio"` section, a `"ul"` element with a class of `"tech-stack"`
+  - Inside `"tech-stack"`, two `"li"` elements:
+      - The first `"li"` element should have an id of `"html"` 
+      - The second should have an id of `"css"`
+      
+***
 
 ## HTML Document Structure
 
@@ -127,6 +148,10 @@ Now let's break it down:
 1. ` <html lang="en">` tells the browser that our document is written in English.
 1. The `<head>` element contains meta information about our web page that helps the browser figure out how to read it. Nothing inside the `<head>` tags will be displayed on the web page.
 1. The `<body>` element contains everything you'll see on the page. All the HTML you write should go between the `body` tags.
+
+
+
+
 
 # Practice
 

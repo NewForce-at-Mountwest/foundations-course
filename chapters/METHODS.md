@@ -29,6 +29,15 @@ var hoagieObject = {
 
 hoagieObject.bark(); // "woof!"
 ```
+***
+## Lightning Exercise
+#### Lightning McQueen
+1. Create a new object representing a sports car
+1. Give the object a property of make, model, and year, and the date of its last oil change to the console.
+1. Give the object a method called `drive`. It should log a string to the console that says "vroom vroom"
+1. Print the car's make, model, year, an d date of last oil change to the console.
+1. Call the car's `drive` method.
+***
 
 Let's look at another example:
 ```js
@@ -62,6 +71,15 @@ jisieObject.greetSomeone(emilyObject.firstName);
 
 ```
 
+***
+## Lightning Exercise
+#### Car Maintenance 
+1. Create a new object representing a mechanic. The mechanic object should have properties representing their name and place of work. 
+1. Give your mechanic object a property of `changeOil`. This method sould accept a parameter of a car object. It should reassign the date of the car's last oil change to [today](https://www.w3schools.com/js/js_dates.asp).
+1. Call the mechanic's `changeOil` method on the car object you created in the last lightning exercise. Log the car's last oil change date before _and_ after you call the `changeOil` method. They should be different!
+
+***
+
 # Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
@@ -93,31 +111,8 @@ var sum = calculator.add(2, 2);
 console.log(sum); // Expected output: 4
 ```
 - Add three more methods to the `calculator` object for subtraction, division, and multiplication. Each method should return the result of the calculation.
-- Call each method at least twice, passing in different parameters. (Hint: you'll need to store the returned values in variables.)
+- Call each method at least twice, passing in different parameters. 
 
-#### 3. Movie Poster
-Copy and paste the following object into your JavaScript file:
-```js
-var starWarsObject = {
-  title: "Star Wars: A New Hope",
-  genre: "Science Fiction",
-  releaseDate: "May 25, 1977"
-  printMoviePoster: function(){
-    // YOUR CODE GOES HERE
-  }
-}
-```
-Copy and paste the following code into your `index.html` file:
-```html
-<section id="movie-poster"></section>
-```
-1. Fill in the `printMoviePoster` method to do the following things:
-    - Create an HTML string with the following elements: 
-          - An `h2` for the movie's title
-          - A `p` for the movie's genre
-          - A `p` for the movie's release date
-    - Use `document.querySelector` and `.innerHTML` to print your HTML string to the `"#movie-poster"` element in the DOM.
-2. Call the `printMoviePoster` method.
 
 #### 4. Address Book
 1. Create an object that represents your contact information. Use the code below as an example:
@@ -157,7 +152,11 @@ var jordanContactInfo = {
 5. Invoke your `callCellPhone` method and pass in your friend's phone number as a parameter. (In this example, my expected output would be `"Jordan Castelloe is now calling (888) 888-8888"`).
 6. Invoke your friend's `sendEmail` method and pass in your email address as a parameter.
 7. Invoke your `sendMail` method and pass in your friend's mailing address as a parameter.
-#### Challenge: Shopping Cart
+
+
+# Challenge
+
+#### Shopping Cart
 
 Copy and paste the following code into your JavaScript file: 
 ```js
@@ -188,13 +187,33 @@ var shoppingCart = {
 }
 ```
 
-Copy and paste the following code into your `index.html` file:
-```html
-<div id="shopping-cart"></div>
-```
+
 Your job is to fill in the three empty methods in the `shoppingCart` object. *(Hint: you can access the `items` array from inside the object with `this.items`.)*
 1. The `addToCard` method should take in a parameter of an object that represents a new item and add it to the shopping cart array. *Hint: look up [.push()](https://www.w3schools.com/jsref/jsref_push.asp)*
 1. The `calcualteTotal` method should calculate and return a total for all the items in your shopping cart.
-1. The `printShoppingCart` method should loop over all the items in the cart, build up an HTML string that represents the data, and print them to the `"#shopping-cart"` element in the DOM. You can use any HTML elements you want as long as all of the data is represented. 
-1. Call each method.
+1. The `printShoppingCart` method should loop over all the items in the cart and print them to the console. It should also print the total price of all the items in your shopping cart.
 
+#### Library System
+
+Your job is to represent a library system with JavaScript objects and methods. 
+In your JavaScript file, create the following objects:
+1. A `library` object with the following properties and methods:
+    - A `name` property
+    - A `location property`
+    - A `currentInventory` property that holds an array of book titles (strings)
+1. A `patron` object with the following properties and methods:
+    - A `firstName` property
+    - A `lastName` property
+    - A `checkedOutBooks` property that holds an array of book titles (strings)
+    - A `overdueFees` property that holds a number
+    - A `printBooks` method that builds an unordered list of all the patron's checked out books and prints it to the DOM.
+1. A `librarian` object with these properties and methods:
+    - A `firstName` property
+    - A `lastName` property
+    - A `checkOutBook` method that accepts three parameters: a string of a book title, a patron object, and a library object. If the book is currently in stock, this method should add the given book title to the patron's `checkedOutBooks` array and remove it from the library's `currentInventory` array. *(Hint: look up [.splice()](https://www.w3schools.com/jsref/jsref_splice.asp))*.
+    - A `chargeFee` method that accepts two parameters: a number that represents the fee amount and a patron object. This method should add the fee object to the patron's `overdueFees` property.
+    - A `checkInBook` method that accepts three parameters: a string of a book title, a patron object, and a library object. This method should remove the given book title from the patron's `checkedOutBooks` array and add it back to the library's `currentInventory` array. 
+   - Patrons can check out a maximum of ten books. If they go over that maximum, the librarian should see an error message in the console.
+   - Patrons should not be able to check in a book that they haven't checked out. If they try to do this, the librairan should see an error message in the console.
+   - If a patron tries to check out a book that's out of stock, the librarian should see an error message.
+   
