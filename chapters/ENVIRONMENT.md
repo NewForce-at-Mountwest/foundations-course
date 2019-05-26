@@ -36,7 +36,7 @@ Visit the [Node.js](https://www.nodejs.org) site and install the LTS release.
 
 Now that you have Node installed, you can install some open source software that you will need in the course.
 
-Run the following command in Git Bash.
+Run the following command in Git Bash to install a command-line http-server.
 
 ```sh
 npm i -g http-server
