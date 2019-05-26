@@ -1,7 +1,7 @@
 # Setting Up Your Environment
 
-## Installs
-#### Hardware
+# Installs
+## Hardware
 
 Up until now, you didn't have the power to destroy your machine, but within the first two weeks of attending NewForce you will have that power. Go buy a backup drive RIGHT NOW and start backing up your entire hard drive.
 
@@ -9,9 +9,9 @@ Up until now, you didn't have the power to destroy your machine, but within the 
 
 ---
 
-### Online Services
+## Online Services
 
-#### Github
+### Github
 
 Github is the primary site that software developers throughout the world use to store their code, and share it with other developers. Visit the [sign up page](https://github.com/join) and create your own, free account.
 
@@ -61,7 +61,7 @@ Suggested extensions to install
 1. [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 
-## Welcome to the Terminal
+# Welcome to the Terminal
 
 Even though it looks like something out of the Matrix, the terminal will become your best friend over the next six months. It's a way to move around your computer, set up projects, and modify files quickly without taking your hands off your keyboard. From here on out, you should use your terminal instead of your file explorer.
 
@@ -106,6 +106,8 @@ code index.html
 rm index.html
 ```
 *Be careful with `rm`. This command deletes it permanently and immediately- it doesn't go to your recycling bin. Use it wisely.*
+
+PRO TIP: Software Developers use the terminal and Command Line Interface (CLI) instead of a Graphic User Interface (GUI) like File Explorer.
 
 ***
 ## Lightning Exercise

@@ -31,7 +31,7 @@ hoagieObject.bark(); // "woof!"
 ```
 ***
 ## Lightning Exercise
-#### Lightning McQueen
+### Lightning McQueen
 1. Create a new object representing a sports car
 1. Give the object a property of make, model, and year, and the date of its last oil change to the console.
 1. Give the object a method called `drive`. It should log a string to the console that says "vroom vroom"
@@ -73,14 +73,14 @@ jisieObject.greetSomeone(emilyObject.firstName);
 
 ***
 ## Lightning Exercise
-#### Car Maintenance 
+### Car Maintenance 
 1. Create a new object representing a mechanic. The mechanic object should have properties representing their name and place of work. 
 1. Give your mechanic object a property of `changeOil`. This method sould accept a parameter of a car object. It should reassign the date of the car's last oil change to [today](https://www.w3schools.com/js/js_dates.asp).
 1. Call the mechanic's `changeOil` method on the car object you created in the last lightning exercise. Log the car's last oil change date before _and_ after you call the `changeOil` method. They should be different!
 
 ***
 
-# Practice
+## Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
@@ -89,7 +89,7 @@ touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 
-#### 1. Pet Store
+### 1. Pet Store
 Create three new objects. Each object should represent a pet at a pet store. Each object should have:
 - A name ("Dennis", "Stacy", "Flapjack", etc)
 - A species (bird, lizard, cat, etc)
@@ -98,7 +98,7 @@ Create three new objects. Each object should represent a pet at a pet store. Eac
 - Call the `vocalize` method for each animal.
 
 
-#### 2. Calculator
+### 2. Calculator
 Copy and paste the following code into your JavaScript file:
 ```js
 var calculator = {
@@ -114,7 +114,7 @@ console.log(sum); // Expected output: 4
 - Call each method at least twice, passing in different parameters. 
 
 
-#### 4. Address Book
+### 4. Address Book
 1. Create an object that represents your contact information. Use the code below as an example:
 ```js
 var jordanContactInfo = {
@@ -156,7 +156,7 @@ var jordanContactInfo = {
 
 ## Challenges
 
-#### Shopping Cart
+### Shopping Cart
 
 Copy and paste the following code into your JavaScript file: 
 ```js
@@ -193,7 +193,7 @@ Your job is to fill in the three empty methods in the `shoppingCart` object. *(H
 1. The `calcualteTotal` method should calculate and return a total for all the items in your shopping cart.
 1. The `printShoppingCart` method should loop over all the items in the cart and print them to the console. It should also print the total price of all the items in your shopping cart.
 
-#### Library System
+### Library System
 
 Your job is to represent a library system with JavaScript objects and methods. 
 In your JavaScript file, create the following objects:

@@ -14,7 +14,7 @@ Every box is made up of four things:
 
 ## Layout
 
-#### Inline, Block, and Inline-Block
+### Inline, Block, and Inline-Block
 We can also control whether elements appear side-by-side in a row or on their own line. 
 ```css
 /* Headings are block level elements by default, which means they get their own line. We can ovverride that default style by giving all h3s a display property of "inline". You cannot set height or top or bottom margin/padding on inline elements*/
@@ -35,7 +35,7 @@ h3 {
 ```
 *** 
 ## Lightning Exercise
- #### CSS Box Model
+ ### CSS Box Model
  1. Copy and paste the following code into your HTML file:
   ```html
 <section class="weather-forecast">
@@ -56,12 +56,12 @@ h3 {
 
 ***
 
-#### Flexbox 
+### Flexbox 
 Flexbox is a very efficient tool for building responsive layouts that look great on any screen size. Start by giving the parent container a rule of `display: flex`. All of the children will line up inside it. You have complete control over how they line up and in what order. [Here's a great resource for working with flexbox.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ***
 ## Lightning Exercise
-#### Flexbox
+### Flexbox
  1. We're going to make a slight modification to the weather forecast div by adding a new `div` as a parent of the `p` elements:
   ```html
 <section class="weather-forecast">
@@ -81,7 +81,7 @@ Flexbox is a very efficient tool for building responsive layouts that look great
 ***
 
 
-# Practice
+## Practice
 Continue to build your personal website, this time focusing on layout. [Here's an example of the finished product.](https://jordan-castelloe.github.io/onboarding-personal-website-demo/) Yours doesn't have to look exactly like this- it's just to give you a starting point. 
 
 1. In your HTML, add a new `div` around your name and job title. This new `div` should be `30vw` wide with `4rem` of padding and should be centered both vertically and horizontally inside the `header` element. *(Hint: flexbox is great for centering!)*

@@ -153,7 +153,7 @@ As a rule of thumb, you should default to using class selectors for your custom 
 
 As we mentioned briefly above, the cascade also takes into account order. When two selectors have the same specificity, the declaration that comes last wins.
 
-# Practice
+## Practice
 Revisit your superhero website from the previous chapter. 
 
 1. In your personal website directory, create a new file: 

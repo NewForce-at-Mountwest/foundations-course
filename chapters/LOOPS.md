@@ -4,7 +4,6 @@ We've dealt with a few situations where we wanted to do something to every item 
 
 ```
 1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
-
 1. Log each movie in the array to the console.
 ```
 
@@ -60,7 +59,7 @@ What's going on here?
 
 ***
 ## Lightning Exercise
-#### Psychotic Bird
+### Psychotic Bird
 In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
 ***
 
@@ -80,18 +79,18 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 
 ***
 ## Lightning Exercise
-#### Psychotic Bird: For Loop Edition
+### Psychotic Bird: For Loop Edition
 In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
 ***
 
 ***
 ## Lightning Exercise
-#### Favorite Foods
+### Favorite Foods
 - In your JavaScript array, create a new variable called `favoriteFoods`. It should store an array of strings representing five of your favorite foods.
 - Loop through the array and print each food item to the console.
 ***
 
-# Practice
+## Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
@@ -99,18 +98,18 @@ mkdir -p ~/workspace/on-boarding/exercises/javascript/loops && cd $_
 touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
-#### 1. Student Names
+### 1. Student Names
 - In your JavaScript file, copy and paste the following array:
 ```js
 var cohortOneStudents = [Sable, David, Joey, Nick, Tommy, Connor, Charles, Russ, Bobby, Josh, Nikki, Matt, Dale]
 ```
 - Use a for loop to print each student's name to the console. 
 
-#### 2. Interests
+### 2. Interests
 - In your JavaScript file, create an array of 5 of your interests.
 - Loop through the interests and console log the phrase "One of my interests is: [your interest]." for each of the interests in your array.
 
-##### Output:
+#### Output:
 ```
 One of my interests is: hiking. 
 One of my interests is: coding. 
@@ -174,7 +173,7 @@ var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "t
 the cow danced MOOOOOOOO through the trees MOOOOOOOO in the light MOOOOOOOO of the moon
 ```
 
-#### Student Grades
+#### 8. Student Grades
 Take the following array from the student grades exercise above. Each entry in the array represents a different student's percentage grade for the entire course:
 ```js
 var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
@@ -187,7 +186,8 @@ Use JavaScript to answer the following questions:
 
 ## Challenges
 
-#### Use the data from the [Yahoo weather API](./VARIABLES_AND_DATATYPES.md) to print a ten day forecast. 
+## Challenge #1
+Use the data from the [Yahoo weather API](./VARIABLES_AND_DATATYPES.md) to print a ten day forecast. 
 
 - In your JavaScript file, copy and paste the weather data.
 - Use a for loop to loop through the forecast data.

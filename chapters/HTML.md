@@ -71,7 +71,7 @@ In the example below, the article element is a child of the section element. It'
 ***
 ## Lightning Exercise
 
-#### HTML Elements
+### HTML Elements
 1. In your `index.html` file, create the following elements:
     - An `h1` element with your name in it.
     - A `p` element with some copy-and-pasted text from the [Bob Ross Lorem Ipsum Generator](https://www.bobrosslipsum.com/)
@@ -112,7 +112,7 @@ We'll use ids and classes a lot when we get to CSS and JavaScript.
 
 ***
 ## Lightning Exercise
-#### Classes and Ids
+### Classes and Ids
 1. In your `index.html` file, create the following elements:
   - A `section` element with a class of `"bio"`
   - Inside the `"bio"` section, a `"ul"` element with a class of `"tech-stack"`
@@ -153,7 +153,7 @@ Now let's break it down:
 
 
 
-# Practice
+## Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```

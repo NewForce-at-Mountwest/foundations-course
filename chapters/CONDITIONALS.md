@@ -31,12 +31,12 @@ if (time === "morning"){
 ```
 ***
 ## Lightning Exercise
-#### Bon Voyage!
+### Bon Voyage!
 1. In your JavaScript file, declare a new variable called `likesToTravel` and set it equal to `true` or `false`.
 1. If `likesToTravel` is true, log "Bon voyage!" to the console. If not, log "Enjoy your couch!" to the console.
 ***
 
-### Comparison Operators
+## Comparison Operators
 Did you notice the weird looking triple equals sign up there?  That wasn't a typo; that's how we compare two values in JavaScript to see if they're equal. Comparison operators always evaluate to `true` or `false`. 
 
 ```js
@@ -62,7 +62,7 @@ if(name !== "Dwayne"){
 // Expected output: "Too bad for you!"
 ```
 
-### Logical Operators
+## Logical Operators
 We can also check to see if more than one condition is true.
 
 ```js
@@ -70,11 +70,13 @@ var fullMoon = true;
 var isWolf = false;
 
 // This block of code will only run if the moon is full AND you're a wolf. Right now, this code won't run because the value of isWolf is false.
+
 if(fullMoon && isWolf){
   console.log("AWOOOOOOOOOOO");
 }
 
 // What if we want non-wolves to be able to howl at the full moon too? This block will run if you're a wolf OR if the moon is full. However, if both conditions are false (you're not a wolf and the moon is not full), the code will not run.
+
 if(fullMoon || isWolf){
   console.log("AWOOOOOOOOOOO");
 }
@@ -83,12 +85,12 @@ if(fullMoon || isWolf){
 
 ***
 ## Lightning Exercise
-#### Fried Pickles are the Best 
+### Fried Pickles are the Best 
 1. In your JavaScript file, declare a new variable called `favoriteFood` and set it equal to your favorite food. 
 1. Write a conditional that checks to see if the `favoriteFood` variable is equal to `"fried pickles"` OR "pepperoni rolls". If so, log `"Congratulations! You have excellent taste!"` to the console. Otherwise, log `"Clearly you have not tried fried pickles or pepperoni rolls."` to the console. 
 ***
 
-# Practice
+## Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
@@ -97,33 +99,33 @@ touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 
-#### 1. Check Your Math
+### 1. Check Your Math
 1. Use JavaScript to check and see if the following comparisons are true. For each of the following, log `"True fact!"` to the console if the condition evaluates to true and `"LIES!"` to the console if it doesn't.
     - Is the sum of 1 and 1 greater than 5?  
     - Is the product of 4 and 5 less than our equal to 20?
     - Is the difference between 6 and 2 greater than or equal to 0?
 
-#### 2. Dog People vs. Cat People
+### 2. Dog People vs. Cat People
 1. In your JavaScript file, declare a new variable called `likesDogs` and set it equal to `true` or `false`.
 1. If `likesDogs` is true, log "You're a dog person!" to the console. If not, log "You're a cat person!" to the console.
 
-#### 3. Generation Gaps
+### 3. Generation Gaps
 1. Declare a variable called `birthYear` and set it equal to your birth year.
 1. Write a conditional statement that checks to see [which generation you're part of](http://socialmarketing.org/archives/generations-xy-z-and-the-others/) and log a sentence about that generation to the console.
 1. Try changing the value of `birthYear` and see what happens.
 
 
 
-#### 4. Greetings
-1. In your JavaScript file, create a new object representing a person. Your object should have at least two properties: one for the person's name and one for their preferred language.
+### 4. Greetings
+- In your JavaScript file, create a new object representing a person. Your object should have at least two properties: one for the person's name and one for their preferred language.
 
-2. Write a conditional that checks for the following:
+- Write a conditional that checks for the following:
     - If the person's preferred language is English, print "Hello, [name]!" to the console.
     - If the person's preferred language is Spanish print "Hola, [name]!" to the console.
     - If their preferred language is French, print "Bonjour, [name]!" to the console.
 
 
-#### 5. Grandma's Kitchen
+### 5. Grandma's Kitchen
 - In your JavaScript file, declare two new variables:
     - A variable called `time` that should store a string that represents a time of day (`"1:00 PM"`, `"2:00 PM"`, etc)
     - A variable called `isHungry` that stores a boolean representing whether or not you're hungry
@@ -135,7 +137,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - If none of the above are true, log `"Have a cookie anyway!"` to the console.
 - Try changing the values of your variables. You should get different results every time you change them.
   
-#### 6. Student Grades
+### 6. Student Grades
 - In your JavaScript file, declare a new variable called `grade` and give it a number value between 0 and 100.
 - Write a conditional that converts the number grade to a letter grade:
     - If the value of `grade` is greater than or equal to 0 and less than or equal to 69, log "You got an F" to the console.
