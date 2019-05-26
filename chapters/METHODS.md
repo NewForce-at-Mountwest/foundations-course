@@ -206,7 +206,7 @@ In your JavaScript file, create the following objects:
     - A `lastName` property
     - A `checkedOutBooks` property that holds an array of book titles (strings)
     - A `overdueFees` property that holds a number
-    - A `printBooks` method that builds an unordered list of all the patron's checked out books and prints it to the DOM.
+    - A `printBooks` method should print all of the books a patron has currently checked out to the console.
 1. A `librarian` object with these properties and methods:
     - A `firstName` property
     - A `lastName` property

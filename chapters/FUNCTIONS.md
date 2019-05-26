@@ -258,6 +258,7 @@ var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 
     - The cost of shipping is always the weight of the package multiplied by the distance it needs to travel, divided by 100.
     - If the package is oversized, it adds ten dollars to the cost of shipping.
 2. Write a function that accepts whatever information you need to calculate the cost of shipping and returns the cost as an integer. 
+3. Execute the function and output the result to the console.
 
 
 

@@ -1,6 +1,6 @@
 # Loops
 
-We've dealt with a few situations where we wanted to do something to every item in an array (log it to the console, print it to the DOM, etc). We purposefully kept our arrays short, but we won't always have that luxury. Let's revisit one of the practice exercises from the [Variables and Data Types](./VARIABLES_AND_DATATYPES.md) Chapter:
+We've dealt with a few situations where we wanted to do something to every item in an array (log it to the console, etc). We purposefully kept our arrays short, but we won't always have that luxury. Let's revisit one of the practice exercises from the [Variables and Data Types](./VARIABLES_AND_DATATYPES.md) Chapter:
 
 ```
 1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
