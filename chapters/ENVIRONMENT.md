@@ -107,7 +107,19 @@ rm index.html
 ```
 *Be careful with `rm`. This command deletes it permanently and immediately- it doesn't go to your recycling bin. Use it wisely.*
 
-
+***
+## Lightning Exercise
+1. Use the `cd` command to navigate to your workspace directory that we made yesterday
+1. Use the `mkdir` command to make a new directory inside your Workspace directory called `on-ramp`
+1. Use the `cd` command to change directories into your `on-ramp` directory
+1. Use the `mkdir` command to make a new directory inside `on-ramp`. Call it `HTML`.
+1. Use the `cd` command to change directories into the `HTML` directory.
+1. Use the `touch` command to create a new file in the `HTML` directory called `index.html`
+1. Run the `pwd` command. You should see something like the following:
+```
+/c/Users/newforce/workspace/on-ramp/HTML/
+```
+***
 
 
 ## Supplemental Material

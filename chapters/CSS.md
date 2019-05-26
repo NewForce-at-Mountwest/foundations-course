@@ -28,6 +28,8 @@ This would select all the elements with a class of `bio` and give them a font-si
 }
 ```
 
+
+
 ## CSS Declarations
 Once you've selected something, it's time to apply some styles. Each individual style is called a declaration. Declarations are made up of properties and values. In the following example, `font-color` is the property and `rgb(155, 244, 66)` is the value.
 ```css
@@ -112,6 +114,27 @@ Example:
 
 ```
 
+***    
+ ## Lightning Exercise
+ 
+ ### CSS Colors and Font Sizes
+ 1. Copy and paste the following code between the `body` tags of your HTML file
+ ```html
+<section class="weather-forecast">
+    <h3 class="weather-heading">This Week's Weather</h3>
+    <p class="forecast">Today: Sunny, high of 53</p>
+    <p class="forecast">Wednesday: Sunny, high of 63</p>
+    <p class="forecast">Thursday: Cloudy, high of 47</p>
+    <p class="forecast">Friday: Sunny, high of 50</p>
+    <p class="forecast">Saturday: Cloudy, high of 56</p>
+</section>
+```
+2. Apply the following styles:
+  - Give all `p` elements a font-size of `1.2em`
+  - Give the class `"weather-heading"` a `font-family` of `Helvetica`.
+  - Give the class `"weather-forecast"` a `background-color` of `"#c7d5ed"`
+  - Give the class `"forecast"`  a `color` of `"#270538"`
+***
 
 
 ## Understanding the Cascade 

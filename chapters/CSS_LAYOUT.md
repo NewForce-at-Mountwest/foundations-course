@@ -33,10 +33,52 @@ h3 {
 }
 
 ```
+*** 
+## Lightning Exercise
+ #### CSS Box Model
+ 1. Copy and paste the following code into your HTML file:
+  ```html
+<section class="weather-forecast">
+    <h3 class="weather-heading">This Week's Weather</h3>
+    <p class="forecast">Today: Sunny, high of 53</p>
+    <p class="forecast">Wednesday: Sunny, high of 63</p>
+    <p class="forecast">Thursday: Cloudy, high of 47</p>
+    <p class="forecast">Friday: Sunny, high of 50</p>
+    <p class="forecast">Saturday: Cloudy, high of 56</p>
+</section>
+```
+2. Give the class of `"forecast"` the following styles:
+  - A width of 10vh
+  - A height of 10vh
+  - Padding of 2em on all sides
+  - A background-color of lightblue
+  - A margin of 2em on all sides
 
+***
 
 #### Flexbox 
 Flexbox is a very efficient tool for building responsive layouts that look great on any screen size. Start by giving the parent container a rule of `display: flex`. All of the children will line up inside it. You have complete control over how they line up and in what order. [Here's a great resource for working with flexbox.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+***
+## Lightning Exercise
+#### Flexbox
+ 1. We're going to make a slight modification to the weather forecast div by adding a new `div` as a parent of the `p` elements:
+  ```html
+<section class="weather-forecast">
+  <h3 class="weather-heading">This Week's Weather</h3>
+  <div class="flex-container">
+    <p class="forecast">Today: Sunny, high of 53</p>
+    <p class="forecast">Wednesday: Sunny, high of 63</p>
+    <p class="forecast">Thursday: Cloudy, high of 47</p>
+    <p class="forecast">Friday: Sunny, high of 50</p>
+    <p class="forecast">Saturday: Cloudy, high of 56</p>
+  </div>
+</section>
+```
+2. Give the class of `"flex-container"` a property of `display: flex`
+3. Use the `justify-content` property to center each child element inside of `"flex-container"`
+4. Use the `flex-wrap` property to make every child element inside `flex-container` wrap to the next line when the screen is resized
+***
 
 
 # Practice
@@ -54,8 +96,6 @@ Continue to build your personal website, this time focusing on layout. [Here's a
 
 
 Once you've followed the steps above, feel free to change anything! 
-
-
 
 
 ## Supplemental Material

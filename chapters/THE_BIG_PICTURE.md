@@ -8,7 +8,7 @@ Here's the breakdown:
     - It contains all the text you see on the page as well as links to other pages and links to images
 1. CSS controls how the web page looks
     - This includes page layout, fonts, colors, sizes, etc.
-    - Without CSS, the every website would look exactly the same: like a boring Word document.
+    - Without CSS, every website would look exactly the same: like a boring Word document.
 1. JavaScript controls how the web page behaves and responds to users
     - For example: what happens when you click a button, the error messages you get when you try to log into a website with the wrong password, etc.
     - JavaScript can manipulate both HTML and CSS in response to user behaviors

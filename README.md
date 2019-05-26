@@ -1,4 +1,4 @@
-# On-Ramp Curriculum
+# Foundations Course
 
 Congratulations! You've begun your journey to become a professional developer. This course is designed to prepare you for the NewForce curriculum so that you can hit the ground running on day one of class.
 
@@ -22,10 +22,12 @@ By the end of this course, you should be able to:
 1. Open your web page in Google Chrome and inspect it with Chrome's built-in developer tools
 1. Apply foundational JavaScript concepts including:
    - Assigning and using variables
-    - Conditionals logic 
+   - Objects 
+    - Conditional logic 
     - Loops
     - Functions
-    - Objects and Methods
+    - Printing to the DOM
+    
 
 ## Table of Contents
 1. [Setting Up Your Environment](chapters/ENVIRONMENT.md)
@@ -35,11 +37,12 @@ By the end of this course, you should be able to:
 1. [Intro to CSS](chapters/CSS.md)
 1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
 1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.md)
-1. [The DOM](chapters/THE_DOM.md)
 1. [Conditionals](chapters/CONDITIONALS.md)
 1. [Loops](chapters/LOOPS.md)
 1. [Functions](chapters/FUNCTIONS.md)
 1. [Objects and Methods](chapters/METHODS.md)
+1. [The DOM](chapters/THE_DOM.md)
+
 
 
 
