@@ -53,7 +53,7 @@ When we do nest HTML elements inside each other, we talk about the relationships
 ```
 In the first example above, the `<li>` elements are children of the `<ul>` element.
 
-In the example below, the article element is a child of the section element. It's also the parent of the two paragraph elements. 
+In the example below, the article element is a child of the section element. It's also the parent of the heading 3 and two paragraph elements. 
 
 ```html
 <h1> How To Wrestle Gators </h1>
@@ -72,7 +72,7 @@ In the example below, the article element is a child of the section element. It'
 ## Lightning Exercise
 
 ### HTML Elements
-1. In your `index.html` file, create the following elements:
+In your `index.html` file, create the following elements:
     - An `h1` element with your name in it.
     - A `p` element with some copy-and-pasted text from the [Bob Ross Lorem Ipsum Generator](https://www.bobrosslipsum.com/)
     - An `img` element with the `src` value of `"https://media.giphy.com/media/Z3ChoP3rZewhy/giphy.gif"` and any `"alt"` value you like.
@@ -106,14 +106,14 @@ Remember our friends the ```<img>``` and ```<a>``` tags?
 <a href="www.spacejam.com"> Click Here </a>
 ```
 
-Both `src` and `href` are attributes. The `src` attribute tells the browser where to look for the image file. The `href` attribute tells the browser where to go when the user clicks on the hyperlink. 
+Both `src` and `href` are attributes. The `src` attribute tells the browser where to look for the image file and `alt` specifies an alternate text for an image. The `href` attribute tells the browser where to go when the user clicks on the hyperlink. 
 
 We'll use ids and classes a lot when we get to CSS and JavaScript.
 
 ***
 ## Lightning Exercise
 ### Classes and Ids
-1. In your `index.html` file, create the following elements:
+In your `index.html` file, create the following elements:
   - A `section` element with a class of `"bio"`
   - Inside the `"bio"` section, a `"ul"` element with a class of `"tech-stack"`
   - Inside `"tech-stack"`, two `"li"` elements:
@@ -157,7 +157,7 @@ Now let's break it down:
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
-mkdir -p ~/workspace/on-boarding/exercises/personal-website && cd $_
+mkdir -p ~/workspace/foundations/exercises/personal-website && cd $_
 touch index.html
 ```
 
@@ -179,13 +179,3 @@ touch index.html
   - A `<footer>` element with the text "Built by [your name]"
 
 Your website will look pretty bad right now, but that's okay! CSS is up next.
-
-
-
-
-
-
-
-
-
-

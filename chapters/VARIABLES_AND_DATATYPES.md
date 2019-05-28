@@ -60,7 +60,7 @@ console.log("myName");
 ## Data Types
 So far, all of our variables have been strings(i.e. they've had quotes around them). JavaScript doesn't care what data type our variables are when we assign them, but data types behave differently once you start trying to manipulate them. 
 ## Primitive Data Types
-#### Numbers
+### Numbers
 Unlike strings, numbers do not have quotes around them. JavaScript treats both integers (whole numbers) and floats (decimal numbers) the same.
 ```
 var age = 46;
@@ -81,7 +81,7 @@ totalWithTax = totalCost + (taxRate * totalCost);
 console.log(totalWithTax);
 ```
 
-#### Booleans
+### Booleans
 Booleans are true/ false values. They do not have quotes around them.
 
 ```js
@@ -89,7 +89,7 @@ var likesDogs = true;
 
 var allergicToDogs = false;
 ```
-#### Strings 
+### Strings 
 Strings are anything that has a quotes around it. For now, the main thing we'll do with strings combine them with other values. This is called concatenation (when you combine a string with another string) or interpolation (when you combine a string with a variable or expression). Don't worry too much about the vocab for right now.
 
 ```js
@@ -116,7 +116,7 @@ var total = x + y;
 ```
 ***
 ## Lightning Exercise
-#### All About Me
+### All About Me
 1. In your JavaScript file, instantiate and assign the following variables with information about yourself:
   - `firstName` should hold a string of your first name
   - `lastName` should hold a string of your last name
@@ -525,8 +525,3 @@ Use JavaScript to answer the following questions and log your answers to the con
 1. Use string template literals to build a sentence about the weather forecast for Saturday, Dec 15. (Example: "Saturday, December 15 will be Partly Cloudy with a high of 7 and a low of -3".)
     - In the data, "Partly Cloudy" is capitalized, but in our sentence that doesn't really make sense. Look up the [method to convert a string to lowercase.](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
 1. What is the average forecasted high temperature for the next seven days? 
-
-
-
-
-

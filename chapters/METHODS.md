@@ -114,7 +114,7 @@ console.log(sum); // Expected output: 4
 - Call each method at least twice, passing in different parameters. 
 
 
-### 4. Address Book
+### 3. Address Book
 1. Create an object that represents your contact information. Use the code below as an example:
 ```js
 var jordanContactInfo = {

@@ -19,7 +19,7 @@ sayHelloWorld();
 
 ***
 ## Lightning Exercise
-### 1. I Love JavaScript
+### I Love JavaScript
 - Write a function that logs the string `"I love JavaScript!"` to the console.
 - Call the function. 
 ***
@@ -65,7 +65,7 @@ greetAFriend("Norman", "midnight"); // Hello, Norman!
 
 ***
 ## Lightning Exercise
-### 2. Dream Vacation
+### Dream Vacation
 1. Write a function that accepts two parameters of `name` and `destination`. 
 2. The function should log a sentence to the console about where that person wants to go.
 3. Call the function three different times with different parameters.
@@ -209,7 +209,7 @@ function ageChecker(){
     - Log the sentnece to the console.
 
 
-### 6. Celsius to Fahrenheit
+### 7. Celsius to Fahrenheit
 You'll be writing two functions: one that converts Celsius to Fahrenheit and the other, vice versa.
 - Write a function that takes the temperature in Celsius as the parameter
 - The function should do the following calculation to get the temperature in Fahrenheit: T(F) = T(C) * 1.8 + 32
@@ -222,7 +222,7 @@ Example output:
 "You entered [degrees in Celsius] Celsius. That converts to [degrees in Fahrenheit] Fahrenheit." "You entered [degrees in Fahrenheit] Fahrenheit. That converts to [degrees in Celsius] Celsius."
 ```
 
-### 7. It All Adds Up!
+### 8. It All Adds Up!
 Copy and paste the following code into your JavaScript file:
 ```js
 var outsideArray =  [4, 7, 8008, 11, 9, -1];
@@ -237,7 +237,7 @@ var outsideArray =  [4, 7, 8008, 11, 9, -1];
 - Log `mySum` to the console.
 - Try changing the numbers in the array or adding new numbers. 
 
-### 8. Law of Averages
+### 9. Law of Averages
 Copy and paste the following code into your JavaScript file:
 ```js
 var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 98, 84];
@@ -253,7 +253,7 @@ var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 
 - Try adding new numbers to the `outsideArray`. Your function should still return the correct average no matter how many items are in the array.
 
 
-### 9. Shipping Calculator 
+### 10. Shipping Calculator 
 1. You work for an online clothing retailer. Every time an order ships, your company needs to calculate the cost of shipping so they can charge the customer correctly. Because they need to make this calculation so many times and in so many places, they've asked you to write a function that calculates shipping cost based on package weight, distance to destination, and whether or not the package is oversized. 
     - The cost of shipping is always the weight of the package multiplied by the distance it needs to travel, divided by 100.
     - If the package is oversized, it adds ten dollars to the cost of shipping.
