@@ -64,7 +64,7 @@ In your JavaScript file, write a while loop that outputs the phrase "TWEET TWEET
 ***
 
 ## For Loop
-While loops are great for learning how loops work, but we won't actually use them very much. The for loop is much more common. It works the exact same way, but the syntax is different.
+While loops are great for learning how loops work, but we won't actually use them very much. The for loop is much more common. It works in a similiar way, but the syntax is different.
 
 ```js
 for(var i = 0; i < moviesArray.length; i++){
@@ -80,7 +80,7 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 ***
 ## Lightning Exercise
 ### Psychotic Bird: For Loop Edition
-In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 times to the console. 
+In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET TWEET" 100 times to the console. 
 
 ### Favorite Foods
 - In your JavaScript array, create a new variable called `favoriteFoods`. It should store an array of strings representing five of your favorite foods.
@@ -91,14 +91,14 @@ In your JavaScript, write a for loop that outputs the phrase "TWEET TWEET" 100 t
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
-mkdir -p ~/workspace/on-boarding/exercises/javascript/loops && cd $_
+mkdir -p ~/workspace/foundations/exercises/javascript/loops && cd $_
 touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 ### 1. Student Names
 - In your JavaScript file, copy and paste the following array:
 ```js
-var cohortOneStudents = [Sable, David, Joey, Nick, Tommy, Connor, Charles, Russ, Bobby, Josh, Nikki, Matt, Dale]
+var cohortOneStudents = [Sable, David, Joey, Nick, Tommy, Connor, Charles, Russ, Bobby, Josh, Nikki, Matt, Dale, Sydney]
 ```
 - Use a for loop to print each student's name to the console. 
 
@@ -142,7 +142,7 @@ var harryPotterTitles = ["and the Sorcerer's Stone", "and the Chamber of Secrets
 "Harry Potter and the Deathly Hallows"
 ```
 
-### 6. Student Grades Take Two
+### 6. Student Grades
 - Copy and paste the folowing array of grades into your JavaScript file:
 ```js
 var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
@@ -154,9 +154,27 @@ var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 9
     - If it's between 84 and 92, log "You got a B" to the console.
     - If it's between 93 and 100, log "You got an A" to the console.
     
+### 7. Two, Four, Six, Eight  - Who do we appreciate?! CHEER
+1. Write a loop that counts by 2's and creates the following output.
+
+##### Output
+
+2
+4
+6
+8
+Who do we appreciate?!
+
+### 8. Student Grades Take Two
+
+- Copy and paste the folowing array of grades into your JavaScript file:
+```js
+var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
+```
+Loop through the grades with a for loop.  Use an if statement to find the highest and lowest grades and then write them to the console.  
+
     
-    
-### 7. Interrupting Cow
+### 9. Interrupting Cow
 1. Copy and paste the following array into your JavaScript file:
 ```js
 var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
@@ -170,7 +188,7 @@ var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "t
 the cow danced MOOOOOOOO through the trees MOOOOOOOO in the light MOOOOOOOO of the moon
 ```
 
-### 8. Student Grades
+### 10. Student Grades
 Take the following array from the student grades exercise above. Each entry in the array represents a different student's percentage grade for the entire course:
 ```js
 var grades = [92, 91, 75, 66, 52, 90, 83, 85, 64, 90, 72, 88, 77, 98, 100, 73, 92]
