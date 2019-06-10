@@ -147,7 +147,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 1. The function should return the sentence.
 1. Call the function three times, passing in three different sets of parameters.
 
-Example output:
+Example console output:
 ```
 "You ordered a toasted meatball sub sandwich on wheat."
 ```
@@ -217,6 +217,7 @@ You'll be writing two functions: one that converts Celsius to Fahrenheit and the
 - Write a second function that takes the temperature in Fahrenheit as the parameter
 - The function should do the following calculation to get the temperature in Celsius: T(C) = (T(F) - 32) / 1.8
 - Output the temperature in Celsius to the console
+
 Example output:
 ```
 "You entered [degrees in Celsius] Celsius. That converts to [degrees in Fahrenheit] Fahrenheit." "You entered [degrees in Fahrenheit] Fahrenheit. That converts to [degrees in Celsius] Celsius."
