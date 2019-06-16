@@ -1,7 +1,7 @@
 # Setting Up Your Environment
 
-## Installs
-#### Hardware
+# Installs
+## Hardware
 
 Up until now, you didn't have the power to destroy your machine, but within the first two weeks of attending NewForce you will have that power. Go buy a backup drive RIGHT NOW and start backing up your entire hard drive.
 
@@ -9,9 +9,9 @@ Up until now, you didn't have the power to destroy your machine, but within the 
 
 ---
 
-### Online Services
+## Online Services
 
-#### Github
+### Github
 
 Github is the primary site that software developers throughout the world use to store their code, and share it with other developers. Visit the [sign up page](https://github.com/join) and create your own, free account.
 
@@ -36,7 +36,7 @@ Visit the [Node.js](https://www.nodejs.org) site and install the LTS release.
 
 Now that you have Node installed, you can install some open source software that you will need in the course.
 
-Run the following command in Git Bash.
+Run the following command in Git Bash to install a command-line http-server.
 
 ```sh
 npm i -g http-server
@@ -61,7 +61,7 @@ Suggested extensions to install
 1. [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 
-## Welcome to the Terminal
+# Welcome to the Terminal
 
 Even though it looks like something out of the Matrix, the terminal will become your best friend over the next six months. It's a way to move around your computer, set up projects, and modify files quickly without taking your hands off your keyboard. From here on out, you should use your terminal instead of your file explorer.
 
@@ -107,17 +107,19 @@ rm index.html
 ```
 *Be careful with `rm`. This command deletes it permanently and immediately- it doesn't go to your recycling bin. Use it wisely.*
 
+PRO TIP: Software Developers use the terminal and Command Line Interface (CLI) instead of a Graphic User Interface (GUI) like File Explorer.
+
 ***
 ## Lightning Exercise
 1. Use the `cd` command to navigate to your workspace directory that we made yesterday
-1. Use the `mkdir` command to make a new directory inside your Workspace directory called `on-ramp`
-1. Use the `cd` command to change directories into your `on-ramp` directory
-1. Use the `mkdir` command to make a new directory inside `on-ramp`. Call it `HTML`.
+1. Use the `mkdir` command to make a new directory inside your Workspace directory called `foundations`
+1. Use the `cd` command to change directories into your `foundations` directory
+1. Use the `mkdir` command to make a new directory inside `foundations`. Call it `HTML`.
 1. Use the `cd` command to change directories into the `HTML` directory.
 1. Use the `touch` command to create a new file in the `HTML` directory called `index.html`
 1. Run the `pwd` command. You should see something like the following:
 ```
-/c/Users/newforce/workspace/on-ramp/HTML/
+/c/Users/newforce/workspace/foundations/HTML/
 ```
 ***
 
@@ -125,4 +127,5 @@ rm index.html
 ## Supplemental Material
 
 - [Visual Studio Code Tutorial](https://www.youtube.com/watch?v=VqCgcpAypFQ)
-- [A Gentle Introduction to the Terminal](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)
+- [A Gentle Introduction to the Terminal - Mac OS](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)
+- [10 Bash file system commands](https://medium.com/the-code-review/top-10-bash-file-system-commands-you-cant-live-without-4cd937bd7df1)

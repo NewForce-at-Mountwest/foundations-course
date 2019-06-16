@@ -60,7 +60,7 @@ console.log("myName");
 ## Data Types
 So far, all of our variables have been strings(i.e. they've had quotes around them). JavaScript doesn't care what data type our variables are when we assign them, but data types behave differently once you start trying to manipulate them. 
 ## Primitive Data Types
-#### Numbers
+### Numbers
 Unlike strings, numbers do not have quotes around them. JavaScript treats both integers (whole numbers) and floats (decimal numbers) the same.
 ```
 var age = 46;
@@ -81,7 +81,7 @@ totalWithTax = totalCost + (taxRate * totalCost);
 console.log(totalWithTax);
 ```
 
-#### Booleans
+### Booleans
 Booleans are true/ false values. They do not have quotes around them.
 
 ```js
@@ -89,7 +89,7 @@ var likesDogs = true;
 
 var allergicToDogs = false;
 ```
-#### Strings 
+### Strings 
 Strings are anything that has a quotes around it. For now, the main thing we'll do with strings combine them with other values. This is called concatenation (when you combine a string with another string) or interpolation (when you combine a string with a variable or expression). Don't worry too much about the vocab for right now.
 
 ```js
@@ -111,12 +111,12 @@ Anything becomes a string when you put quotes around it. This can cause some fun
 var x = "2";
 var y = "4";
 var total = x + y;
-// In this case, the value of total woudl be 24, not 6.
+// In this case, the value of total would be 24, not 6.
 
 ```
 ***
 ## Lightning Exercise
-#### All About Me
+### All About Me
 1. In your JavaScript file, instantiate and assign the following variables with information about yourself:
   - `firstName` should hold a string of your first name
   - `lastName` should hold a string of your last name
@@ -165,7 +165,7 @@ months.splice(4, 1, 'May');
 
 ***
 ## Lightning Exercise
-#### Favorite Movies
+### Favorite Movies
 1. In your JavaScript file, instantiate and assign a variable called `movieArray`. This variable should hold an array of your favorite movie titles. (Don't go overboard- two or three is fine).
 1. Log each movie in the array to the console.
 ***
@@ -209,11 +209,11 @@ console.log(studentsArray[0].firstName); // "Leah"
 
 ***
 ## Lightning Exercise
-#### All About Me Pt. 2
-1. Instead of storing the data from your first lightning exercise in seperate variables, store them in an object. Your object should have a property of  `firstName`, `lastName`, `age`, `likesToTravel`. It should also have a property called `favoriteMovies`, which should hold the array of  your favorite movies you created in the last lightning exercise.
+### All About Me Pt. 2
+1. Instead of storing the data from your first lightning exercise in separate variables, store them in an object. Your object should have a property of  `firstName`, `lastName`, `age`, `likesToTravel`. It should also have a property called `favoriteMovies`, which should hold the array of  your favorite movies you created in the last lightning exercise.
 ***
 
-# Practice
+## Practice
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
 mkdir -p ~/workspace/on-boarding/exercises/javascript/variables_and_datatypes && cd $_
@@ -222,7 +222,7 @@ touch index.html script.js
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
 
 
-#### 1. Today's weather
+### 1. Today's weather
 1. In your JavaScript file, instantiate and assign the following variables with information about the current weather:
   - `temperature` should hold a number representing the current temperature in Fahrenheit
   - `conditions` should hold a string about the current weather conditions (i.e. "cloudy", "sunny", etc).
@@ -244,7 +244,7 @@ var lowTemperatures = [33, 30, 29, 35, 31, 32];
 1. What is the average low temperature from the data set?
 
 
-#### 3. Weather Object
+### 3. Weather Object
 1. In your JavaScript file, create an object that represents the current weather. Your can reuse your data from the first exercise. Your object should have the following properties:
     - `temperature`
     - `conditions`
@@ -252,7 +252,7 @@ var lowTemperatures = [33, 30, 29, 35, 31, 32];
 1. Log the current temperature to the console.
 1. Use string template literals to log a sentence about the weather console. (Example: "It's 64 degrees F and sunny.")
 
-## 4. Nested Weather Objects
+### 4. Nested Weather Objects
 Refactor your weather object to include today's high and low temperature and sunrise/ sunset times. Now your object should look something like this: 
 ```js
 var todaysWeather = {
@@ -273,7 +273,7 @@ var todaysWeather = {
 1. Log today's sunrise time to the console.
 1. Use string template literals to create a more detailed description of today's weather.
 
-## 5. Weather Forecast
+### 5. Weather Forecast
 Copy and paste the following array into your JavaScript file
 ```js
 var weatherForecast = [
@@ -332,7 +332,7 @@ var williamGrades = [62, 97, 99, 85, 73, 97];
 1. Use JavaScript to find William's average grade.
 
 
-#### 7. Movie Star
+### 7. Movie Star
 1. In your JavaScript file, create an object that represents a famous movie star. Your object should have the following properties:
     - `firstName`
     - `lastName`
@@ -345,7 +345,7 @@ var williamGrades = [62, 97, 99, 85, 73, 97];
 
 
 
-#### 8. Dwayne's Hobbies
+### 8. Dwayne's Hobbies
 Refactor your movie star object to add their hobbies. Now your object should look something like this: 
 ```js
 var dwayneObject = {
@@ -360,7 +360,7 @@ var dwayneObject = {
 
 
 ## Challenge
-#### Weather Data
+### Weather Data
 Here's some real data from the Yahoo Weather API:
 ```js
 var weatherData = {
@@ -525,8 +525,3 @@ Use JavaScript to answer the following questions and log your answers to the con
 1. Use string template literals to build a sentence about the weather forecast for Saturday, Dec 15. (Example: "Saturday, December 15 will be Partly Cloudy with a high of 7 and a low of -3".)
     - In the data, "Partly Cloudy" is capitalized, but in our sentence that doesn't really make sense. Look up the [method to convert a string to lowercase.](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
 1. What is the average forecasted high temperature for the next seven days? 
-
-
-
-
-

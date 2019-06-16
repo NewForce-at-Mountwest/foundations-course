@@ -19,7 +19,7 @@ sayHelloWorld();
 
 ***
 ## Lightning Exercise
-#### 1. I Love JavaScript
+### I Love JavaScript
 - Write a function that logs the string `"I love JavaScript!"` to the console.
 - Call the function. 
 ***
@@ -65,7 +65,7 @@ greetAFriend("Norman", "midnight"); // Hello, Norman!
 
 ***
 ## Lightning Exercise
-#### 2. Dream Vacation
+### Dream Vacation
 1. Write a function that accepts two parameters of `name` and `destination`. 
 2. The function should log a sentence to the console about where that person wants to go.
 3. Call the function three different times with different parameters.
@@ -107,14 +107,14 @@ console.log(yourPizza);
 
 ***
 ## Lightning Exercise
-#### Taco Truck
+### Taco Truck
 1. Write a function to represent a taco truck's ordering system. The function should accept two parameters: `typeOfShell` and `topping`. (Both will be strings.)
 1. Inside the function, use string interpolation to build a sentence that announces the taco is ready. Use the information the customer passed in. For example: `"Your soft shell taco with chicken is ready!"`
 1. Return the taco sentence.
 1. Execute the function.
 1. Log  the returned sentence to the console. 
 ***
-# Practice
+## Practice
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
@@ -122,18 +122,18 @@ mkdir -p ~/workspace/on-boarding/exercises/javascript/functions && cd $_
 touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
-#### 1. Calculator
+### 1. Calculator
 1. Write a function called `add`. It should accept two numbers as parameters and log their sum to the console.
 1. Write a function called `subtract`. It should accept two numbers as parameters and log the difference between the first and second number to the console.
 1. Write a function called `multiply`. It should accept two numbers as parameters and log their product to the console.
 1. Write a function called `divide.` It should accept two numbers as parameters, divide the first number by the second number, and log the result to the console.
 1. Call each function three times with different parameters.
 
-#### 2. Calculator Refactor
+### 2. Calculator Refactor
 1. Refactor your previous exercise so that each calculator function _returns_ the result of its calculations. You should not have any `console.log`s inside your functions. 
 1. When you execute your calculator functions, store each result in a new variable and log the variable to the console. The `console.log`s should now be outside the scope of your functions. 
 
-#### 3. Greetings Pt. 2
+### 3. Greetings Pt. 2
 
 1. Revisit the greetings exercise you did in the conditionals chapter, where you logged a greeting to the console based on the person's preferred language. 
 1. Write a function that accepts two parameters: `name` and `language`. 
@@ -141,18 +141,18 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
     - If the person's preferred language is Spanish print "Hola, [name]!" to the console.
     - If their preferred language is French, print "Bonjour, [name]!" to the console.
 
-#### 4. Sandwich Maker
+### 4. Sandwich Maker
 1. Write a function that accepts three parameters: `breadType` (a string), `sandwichName`, and `isToasted` (a boolean). 
 1. The function should check whether `isToasted` is true or false and build a sentence about the sandwich order accordingly. 
 1. The function should return the sentence.
 1. Call the function three times, passing in three different sets of parameters.
 
-Example output:
+Example console output:
 ```
 "You ordered a toasted meatball sub sandwich on wheat."
 ```
 
-#### 5. The Rock's Hobbies
+### 5. The Rock's Hobbies
 1. Copy and paste the following object into your JavaScript file:
 ```js
 var dwayneObject = {
@@ -170,7 +170,7 @@ function printHobbies(){
 2. The `printHobbies` function should loop through the array of Dwayne The Rock Johnson's hobbies and print each one to the console.
 3. Call the `printHobbies` function.
 
-#### 6. New Years Eve Party
+### 6. New Years Eve Party
 Copy and paste the following array into your JavaScript file:
 ```js
 var partyGuests = [
@@ -209,7 +209,7 @@ function ageChecker(){
     - Log the sentnece to the console.
 
 
-#### 6. Celsius to Fahrenheit
+### 7. Celsius to Fahrenheit
 You'll be writing two functions: one that converts Celsius to Fahrenheit and the other, vice versa.
 - Write a function that takes the temperature in Celsius as the parameter
 - The function should do the following calculation to get the temperature in Fahrenheit: T(F) = T(C) * 1.8 + 32
@@ -217,12 +217,13 @@ You'll be writing two functions: one that converts Celsius to Fahrenheit and the
 - Write a second function that takes the temperature in Fahrenheit as the parameter
 - The function should do the following calculation to get the temperature in Celsius: T(C) = (T(F) - 32) / 1.8
 - Output the temperature in Celsius to the console
+
 Example output:
 ```
 "You entered [degrees in Celsius] Celsius. That converts to [degrees in Fahrenheit] Fahrenheit." "You entered [degrees in Fahrenheit] Fahrenheit. That converts to [degrees in Celsius] Celsius."
 ```
 
-#### 7. It All Adds Up!
+### 8. It All Adds Up!
 Copy and paste the following code into your JavaScript file:
 ```js
 var outsideArray =  [4, 7, 8008, 11, 9, -1];
@@ -237,7 +238,7 @@ var outsideArray =  [4, 7, 8008, 11, 9, -1];
 - Log `mySum` to the console.
 - Try changing the numbers in the array or adding new numbers. 
 
-#### 8. Law of Averages
+### 9. Law of Averages
 Copy and paste the following code into your JavaScript file:
 ```js
 var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 98, 84];
@@ -253,14 +254,9 @@ var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 
 - Try adding new numbers to the `outsideArray`. Your function should still return the correct average no matter how many items are in the array.
 
 
-#### 9. Shipping Calculator 
+### 10. Shipping Calculator 
 1. You work for an online clothing retailer. Every time an order ships, your company needs to calculate the cost of shipping so they can charge the customer correctly. Because they need to make this calculation so many times and in so many places, they've asked you to write a function that calculates shipping cost based on package weight, distance to destination, and whether or not the package is oversized. 
     - The cost of shipping is always the weight of the package multiplied by the distance it needs to travel, divided by 100.
     - If the package is oversized, it adds ten dollars to the cost of shipping.
 2. Write a function that accepts whatever information you need to calculate the cost of shipping and returns the cost as an integer. 
 3. Execute the function and output the result to the console.
-
-
-
-
-
