@@ -31,17 +31,17 @@ This would select all the elements with a class of `bio` and give them a font-si
 
 
 ## CSS Declarations
-Once you've selected something, it's time to apply some styles. Each individual style is called a declaration. Declarations are made up of properties and values. In the following example, `font-color` is the property and `rgb(155, 244, 66)` is the value.
+Once you've selected something, it's time to apply some styles. Each individual style is called a declaration. Declarations are made up of properties and values. In the following example, `color` is the property and `rgb(155, 244, 66)` is the value.
 ```css
 li{
-  font-color: rgb(155, 244, 66);
+  color: rgb(155, 244, 66);
 }
 ```
 You can write as many declarations as you want for any given selector. Your browser will apply those styles from top to bottom. In the example below, I accidentally wrote two declarations for text-aligment. The last `text-alignment` declaration will override the first one.
 ```css
 h3{
   text-align: left;
-  font-color: #9bf442;
+  color: #9bf442;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
@@ -154,7 +154,7 @@ As a rule of thumb, you should default to using class selectors for your custom 
 As we mentioned briefly above, the cascade also takes into account order. When two selectors have the same specificity, the declaration that comes last wins.
 
 ## Practice
-Revisit your superhero website from the previous chapter. 
+Revisit your website from the previous chapter. 
 
 1. In your personal website directory, create a new file: 
 ```
