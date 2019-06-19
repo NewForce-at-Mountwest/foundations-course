@@ -17,7 +17,7 @@ Every box is made up of four things:
 ### Inline, Block, and Inline-Block
 We can also control whether elements appear side-by-side in a row or on their own line. 
 ```css
-/* Headings are block level elements by default, which means they get their own line. We can ovverride that default style by giving all h3s a display property of "inline". You cannot set height or top or bottom margin/padding on inline elements*/
+/* Headings are block level elements by default, which means they get their own line. We can override that default style by giving all h3s a display property of "inline". You cannot set height or top or bottom margin/padding on inline elements*/
 h3 {
   display: inline;
 }

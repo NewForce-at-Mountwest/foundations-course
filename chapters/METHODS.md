@@ -35,7 +35,7 @@ hoagieObject.bark(); // "woof!"
 1. Create a new object representing a sports car
 1. Give the object a property of make, model, and year, and the date of its last oil change to the console.
 1. Give the object a method called `drive`. It should log a string to the console that says "vroom vroom"
-1. Print the car's make, model, year, an d date of last oil change to the console.
+1. Print the car's make, model, year, and date of last oil change to the console.
 1. Call the car's `drive` method.
 ***
 
@@ -75,7 +75,7 @@ jisieObject.greetSomeone(emilyObject.firstName);
 ## Lightning Exercise
 ### Car Maintenance 
 1. Create a new object representing a mechanic. The mechanic object should have properties representing their name and place of work. 
-1. Give your mechanic object a property of `changeOil`. This method sould accept a parameter of a car object. It should reassign the date of the car's last oil change to [today](https://www.w3schools.com/js/js_dates.asp).
+1. Give your mechanic object a property of `changeOil`. This method should accept a parameter of a car object. It should reassign the date of the car's last oil change to [today](https://www.w3schools.com/js/js_dates.asp).
 1. Call the mechanic's `changeOil` method on the car object you created in the last lightning exercise. Log the car's last oil change date before _and_ after you call the `changeOil` method. They should be different!
 
 ***
@@ -190,7 +190,7 @@ var shoppingCart = {
 
 Your job is to fill in the three empty methods in the `shoppingCart` object. *(Hint: you can access the `items` array from inside the object with `this.items`.)*
 1. The `addToCard` method should take in a parameter of an object that represents a new item and add it to the shopping cart array. *Hint: look up [.push()](https://www.w3schools.com/jsref/jsref_push.asp)*
-1. The `calcualteTotal` method should calculate and return a total for all the items in your shopping cart.
+1. The `calculateTotal` method should calculate and return a total for all the items in your shopping cart.
 1. The `printShoppingCart` method should loop over all the items in the cart and print them to the console. It should also print the total price of all the items in your shopping cart.
 
 ### Library System
