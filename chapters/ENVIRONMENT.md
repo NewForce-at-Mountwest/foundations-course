@@ -128,4 +128,3 @@ PRO TIP: Software Developers use the terminal and Command Line Interface (CLI) i
 
 - [Visual Studio Code Tutorial](https://www.youtube.com/watch?v=VqCgcpAypFQ)
 - [A Gentle Introduction to the Terminal - Mac OS](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)
-- [10 Bash file system commands](https://medium.com/the-code-review/top-10-bash-file-system-commands-you-cant-live-without-4cd937bd7df1)
