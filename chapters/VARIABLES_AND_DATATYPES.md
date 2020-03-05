@@ -53,7 +53,7 @@ var myName = "Dwayne Johnson";
 myName = "The Rock";
 
 // This should log "The Rock" to the console
-console.log("myName");
+console.log(myName);
 ```
 
 
