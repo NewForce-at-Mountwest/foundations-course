@@ -9,7 +9,7 @@ __Elements__ are the building blocks of HTML pages. This is an HTML element repr
 <h1> My Awesome Website </h1>
 ```
 
-Elements are labeled with __tags__. In the example above, `<h1>` is the opening tag and `</h1>` is the closing tag. Everything that goes between them is the content you'll see on the web page. 
+Elements are labeled with __tags__. In the example above, `<h1>` is the opening tag and `</h1>` is the closing tag. Everything that goes between them is the content you'll see on the web page.
 
 Here's a few basic HTML tags to take for a spin:
 
@@ -39,7 +39,7 @@ All-purpose container:
 ```
 
 ## Nesting HTML Elements
-When we do nest HTML elements inside each other, we talk about the relationships in terms of parents and children. Unordered and ordered lists are a good example of this:
+When we nest HTML elements inside each other, we talk about the relationships in terms of parents and children. Unordered and ordered lists are a good example of this:
 ```html
 <ul>
   <li> I'm one bulleted item</li>
@@ -53,7 +53,7 @@ When we do nest HTML elements inside each other, we talk about the relationships
 ```
 In the first example above, the `<li>` elements are children of the `<ul>` element.
 
-In the example below, the article element is a child of the section element. It's also the parent of the heading 3 and two paragraph elements. 
+In the example below, the article element is a child of the section element. It's also the parent of the heading 3 and two paragraph elements.
 
 ```html
 <h1> How To Wrestle Gators </h1>
@@ -73,15 +73,15 @@ In the example below, the article element is a child of the section element. It'
 
 ### HTML Elements
 In your `index.html` file, create the following elements:
-    - An `h1` element with your name in it.
-    - A `p` element with some copy-and-pasted text from the [Bob Ross Lorem Ipsum Generator](https://www.bobrosslipsum.com/)
-    - An `img` element with the `src` value of `"https://media.giphy.com/media/Z3ChoP3rZewhy/giphy.gif"` and any `"alt"` value you like.
+  - An `h1` element with your name in it.
+  - A `p` element with some copy-and-pasted text from the [Bob Ross Lorem Ipsum Generator](https://www.bobrosslipsum.com/)
+  - An `img` element with the `src` value of `"https://media.giphy.com/media/Z3ChoP3rZewhy/giphy.gif"` and any `"alt"` value you like.
 
-*** 
+***
 
 ## Attributes
 
-HTML elements can have attributes that distinguish them from other elements or tell the how to behave. 
+HTML elements can have attributes that distinguish them from other elements or tell the how to behave.
 
 In the example above, imagine you needed to tell the difference between the two paragraphs. You could give them a `class` and/or an  `id`.
 
@@ -90,7 +90,7 @@ In the example above, imagine you needed to tell the difference between the two 
 
 ```html
 <p id="firstParagraph" class="background-blue">
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </p>
 
 <p id="secondParagraph" class="background-blue">
@@ -98,7 +98,7 @@ In the example above, imagine you needed to tell the difference between the two 
 </p>
 ```
 
-Remember our friends the ```<img>``` and ```<a>``` tags? 
+Remember our friends the ```<img>``` and ```<a>``` tags?
 
 ```html
 <img src="path/to/image" alt="Alternate text">
@@ -106,7 +106,7 @@ Remember our friends the ```<img>``` and ```<a>``` tags?
 <a href="www.spacejam.com"> Click Here </a>
 ```
 
-Both `src` and `href` are attributes. The `src` attribute tells the browser where to look for the image file and `alt` specifies an alternate text for an image. The `href` attribute tells the browser where to go when the user clicks on the hyperlink. 
+Both `src` and `href` are attributes. The `src` attribute tells the browser where to look for the image file and `alt` specifies an alternate text for an image. The `href` attribute tells the browser where to go when the user clicks on the hyperlink.
 
 We'll use ids and classes a lot when we get to CSS and JavaScript.
 
@@ -117,9 +117,9 @@ In your `index.html` file, create the following elements:
   - A `section` element with a class of `"bio"`
   - Inside the `"bio"` section, a `"ul"` element with a class of `"tech-stack"`
   - Inside `"tech-stack"`, two `"li"` elements:
-      - The first `"li"` element should have an id of `"html"` 
+      - The first `"li"` element should have an id of `"html"`
       - The second should have an id of `"css"`
-      
+
 ***
 
 ## HTML Document Structure
@@ -170,7 +170,7 @@ touch index.html
       - An `<h3>` heading
       - A `<p>` element with your bio text
       - An `<img>` element with a picture of yourself
-  - A `<section>` element for the techologies you'll know at the end of this program. It should contain: 
+  - A `<section>` element for the techologies you'll know at the end of this program. It should contain:
       -  An `<h3>` heading
       - A bulleted list of at least three languages. (HTML, CSS, and JavaScript are fine for now.)
   - A `<section>` element about your work experience. It should contain:
