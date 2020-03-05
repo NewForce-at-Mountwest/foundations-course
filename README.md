@@ -32,8 +32,8 @@ By the end of this course, you should be able to:
 ## Table of Contents
 1. [Setting Up Your Environment](chapters/ENVIRONMENT.md)
 1. [The Big Picture](chapters/THE_BIG_PICTURE.md)
-1. [Intro to Git](chapters/GIT.md)
 1. [Intro to HTML](chapters/HTML.md)
+1. [Intro to Git](chapters/GIT.md)
 1. [Intro to CSS](chapters/CSS.md)
 1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
 1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.md)
