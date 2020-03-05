@@ -2,6 +2,35 @@
 
 HTML stands for __Hyper Text Markup Language__. It defines the structure and content of a web page.
 
+## HTML Document Structure
+
+Here's an example of an HTML document:
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Everything you want to show up on your web page goes between these two tags -->
+</body>
+</html>
+
+```
+
+Now let's break it down:
+1. `<!DOCTYPE html>` lets the browser know that it's getting an HTML document
+1. ` <html lang="en">` tells the browser that our document is written in English.
+1. The `<head>` element contains meta information about our web page that helps the browser figure out how to read it. Nothing inside the `<head>` tags will be displayed on the web page.
+1. The `<body>` element contains everything you'll see on the page. All the HTML you write should go between the `body` tags.
+
+***
+
 ## The Building Blocks of HTML
 
 __Elements__ are the building blocks of HTML pages. This is an HTML element representing a page heading:
@@ -121,37 +150,6 @@ In your `index.html` file, create the following elements:
       - The second should have an id of `"css"`
 
 ***
-
-## HTML Document Structure
-
-Here's an example of an HTML document:
-
-```html
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <!-- Everything you want to show up on your web page goes between these two tags -->
-</body>
-</html>
-
-```
-
-Now let's break it down:
-1. `<!DOCTYPE html>` lets the browser know that it's getting an HTML document
-1. ` <html lang="en">` tells the browser that our document is written in English.
-1. The `<head>` element contains meta information about our web page that helps the browser figure out how to read it. Nothing inside the `<head>` tags will be displayed on the web page.
-1. The `<body>` element contains everything you'll see on the page. All the HTML you write should go between the `body` tags.
-
-
-
-
 
 ## Practice
 
