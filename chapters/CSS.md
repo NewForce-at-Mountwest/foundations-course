@@ -9,7 +9,7 @@ Your CSS should live in a seperate file from your HTML. In order for your CSS to
 ```
 
 ## CSS Selectors
-You can select HTML elements in several different ways. 
+You can select HTML elements in several different ways.
 Let's start with the first two:
 
 ### By Element
@@ -67,7 +67,7 @@ h1{
 }
 
 p{
- 
+
   background-color: #ff0000;  /* red background*/
   color: rgb(0, 255, 0);   /* green text */
   border-color: rgba(0, 0, 255, 0.8);  /* blue, slightly transparent border */
@@ -91,7 +91,7 @@ Example:
 
 ```html
 <div class="bio">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit ut velit non rhoncus. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit ut velit non rhoncus.
   <img class="headshot" src="../img/headshot.jpg">
 </div>
 ```
@@ -114,9 +114,9 @@ Example:
 
 ```
 
-***    
+***
  ## Lightning Exercise
- 
+
  ### CSS Colors and Font Sizes
  1. Copy and paste the following code between the `body` tags of your HTML file
  ```html
@@ -137,7 +137,7 @@ Example:
 ***
 
 
-## Understanding the Cascade 
+## Understanding the Cascade
 
 The CSS Cascade is the algorithm that your browser uses to decide which CSS styles to apply to an element—a lot of people like to think of this as the style that “wins”.
 
@@ -154,15 +154,26 @@ As a rule of thumb, you should default to using class selectors for your custom 
 As we mentioned briefly above, the cascade also takes into account order. When two selectors have the same specificity, the declaration that comes last wins.
 
 ## Practice
-Revisit your website from the previous chapter. 
+Team up with a partner.
 
-1. In your personal website directory, create a new file: 
+1. In a new directory, create a new file:
 ```
-touch style.css
+mkdir -p ~/workspace/foundations/exercises/team-website && cd $_
+touch index.html style.css
 ```
-2. Link your new CSS file to the HTML file you made last time.
+2. Link your new CSS file in the HTML document.
 
-3. Give your elements appropriate classnames and apply the following styles:
+3. You'll be creating a website for your partner. You will need:
+    -  A  `header` element with the following child elements:
+        - An `<h1>` element with their name
+    - An `<aside>` element that contain's a list of their favorite movies:
+      - A `<ul>` element with `<li>` children
+    - A `<div>` element containing:
+
+      - A `<p>` element with their favorite quote
+      - An `<img>` element with their favorite gif
+
+4. Give your elements appropriate classnames and apply the following styles:
     - Turn your `header` element into a splash page that takes up `100vw` and `100vh`. (Users should be able to scroll down to see the rest of your content.)
     - All headings should be centered.
     - Pick two fonts from [Google Fonts](https://fonts.google.com/). Apply one of them to all the heading elements and the other  to all non-heading text.
@@ -170,12 +181,11 @@ touch style.css
     - The `<aside>` should be `35vw` wide.
     - The entire page should have a background color of `#494949`
     - All text should be `#f4c20c`.
-    - The text in your `footer` should be centered.
-
+    
 **Challenge:**
  Give your `header` splash page a [background image](http://www.htmldog.com/guides/css/intermediate/backgroundimages/) of your choice.
-  
-Commit your changes and then feel free to mess around with any other styles you like! 
-  
+
+Commit your changes and then feel free to mess around with any other styles you like!
+
 
 

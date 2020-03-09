@@ -10,7 +10,7 @@ This course is also designed to give _you_ a sense of what NewForce will be like
 
  Keep the following questions in mind as you go through the course:
 1. Do I enjoy coding? Am I curious about and motivated to solve these kinds of problems?
-1. Does this style of learning work for me? Can I live without understanding 100% of the things 100% of the time? 
+1. Does this style of learning work for me? Can I live without understanding 100% of the things 100% of the time?
 
 If the answer to any of these questions is anything other than a solid yes, please reach out to one of your instructors. NewForce is not the only path to becoming a developer and we want to help you figure out if this is the right one for you.
 
@@ -22,25 +22,24 @@ By the end of this course, you should be able to:
 1. Open your web page in Google Chrome and inspect it with Chrome's built-in developer tools
 1. Apply foundational JavaScript concepts including:
    - Assigning and using variables
-   - Objects 
-    - Conditional logic 
+   - Objects
+    - Conditional logic
     - Loops
     - Functions
     - Printing to the DOM
-    
+
 
 ## Table of Contents
 1. [Setting Up Your Environment](chapters/ENVIRONMENT.md)
 1. [The Big Picture](chapters/THE_BIG_PICTURE.md)
-1. [Intro to Git](chapters/GIT.md)
 1. [Intro to HTML](chapters/HTML.md)
+1. [Intro to Git](chapters/GIT.md)
 1. [Intro to CSS](chapters/CSS.md)
 1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
 1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.md)
 1. [Conditionals](chapters/CONDITIONALS.md)
 1. [Loops](chapters/LOOPS.md)
 1. [Functions](chapters/FUNCTIONS.md)
-1. [Objects and Methods](chapters/METHODS.md)
 1. [The DOM](chapters/THE_DOM.md)
 
 
