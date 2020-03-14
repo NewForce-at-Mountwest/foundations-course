@@ -32,25 +32,13 @@ Visit the [Git powershell](http://www.git-scm.com/downloads) download page click
 
 Visit the [Node.js](https://www.nodejs.org) site and install the LTS release.
 
-### Node Packages
-
-Now that you have Node installed, you can install some open source software that you will need in the course.
-
-Run the following command in Git Bash to install a command-line http-server.
-
-```sh
-npm i -g http-server
-```
-
 ### Slack Desktop Client
 
 Do not use the browser-based interface for Slack. Download and [install the client](https://slack.com/downloads). Let us know if you did not get an invitation to the NewForce Slack organization, and we'll send you one immediately.
 
 ### Visual Studio Code
 
-Visual Studio Code is the editor we will all be working on to start the course.
-
-Windows users must visit the [Visual Studio Code](https://code.visualstudio.com/) website to download and install the code editor.
+We'll use [Visual Studio Code](https://code.visualstudio.com/) to start the course. 
 
 Suggested extensions to install
 
@@ -58,7 +46,9 @@ Suggested extensions to install
 1. [FontSize Shortcuts](https://marketplace.visualstudio.com/items?itemName=fosshaas.fontsize-shortcuts)
 1. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 1. [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-1. [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+1. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+1. [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+1. [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 
 
 # Welcome to the Terminal
