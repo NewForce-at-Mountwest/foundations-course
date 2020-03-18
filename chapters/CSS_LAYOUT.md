@@ -82,7 +82,7 @@ Flexbox is a very efficient tool for building responsive layouts that look great
 
 
 ## Practice
-Continue to build your personal website, this time focusing on layout. [Here's an example of the finished product.](https://jordan-castelloe.github.io/onboarding-personal-website-demo/) Yours doesn't have to look exactly like this- it's just to give you a starting point. 
+Continue to build your partner website, this time focusing on layout. [Here's an example of the finished product.](https://jordan-castelloe.github.io/onboarding-personal-website-demo/) Yours doesn't have to look exactly like this- it's just to give you a starting point. 
 
 1. In your HTML, add a new `div` around your name and job title. This new `div` should be `30vw` wide with `4rem` of padding and should be centered both vertically and horizontally inside the `header` element. *(Hint: flexbox is great for centering!)*
 1. Use flexbox to create a two-column layout for the page content: 
