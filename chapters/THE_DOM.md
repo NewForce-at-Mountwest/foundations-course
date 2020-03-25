@@ -273,15 +273,15 @@ var cohort2 = {
  name: "Cohort Two",
  startDate: "August 15, 2019",
  endDate: "Feb 10, 2020",
- instructors: ["Kim", "Josh", "Jordan"],
+ instructors: ["Tommy", "Jordan],
  techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
 }
 
 var cohort3 = {
  name: "Cohort Three",
- startDate: "Feb 20, 2020",
+ startDate: "April 6, 2020",
  endDate: "August 20, 2020",
- instructors: ["Kim", "Josh", "Jordan"],
+ instructors: ["Tommy", "Jordan"],
  techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
 }
 
