@@ -1,11 +1,10 @@
 # Setting Up Your Environment
 
 # Installs
+
 ## Hardware
 
-Up until now, you didn't have the power to destroy your machine, but within the first two weeks of attending NewForce you will have that power. Go buy a backup drive RIGHT NOW and start backing up your entire hard drive.
-
-**Seriously, right now!**
+Up until now, you didn't have the power to destroy your machine, but within the first two weeks of attending NewForce you will have that power. We recommend buying a backup drive RIGHT NOW and start backing up your entire hard drive.
 
 ---
 
@@ -19,14 +18,11 @@ Github is the primary site that software developers throughout the world use to 
 
 ## Software
 
+Everyone should install the following: 
+
 ### Google Chrome
 
 [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html) is the most popular browser for web developers because of the powerful tools it provides to test code, manipulate documents, and measure performance.
-
-
-### Git Bash
-
-Visit the [Git powershell](http://www.git-scm.com/downloads) download page click the "Download for Windows" button, and once complete, install the software. Powershell is a command line utility that allows you to run most Unix command inside a Windows environment.
 
 ### Node
 
@@ -43,79 +39,56 @@ We'll use [Visual Studio Code](https://code.visualstudio.com/) to start the cour
 Suggested extensions to install
 
 1. [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-1. [FontSize Shortcuts](https://marketplace.visualstudio.com/items?itemName=fosshaas.fontsize-shortcuts)
 1. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-1. [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
 1. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 1. [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 1. [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 
+---
 
-# Welcome to the Terminal
+## Software: Windows Users Only
 
-Even though it looks like something out of the Matrix, the terminal will become your best friend over the next six months. It's a way to move around your computer, set up projects, and modify files quickly without taking your hands off your keyboard. From here on out, you should use your terminal instead of your file explorer.
+### Git Bash
 
-Open up Git Bash! Let's run some commands to get you started:
+Visit the [Git powershell](http://www.git-scm.com/downloads) download page click the "Download for Windows" button, and once complete, install the software. Powershell is a command line utility that allows you to run most Unix command inside a Windows environment.
 
-*Note: from here on out, we'll use the word "directory" instead of "folder" in reference to file structure.*
+---
 
-1. Make a new directory called `workspace`. 
-```
-mkdir workspace
-```
+## Software: Mac Users Only
 
-2. Change directories- let's move into the one you just created
-```
-cd workspace
-```
+### Homebrew
 
-3. Get in the habit of checking to make sure you're in the right place. `pwd` stands for "print working directory" and will show you the filepath to your current location.
-```
-pwd
-```
-*This command should output something like `/Users/jordancastelloe/workspace/`*
+Visit the [homebrew home page](http://brew.sh/) and follow the single instruction there to get it installed.
 
-4. Create a new file called `index.html`
-```
-touch index.html
+## Git
+
+Git is how you and your teammates will work on a shard codebase during your time at NewForce. Type in the following command to install.
+
+```sh
+brew install git
+brew install tig
 ```
 
-5. To see if it worked, list all the files in the current directory:
-```
-ls
-```
-*This command should output `index.html`, since right now it's the only file in `workspace`.*
+## Oh My Zsh
 
-6. Open your new file in VS Code:
-```
-code index.html
-```
+1. If you haven't install Homebrew from the previous step, please complete that first.
+1. Install zsh which is a powerful replacement for the standard bash terminal by typing the following command into the terminal
+    ```sh
+    brew install zsh zsh-completions
+    ```
+1. Install [Oh My Zsh](http://ohmyz.sh/) which is a framework for Z shell which makes the terminal a pleasure to work in. Use the following command.
+    ```sh
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    ```
 
-7. Whoops, we changed our mind. We don't want `index.html` after all. Let's remove it.
-```
-rm index.html
-```
-*Be careful with `rm`. This command deletes it permanently and immediately- it doesn't go to your recycling bin. Use it wisely.*
+### Command Line Launcher
 
-PRO TIP: Software Developers use the terminal and Command Line Interface (CLI) instead of a Graphic User Interface (GUI) like File Explorer.
+Set up Visual Studio Code to be [launched from the command line](https://code.visualstudio.com/docs/setup/mac).
 
-***
-## Lightning Exercise
-1. Use the `cd` command to navigate to your workspace directory that we made yesterday
-1. Use the `mkdir` command to make a new directory inside your Workspace directory called `foundations`
-1. Use the `cd` command to change directories into your `foundations` directory
-1. Use the `mkdir` command to make a new directory inside `foundations`. Call it `HTML`.
-1. Use the `cd` command to change directories into the `HTML` directory.
-1. Use the `touch` command to create a new file in the `HTML` directory called `index.html`
-1. Run the `pwd` command. You should see something like the following:
-```
-/c/Users/newforce/workspace/foundations/HTML/
-```
-***
+### Spectacle
+This application will allow you to use certain combinations of keys on your keyboard to move and resize applications while you are developing.
+
+[Download and install Spectacle](https://www.spectacleapp.com/) and after it is installed, click on the link labeled _**keyboard shortcuts**_ on the web site to try it out.
 
 
-## Supplemental Material
 
-- [Visual Studio Code Tutorial](https://www.youtube.com/watch?v=VqCgcpAypFQ)
-- [A Gentle Introduction to the Terminal - Mac OS](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)
-- [10 Bash file system commands](https://medium.com/the-code-review/top-10-bash-file-system-commands-you-cant-live-without-4cd937bd7df1)
