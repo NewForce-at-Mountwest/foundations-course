@@ -5,15 +5,15 @@ One of the main principles of software development is that code should be as DRY
 
 Functions are another way to DRY up your code. Functions are reusable chunks of code. If you think you might need to write a piece of code more than once, you should probably put it in a function.
 
-Here's a simple function declaration:
+Here's a simple function definition:
 ```js
 function sayHelloWorld(){
   console.log("Hello, world!");
 }
 ```
-If you paste the code above in your JavaScript file right now and run it, nothing will happen. To run the code inside a function, you have to call the function.
+If you paste the code above in your JavaScript file right now and run it, nothing will happen. To run the code inside a function, you have to execute, or call, the function
 ```js
-sayHelloWorld();
+sayHelloWorld(); // execution
 // Expected output: "Hello, world!"
 ```
 
@@ -21,7 +21,7 @@ sayHelloWorld();
 ## Lightning Exercise
 ### I Love JavaScript
 - Write a function that logs the string `"I love JavaScript!"` to the console.
-- Call the function.
+- Execute the function.
 ***
 
 ## Parameters
@@ -33,15 +33,19 @@ function greetAFriend(friendName){
   console.log(`Hello, ${friendName}!`)
 }
 
-// When we call the function, we give it the actual name that we want to print.
-greetAFriend("Dwayne");
+// When we execute the function, we give it the actual name that we want to print.
+greetAFriend("Dwayne") // Output: Hello, Dwayne!
+
+// We can execute a function multiple times with different parameters and get different results
+greetAFriend("Courtney") // Output: Hello, Courtney!
+greetAFriend("Tommy") // Output: Hello, Tommy!
 ```
 
 Functions can take more than one parameter.
 
 ```js
 
-
+// Define a function that accepts two strings
 function greetAFriend(friendName, timeOfDay){
   var greeting;
   if(timeOfDay === "morning"){
@@ -63,6 +67,12 @@ greetAFriend("Hannah", "afternoon"); // Good afternoon, Hannah!
 greetAFriend("Norman", "midnight"); // Hello, Norman!
 ```
 
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. Function definition
+1. Function execution
+1. Parameters
+
 ***
 ## Lightning Exercise
 ### Dream Vacation
@@ -74,15 +84,28 @@ greetAFriend("Norman", "midnight"); // Hello, Norman!
 
 ***
 ## JavaScript Function Scope
-In JavaScript there are two types of scope:
+In JavaScript there are two types of scope that we need to worry about right now:
 
 - Local scope
 - Global scope
 
-
 Scope determines the accessibility (visibility) of these variables.
 
 Variables defined inside a function are not accessible (visible) from outside the function.
+
+For example:
+
+```js
+// This variable is defined in the global scope, outside of any curly braces. It's accessible anywhere in the file!
+let publicInformation = "I like butter on my toast"
+
+function tellASecret(){
+  console.log(publicInformation) // We can access a globally scoped variable anywhere, including inside a function
+  let secret = "I also like mayo on my toast, but don't tell anyone" // This variable is defined INSIDE the function, so it will only be accessible between these curly braces
+  console.log(secret) // This will output our secret
+}
+
+console.log(secret) // This will be undefined, because it's locally scoped to the tellASecret function-- we can't see it out here
 
 
 ***
@@ -90,7 +113,7 @@ Variables defined inside a function are not accessible (visible) from outside th
 Functions have their own scope, which means variales we declare inside the function can't be accessed outside of it. **The following code won't work!!!!**
 ```js
 function makeAPizza(crustType, size, toppingsArray){
-  var finishedPizza = `A ${size} pizza with ${crustType} crust and ${toppingsArray.join(", ")} on top.`
+  let finishedPizza = `A ${size} pizza with ${crustType} crust and ${toppingsArray.join(", ")} on top.`
 }
 
 makeAPizza("wheat", "large", ["green peppers", "onions", "pepperoni"]);
@@ -107,9 +130,9 @@ function makeAPizza(crustType, size, toppingsArray){
   return finishedPizza;
 }
 
-var myPizza = makeAPizza("wheat", "large", ["green peppers", "onions", "pepperoni"]);
+let myPizza = makeAPizza("wheat", "large", ["green peppers", "onions", "pepperoni"]);
 
-var yourPizza = makeAPizza("white", "medium", ["anchovies", "feta", "pineapple"]);
+let yourPizza = makeAPizza("white", "medium", ["anchovies", "feta", "pineapple"]);
 
 console.log(myPizza);
 // Expected output: "A large pizza with wheat crust and green peppers, onions, pepperoni on top."
@@ -118,6 +141,12 @@ console.log(yourPizza);
 // Expected output: "A medium pizza with white crust and green anchovies, feta, pineapple on top."
 
 ```
+
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. Scope
+1. Return statements
+
 
 ***
 ## Lightning Exercise

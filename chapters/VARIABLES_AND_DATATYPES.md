@@ -7,18 +7,17 @@ JavaScript is the programming language of the web. This is how we'll make our we
 - Keep track of our friend's information
 - And pretty much everything else you can think of that happens on the web
 
-But before we can do any of that cool stuff, we need to learn the basic building blocks of JavaScript. 
+But before we can do any of that cool stuff, we need to learn the basic building blocks of JavaScript.
 
 First, create two new files: an HTML document and a JavaScript file.
 ```
 touch index.html script.js
 ```
 
-In `index.html`, add the following code right before the closing body tag:
+In `index.html`, add some boilerplate code by holding down the `Shift` key and pressing the `!` key. This will generate some basic HTML markup that we're not going to discuss right now. We'll talk about what it does later. For now, just add the following code right before the closing body tag:
 ```html
-<body>
-  <!-- All your HTML goes here -->
-  <script src='script.js'></script>
+<body> <!--Body tags should already be there -->
+  <script src='script.js'></script> <!--Add this line -->
 </body>
 
 ```
@@ -28,53 +27,72 @@ To make sure it works, add the following code to `script.js`:
 alert("Hello, world")
 ```
 
-Open `index.html` in your web browser. If your script tag is linked correctly, you should see an alert box pop up immediately with the text you entered.
+Open `index.html` in your web browser by clicking the "Go Live" button at the bottom of your window. If your script tag is linked correctly, you should see an alert box pop up immediately with the text you entered.
+
+## Logging to the console
+From here on out, we'll spend a _lot_ of time in the Chrome developer tools. You can access them by hitting `Ctrl` + `Shift` + `I` on Windows or ` ⌘ + J` on a Mac. We can check our work in JavaScript by logging things to the console. Paste the following line of code into your JavaScript file.
+```js
+console.log("Howdy, world")
+```
+Now open your developer tools. You should see the sentence in the console!
 
 ## Variables
-A variable is a little box to store information that you want to reference or modify later. Let's start by declaring a simple variable to hold a name:
+A variable is a little box to store information that you want to reference or modify later. Let's start by creating a simple variable to hold a name:
 
 ```js
-var myName = "Dwayne The Rock Johnson";
+let myName = "Dwayne The Rock Johnson";
 ```
 
-We can also instantiate the variable first and then assign it later. (This is like setting up an empty box and then putting something in it later.)
+We can also declare the variable first and then assign it later. This is like setting up an empty box and then putting something in it later.
 ```js
-var myName;
+let myName; // variable declaration
 
-myName = "Dwayne The Rock Johnson";
+myName = "Dwayne The Rock Johnson"; // variable assignment
 ```
 Variable values can change. For example, lets' say we want to change our name to just "The Rock" for the sake of brevity.
 
 ```js
 // We declare the variable just like we did before
-var myName = "Dwayne Johnson";
+let myName = "Dwayne Johnson";
 
-// Except this time we reassign it to hold a different value. Notice we don't have to use the var keyword for reassignments.
+// Except this time we reassign it to hold a different value. Notice we don't have to use the let keyword for reassignments.
 myName = "The Rock";
 
 // This should log "The Rock" to the console
 console.log(myName);
 ```
 
+#### Let, const, and var
+If you've been exposed to JavaScript before, or you find yourself googling in the next couple of weeks, you may see some other ways of declaring variables. For example, all of the following is valid code:
+```js
+let catsName = "Edgar"
+
+const catColor = "orange"
+
+var catAge = 5
+```
+
+There are slight differences in the way each of these variables will behave. We'll discuss more about those differences later. For now, we'll default to using `let`. If you're burning with curiosity, you can read a little bit more about the different variable keywords [here](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/).
+
 
 ## Data Types
-So far, all of our variables have been strings(i.e. they've had quotes around them). JavaScript doesn't care what data type our variables are when we assign them, but data types behave differently once you start trying to manipulate them. 
+So far, most of our variables have been strings (i.e. they've had quotes around them). JavaScript doesn't care what data type our variables are when we assign them, but data types behave differently once you start trying to manipulate them.
 ## Primitive Data Types
 ### Numbers
 Unlike strings, numbers do not have quotes around them. JavaScript treats both integers (whole numbers) and floats (decimal numbers) the same.
 ```
-var age = 46;
+let age = 46;
 ```
 You can perform basic math with JavaScript just like you would on a calculator.
 
 ```js
-var totalCost;
-var totalWithTax;
+let totalCost;
+let totalWithTax;
 
-var costPerItem = 2.50;
-var numberOfItems = 4;
-var taxRate = 0.06;
- 
+let costPerItem = 2.50;
+let numberOfItems = 4;
+let taxRate = 0.06;
+
 totalCost = costPerItem * numberOfItems;
 totalWithTax = totalCost + (taxRate * totalCost);
 
@@ -85,21 +103,21 @@ console.log(totalWithTax);
 Booleans are true/ false values. They do not have quotes around them.
 
 ```js
-var likesDogs = true;
+let likesDogs = true;
 
-var allergicToDogs = false;
+let allergicToDogs = false;
 ```
-### Strings 
+### Strings
 Strings are anything that has a quotes around it. For now, the main thing we'll do with strings combine them with other values. This is called concatenation (when you combine a string with another string) or interpolation (when you combine a string with a variable or expression). Don't worry too much about the vocab for right now.
 
 ```js
-var firstName = "Dwayne";
-var lastName = "Johnson";
+let firstName = "Dwayne";
+let lastName = "Johnson";
 
 // There are a couple different ways to combine strings. These two examples produce the same result:
 
 // Option A: String Concatenation with the + symbol
-var fullName = firstName + " " + lastName;
+let fullName = firstName + " " + lastName;
 
 // Option B: String template literals (probably easier once you get used to them)
 fullName = `${firstName} ${lastName}`;
@@ -108,36 +126,47 @@ fullName = `${firstName} ${lastName}`;
 Anything becomes a string when you put quotes around it. This can cause some funky behavior if you're not careful.
 
 ```js
-var x = "2";
-var y = "4";
-var total = x + y;
-// In this case, the value of total would be 24, not 6.
+let x = "2";
+let y = "4";
+let total = x + y;
+// In this case, the value of total would be "24", not 6.
 
 ```
+
+
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. Variable
+1. Declare
+1. Assign
+1. String
+1. Boolean
+
+
 ***
 ## Lightning Exercise
 ### All About Me
-1. In your JavaScript file, instantiate and assign the following variables with information about yourself:
+1. In your JavaScript file, declare and assign the following variables with information about yourself:
   - `firstName` should hold a string of your first name
   - `lastName` should hold a string of your last name
   - `age` should hold a number of your age
-  - `likesTravel` should hold a boolean representing whether or not you like to travel 
+  - `likesTravel` should hold a boolean representing whether or not you like to travel
   - Log each variable to the console.
 ***
 
 ## Arrays
-Arrays are collections of data stored in order. You can put anything you want inside an array. 
+Arrays are collections of data stored in order. You can put anything you want inside an array.
 ```js
-var grabBagArray = [1, "Hello, world", true]
+let grabBagArray = [1, "Hello, world", true]
 ```
 
 We'll access items in an array by their index, or their place in line. Arrays are zero-indexed, which means we start counting at 0 instead of 1.
 
 ```js
-var gradesArray = [97, 55, 62, 82, 79, 91, 74, 86];
-var firstItem = gradesArray[0] // 97
-var secondItem = gradesArray[1] // 55
-var thirdItem = gradesArray[2] // 62
+let gradesArray = [97, 55, 62, 82, 79, 91, 74, 86];
+let firstItem = gradesArray[0] // 97
+let secondItem = gradesArray[1] // 55
+let thirdItem = gradesArray[2] // 62
 ```
 You can find out how many items are in an array with the `.length` property. (We won't use this very much right now, but it'll come in very handy later when we cover loops.)
 ```js
@@ -154,14 +183,15 @@ gradesArray[9] = 83;
 ```
 We can add, remove, or replace items with the `.splice()` method. This one's a bit more complicated, but it's very powerful.
 ```js
-var months = ['Jan', 'March', 'April', 'June'];
+let months = ['Jan', 'March', 'April', 'June'];
 
-// Inserts 'Feb' at an index of 1 and removes 0 elements 
+// Inserts 'Feb' at an index of 1 and removes 0 elements
 months.splice(1, 0, 'Feb');
 
 // Inserts 'May' at an index of 4 and removes one item (i.e. replaces 'June')
 months.splice(4, 1, 'May');
 ```
+
 
 ***
 ## Lightning Exercise
@@ -173,27 +203,31 @@ months.splice(4, 1, 'May');
 ## Objects
 Arrays are great if we want to store data in order, but they have one big limitation: they can *only* keep track of our data by index. What if we want to label and organize our data in more detail? For example, let's say we want to store information about the students in a class instead of just their grades. Objects to the rescue!
 
+Objects are constructed of key value pairs. The key, on the left, is the identifier. The value, on the right, is the data you want to store. You may also hear us refer to the _properties_ in an object. We'll use the terms key and property interchangebaly.
+
 ```js
-var leahObject = {
-  firstName: "Leah",
+// Here's a JavaScript object representing a student
+// This particular object has three key value pairs, but objects can have as many key value pairs as you like
+let leahObject = {
+  firstName: "Leah", // On this line, the key is firstName and the value is "Leah"
   lastName: "Gwin",
   age: 27
 }
 
-console.log(leahObject.firstName); // "Leah"
+console.log(leahObject.firstName); // We can access the value of "Leah" by referencing the key name
 console.log(leahObject.age); // 27
 ```
-Just like arrays, objects can hold any other data type- including arrays and objects. 
+Just like arrays, objects can hold any other data type- including arrays and objects.
 
 ```js
-var robertObject = {
+let robertObject = {
   firstName: "Robert",
   lastName: "Leedy",
   age: 32,
   hobbies: ["cooking", "rock climbing"]
 }
 
-var williamObject = {
+let williamObject = {
   firstName: "William",
   lastName: "Kimball",
   age: 21
@@ -203,9 +237,15 @@ var williamObject = {
 console.log(williamObject.hobbies[0]) // "calligraphy"
 
 // We can also have arrays of objects! Aaah!
-var studentsArray = [leahObject, robertObject, williamObject];
+let studentsArray = [leahObject, robertObject, williamObject];
 console.log(studentsArray[0].firstName); // "Leah"
 ```
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. Array
+1. Index
+1. Object
+1. Key value pair
 
 ***
 ## Lightning Exercise
@@ -216,7 +256,7 @@ console.log(studentsArray[0].firstName); // "Leah"
 ## Practice
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
-mkdir -p ~/workspace/on-boarding/exercises/javascript/variables_and_datatypes && cd $_
+mkdir -p ~/workspace/foundations/exercises/javascript/variables_and_datatypes && cd $_
 touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
@@ -229,16 +269,16 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
   - `sunriseTime` should hold a string representing what time the sun rose this morning
   - `sunsetTime` should hold a string representing what time the sun will set this evening
   - Log each variable to the console.
-  - Use string template literals to combine these variables into a sentence about the weather. (Example: "It's currently sunny and 55 degrees. The sun rose this morning at 7:34 AM and will set at 5:09 PM.") 
+  - Use string template literals to combine these variables into a sentence about the weather. (Example: "It's currently sunny and 55 degrees. The sun rose this morning at 7:34 AM and will set at 5:09 PM.")
 
 
 ### 2. Weather Data
 In your JavaScript file, copy and paste the following array:
 ```js
 var highTemperatures = [55, 57, 53, 47, 56, 50];
-var lowTemperatures = [33, 30, 29, 35, 31, 32]; 
+var lowTemperatures = [33, 30, 29, 35, 31, 32];
 ```
-1. Print the first high temperature to the console. 
+1. Print the first high temperature to the console.
 1. Print the last low temperature to the console.
 1. What is the average high temperature from the data set?
 1. What is the average low temperature from the data set?
@@ -253,9 +293,9 @@ var lowTemperatures = [33, 30, 29, 35, 31, 32];
 1. Use string template literals to log a sentence about the weather console. (Example: "It's 64 degrees F and sunny.")
 
 ### 4. Nested Weather Objects
-Refactor your weather object to include today's high and low temperature and sunrise/ sunset times. Now your object should look something like this: 
+Refactor your weather object to include today's high and low temperature and sunrise/ sunset times. Now your object should look something like this:
 ```js
-var todaysWeather = {
+let todaysWeather = {
   temperature: {
     high: 55,
     low: 32
@@ -267,7 +307,7 @@ var todaysWeather = {
   }
 }
 ```
-1. Log today's high temperature to the console. 
+1. Log today's high temperature to the console.
 1. Log today's low temperature to the console.
 1. Log today's conditions to the console.
 1. Log today's sunrise time to the console.
@@ -276,7 +316,7 @@ var todaysWeather = {
 ### 5. Weather Forecast
 Copy and paste the following array into your JavaScript file
 ```js
-var weatherForecast = [
+let weatherForecast = [
  {
   day: "Today",
   temperature: {
@@ -325,7 +365,7 @@ var weatherForecast = [
 ### 6. Student Grades
 In your JavaScript file, copy and paste the following array:
 ```js
-var williamGrades = [62, 97, 99, 85, 73, 97];
+let williamGrades = [62, 97, 99, 85, 73, 97];
 ```
 1. Print the first grade in the array to the console.
 1. Print the last grade in the array to the console.
@@ -346,13 +386,13 @@ var williamGrades = [62, 97, 99, 85, 73, 97];
 
 
 ### 8. Dwayne's Hobbies
-Refactor your movie star object to add their hobbies. Now your object should look something like this: 
+Refactor your movie star object to add their hobbies. Now your object should look something like this:
 ```js
-var dwayneObject = {
+let dwayneObject = {
   firstName: "Dwayne",
   lastName: "Johnson",
   favoriteFood: "Eggs",
-  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
+  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building incredible muscle mass"]
 }
 ```
 1. Log each one of their hobbies individually to the console.
@@ -363,7 +403,7 @@ var dwayneObject = {
 ### Weather Data
 Here's some real data from the Yahoo Weather API:
 ```js
-var weatherData = {
+let weatherData = {
  "query": {
   "count": 1,
   "created": "2018-12-06T20:52:22Z",
@@ -524,4 +564,4 @@ Use JavaScript to answer the following questions and log your answers to the con
 1. What will be the high on Saturday the 8th?
 1. Use string template literals to build a sentence about the weather forecast for Saturday, Dec 15. (Example: "Saturday, December 15 will be Partly Cloudy with a high of 7 and a low of -3".)
     - In the data, "Partly Cloudy" is capitalized, but in our sentence that doesn't really make sense. Look up the [method to convert a string to lowercase.](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
-1. What is the average forecasted high temperature for the next seven days? 
+1. What is the average forecasted high temperature for the next seven days?

@@ -18,10 +18,11 @@ console.log(movieArray[2])
 console.log(movieArray[200])
 ```
 Fortunately, computers are really good at doing repetitve tasks quickly. Whenever we want to repeat an action multiple times, we use a loop to do the grunt work for us.
+
 ## While Loops
 Here's a bare-bones while loop. This code will log `"Hello, world"` to the console 20 times and then stop.
 ```js
-var i = 1;
+let i = 1;
 
 while(i < 20){
   console.log("Hello, world");
@@ -29,12 +30,12 @@ while(i < 20){
 }
 ```
 Let's break it down:
-- `var i = 1` declares `i` as our counter variable and sets it equal to 1.
+- `let i = 1` declares `i` as our counter variable and sets it equal to 1. You can name your counter variable whatever you want, but we usually use `i` because it stands for iterator. Every time a loop runs, it's called an _iteration_. We'll use this word to refer to how may times the loop has already run (first iteraiton, second iteration, etc).
 - The code inside the curly braces will run *while* the expression in the parentehses evaluates to true.
-- The first time the loop runs, `i` is `1`. Is `1` less than `20`? Yep, that's true! The code between the parentheses can run. It does two things:
+- On the first iteration, `i` is `1`. Is `1` less than `20`? Yep, that's true! The code between the parentheses can run. It does two things:
     - Log `"Hello, world"` to the console
     - `i++` is the same thing as writing `i = i + 1`. We're reassigning it to be one more than itself.
-- The second time the loop runs, `i` will be 2. Is `2` less than `20`? Yep! The code block runs again.
+- The second iteration, `i` will be 2. Is `2` less than `20`? Yep! The code block runs again.
 - This process keeps going until `i` is no longer less than `20`. As soon as that expression evaluates to `false`, the loop stops.
 
 Let's look at a more practical example.
@@ -76,6 +77,12 @@ In a for loop, we have three expressions inside the parentheses that tell the lo
 1. The first expression (`var i = 0`) declares our counter variable. Our loop will start counting at 0.
 1. The second expression (`i < moviesArray.length`) is the condition that must be `true` for the code block to run. In this case, the loop will keep going as long as `i` is less than `moviesArray.length`.
 1. The third expression (`i++`) tells the counter varaible how to increment. Each time the loop runs, `i` will increase by 1.
+
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. Loop
+1. Iteration
+1. Increment
 
 ***
 ## Lightning Exercise

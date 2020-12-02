@@ -8,7 +8,7 @@ Git and GitHub are two completely seperate systems. Git repositories exist on yo
 
 ## A few commands to git you started locally (har har har)
 
-If you're not already in your `workspace` folder, go there now. To figure out where you are and change directories, see the [Environment](ENVIRONMENT.md) chapter.
+If you're not already in your `workspace` folder, go there now. To figure out where you are and change directories, see the [Terminal](TERMINAL.md) chapter.
 
 Make a new directory called `test-project` and `cd` into it.
 ```
