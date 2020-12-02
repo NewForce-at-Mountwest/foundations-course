@@ -28,8 +28,6 @@ This would select all the elements with a class of `bio` and give them a font-si
 }
 ```
 
-
-
 ## CSS Declarations
 Once you've selected something, it's time to apply some styles. Each individual style is called a declaration. Declarations are made up of properties and values. In the following example, `color` is the property and `rgb(155, 244, 66)` is the value.
 ```css
@@ -181,7 +179,7 @@ touch index.html style.css
     - The `<aside>` should be `35vw` wide.
     - The entire page should have a background color of `#494949`
     - All text should be `#f4c20c`.
-    
+
 **Challenge:**
  Give your `header` splash page a [background image](http://www.htmldog.com/guides/css/intermediate/backgroundimages/) of your choice.
 

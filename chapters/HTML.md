@@ -67,6 +67,12 @@ All-purpose container:
 <div>
 ```
 
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. HTML Tag
+1. HTML Element
+
+
 ## Nesting HTML Elements
 When we nest HTML elements inside each other, we talk about the relationships in terms of parents and children. Unordered and ordered lists are a good example of this:
 ```html
@@ -138,6 +144,12 @@ Remember our friends the ```<img>``` and ```<a>``` tags?
 Both `src` and `href` are attributes. The `src` attribute tells the browser where to look for the image file and `alt` specifies an alternate text for an image. The `href` attribute tells the browser where to go when the user clicks on the hyperlink.
 
 We'll use ids and classes a lot when we get to CSS and JavaScript.
+
+## New Vocab
+These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+1. HTML Attributes
+1. Classes
+1. Id's
 
 ***
 ## Lightning Exercise
