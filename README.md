@@ -34,6 +34,7 @@ By the end of this course, you should be able to:
 1. [The Big Picture](chapters/THE_BIG_PICTURE.md)
 1. [JavaScript Variables and Data Types](chapters/VARIABLES_AND_DATATYPES.md)
 1. [Intro to Git](chapters/GIT.md)
+1. [Arrays and Objects](chapters/Arrays_AND_OBJECTS.md)
 1. [Conditionals](chapters/CONDITIONALS.md)
 1. [Loops](chapters/LOOPS.md)
 1. [Functions](chapters/FUNCTIONS.md)
