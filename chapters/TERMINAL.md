@@ -48,7 +48,7 @@ PRO TIP: Software Developers use the terminal and Command Line Interface (CLI) i
 
 ***
 ## Lightning Exercise
-1. Use the `cd` command to navigate to your workspace directory that we made yesterday
+1. Use the `cd` command to navigate to your workspace directory that we just made
 1. Use the `mkdir` command to make a new directory inside your Workspace directory called `foundations`
 1. Use the `cd` command to change directories into your `foundations` directory
 1. Use the `mkdir` command to make a new directory inside `foundations`. Call it `HTML`.
