@@ -116,8 +116,7 @@ var lowTemperatures = [33, 30, 29, 35, 31, 32];
 ```
 1. Print the first high temperature to the console.
 1. Print the last low temperature to the console.
-1. What is the average high temperature from the data set?
-1. What is the average low temperature from the data set?
+
 
 
 ### 2. Weather Object
