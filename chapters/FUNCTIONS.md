@@ -7,6 +7,7 @@ Functions are another way to DRY up your code. Functions are reusable chunks of 
 
 Here's a simple function definition:
 ```js
+// definition
 function sayHelloWorld(){
   console.log("Hello, world!");
 }
@@ -20,8 +21,8 @@ sayHelloWorld(); // execution
 ***
 ## Lightning Exercise
 ### I Love JavaScript
-- Write a function that logs the string `"I love JavaScript!"` to the console.
-- Execute the function.
+- Define a function that logs the string `"I love JavaScript!"` to the console.
+- Execute, or call, the function.
 ***
 
 ## Parameters
@@ -47,7 +48,7 @@ Functions can take more than one parameter.
 
 // Define a function that accepts two strings
 function greetAFriend(friendName, timeOfDay){
-  var greeting;
+  let greeting;
   if(timeOfDay === "morning"){
     greeting = "Good morning";
   } else if (timeOfDay === "afternoon"){
@@ -57,10 +58,11 @@ function greetAFriend(friendName, timeOfDay){
   } else {
     greeting = "Hello";
   }
-  var personalGgreeting = `${greeting}, ${friendName}!`;
+  let personalGreeting = `${greeting}, ${friendName}!`;
   console.log(personalGreeting);
 }
 
+// Execute the function with different sets of parameters 
 greetAFriend("Todd", "evening"); // Good evening, Todd!
 greetAFriend("Jamie", "morning"); // Good morning, Jamie!
 greetAFriend("Hannah", "afternoon"); // Good afternoon, Hannah!
@@ -97,15 +99,15 @@ For example:
 
 ```js
 // This variable is defined in the global scope, outside of any curly braces. It's accessible anywhere in the file!
-let publicInformation = "I like butter on my toast"
+let publicInformation = "I like ham sandwiches"
 
 function tellASecret(){
-  console.log(publicInformation) // We can access a globally scoped variable anywhere, including inside a function
-  let secret = "I also like mayo on my toast, but don't tell anyone" // This variable is defined INSIDE the function, so it will only be accessible between these curly braces
+  console.log(publicInformation) // We can access a globally scoped variable anywhere, including inside a function. This will log correctly.
+  let secret = "I also like mayo and pickle sandwiches, but don't tell anyone" // This variable is declared INSIDE the function, so it will only be accessible between these curly braces
   console.log(secret) // This will output our secret
 }
 
-console.log(secret) // This will be undefined, because it's locally scoped to the tellASecret function-- we can't see it out here
+console.log(secret) // But wait! This will be undefined, because it's locally scoped to the tellASecret function-- we can't see it out here
 
 
 ***
@@ -126,7 +128,7 @@ If we want to use the `finishedPizza` variable anywhere outside the function, we
 
 ```js
 function makeAPizza(crustType, size, toppingsArray){
-  var finishedPizza = `A ${size} pizza with ${crustType} crust and ${toppingsArray.join(", ")} on top.`
+  let finishedPizza = `A ${size} pizza with ${crustType} crust and ${toppingsArray.join(", ")} on top.`
   return finishedPizza;
 }
 
@@ -142,8 +144,10 @@ console.log(yourPizza);
 
 ```
 
+Return statements are tricky, and they probably won't make sense at first. **One thing to remember about return statements is that, once they run, nothing else in that particular code block will run after them.** Imagine a a function as a factory assembly line, and every line of code inside a function is a step in the assembly line. A return statement is like saying, "Okay, we're done! Ejector seat! Package it up and ship it out!" If you have a step in the assembly line line that packages and ships your product (i.e. your return statement), any steps after that won't run. 
+
 ## New Vocab
-These are some important new words we've learned so far. If you don't remember what any of these mean, re-read the chapter so far or ask an instructor.
+These are some important new words we've learned so far. If you don't remember the context for any of these words, re-read the chapter so far or ask an instructor.
 1. Scope
 1. Return statements
 
@@ -153,7 +157,7 @@ These are some important new words we've learned so far. If you don't remember w
 ### Taco Truck
 1. Write a function to represent a taco truck's ordering system. The function should accept two parameters: `typeOfShell` and `topping`. (Both will be strings.)
 1. Inside the function, use string interpolation to build a sentence that announces the taco is ready. Use the information the customer passed in. For example: `"Your soft shell taco with chicken is ready!"`
-1. Return the taco sentence.
+1. Return the taco sentence and store the returned sentence in a variable.
 1. Execute the function.
 1. Log  the returned sentence to the console.
 ***
@@ -161,7 +165,7 @@ These are some important new words we've learned so far. If you don't remember w
 
 These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
 ```
-mkdir -p ~/workspace/on-boarding/exercises/javascript/functions && cd $_
+mkdir -p ~/workspace/foundations/exercises/javascript/functions && cd $_
 touch index.html script.js
 ```
 Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
@@ -196,14 +200,14 @@ Example console output:
 ```
 
 ### 5. The Rock's Hobbies
-1. Copy and paste the following object into your JavaScript file:
+1. Once again, we concern ourselves with our friend Dwayne:
 ```js
-var dwayneObject = {
+let dwayneObject = {
   firstName: "Dwayne",
   nickName: "The Rock",
   lastName: "Johnson",
   favoriteFood: "Eggs",
-  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
+  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building incredible muscle mass"]
 }
 
 function printHobbies(){
@@ -216,7 +220,7 @@ function printHobbies(){
 ### 6. New Years Eve Party
 Copy and paste the following array into your JavaScript file:
 ```js
-var partyGuests = [
+let partyGuests = [
   {
     name: "Sam",
     age: 18
@@ -250,6 +254,8 @@ function ageChecker(){
     - Build a sentence or two about who can drink and who can't. (Example: `"
 "Jery, Lila, and Mary can drink. Sam and Todd are too young."`)
     - Log the sentnece to the console.
+    
+2. Optional Challenge- Make your function more reusable by adding parameters! Let's say that your next task is to sort through an array of people and figure out who is old enough to vote, not drink. You _could_ write another function that does approximately the same thing, but with an array of potential voters and the cut off age of 18 instead of 21. But that would be a lot of repeat code, and our goal is to repeat ourselves as little as possible! Refactor your `ageChecker` function so that it accepts two parameters: an array of objects representing people (assume that they will be structured like the objects in the `partyGuests` array) and an age to check for. Now the function should _return_ an array of people objects that are at or above the given cut-off age. Please ask for help with this one if you get stuck!
 
 
 ### 7. Celsius to Fahrenheit
@@ -269,7 +275,7 @@ Example output:
 ### 8. It All Adds Up!
 Copy and paste the following code into your JavaScript file:
 ```js
-var outsideArray =  [4, 7, 8008, 11, 9, -1];
+let outsideArray =  [4, 7, 8008, 11, 9, -1];
 ```
 
 - In your JavaScript file, create (declare) a function named `addThemUp`.
@@ -284,10 +290,10 @@ var outsideArray =  [4, 7, 8008, 11, 9, -1];
 ### 9. Law of Averages
 Copy and paste the following code into your JavaScript file:
 ```js
-var scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 98, 84];
+let scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 98, 84];
 ```
 
-- In your JavaScript file, create (declare) a function named `findAverage`.
+- In your JavaScript file, define a function named `findAverage`.
 - The function should accept one argument: an array of numbers.
 - Inside the function, loop over the array of numbers parameter and find their average.
 - The `findAverage` function should return the average of all the numbers.
