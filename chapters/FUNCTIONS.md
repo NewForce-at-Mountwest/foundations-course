@@ -108,7 +108,7 @@ function tellASecret(){
 }
 
 console.log(secret) // But wait! This will be undefined, because it's locally scoped to the tellASecret function-- we can't see it out here
-
+```
 
 ***
 ## Return Statements
