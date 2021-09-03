@@ -41,8 +41,7 @@ Suggested extensions to install
 1. [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 1. [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 1. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-1. [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-1. [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+
 
 ---
 
@@ -69,26 +68,11 @@ brew install git
 brew install tig
 ```
 
-## Oh My Zsh
-
-1. If you haven't install Homebrew from the previous step, please complete that first.
-1. Install zsh which is a powerful replacement for the standard bash terminal by typing the following command into the terminal
-    ```sh
-    brew install zsh zsh-completions
-    ```
-1. Install [Oh My Zsh](http://ohmyz.sh/) which is a framework for Z shell which makes the terminal a pleasure to work in. Use the following command.
-    ```sh
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    ```
 
 ### Command Line Launcher
 
 Set up Visual Studio Code to be [launched from the command line](https://code.visualstudio.com/docs/setup/mac).
 
-### Spectacle
-This application will allow you to use certain combinations of keys on your keyboard to move and resize applications while you are developing.
-
-[Download and install Spectacle](https://www.spectacleapp.com/) and after it is installed, click on the link labeled _**keyboard shortcuts**_ on the web site to try it out.
 
 
 
