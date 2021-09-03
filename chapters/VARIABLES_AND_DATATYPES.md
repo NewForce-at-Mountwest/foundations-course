@@ -9,32 +9,13 @@ JavaScript is the programming language of the web. This is how we'll make our we
 
 But before we can do any of that cool stuff, we need to learn the basic building blocks of JavaScript.
 
-First, create two new files: an HTML document and a JavaScript file.
-```
-touch index.html script.js
-```
-
-In `index.html`, add some boilerplate code by holding down the `Shift` key and pressing the `!` key. This will generate some basic HTML markup that we're not going to discuss right now. We'll talk about what it does later. For now, just add the following code right before the closing body tag:
-```html
-<body> <!--Body tags should already be there -->
-  <script src='script.js'></script> <!--Add this line -->
-</body>
-
-```
-
-To make sure it works, add the following code to `script.js`:
-```js
-alert("Hello, world")
-```
-
-Open `index.html` in your web browser by clicking the "Go Live" button at the bottom of your window. If your script tag is linked correctly, you should see an alert box pop up immediately with the text you entered.
 
 ## Logging to the console
-From here on out, we'll spend a _lot_ of time in the Chrome developer tools. You can access them by hitting `Ctrl` + `Shift` + `I` on Windows or ` ⌘ + J` on a Mac. We can check our work in JavaScript by logging things to the console. Paste the following line of code into your JavaScript file.
+ We can check our work in JavaScript by logging things to the console. Paste the following line of code into your JavaScript file.
 ```js
 console.log("Howdy, world")
 ```
-Now open your developer tools. You should see the sentence in the console!
+Now click "run" at the top of the page. You should see the sentence in the console!
 
 ## Variables
 A variable is a little box to store information that you want to reference or modify later. Let's start by creating a simple variable to hold a name:
@@ -155,18 +136,6 @@ These are some important new words we've learned so far. If you don't remember w
 ***
 
 ## Practice
-These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below. It doesn't matter what directory you are currently in.
-```
-mkdir -p ~/workspace/foundations/exercises/javascript/variables_and_datatypes && cd $_
-touch index.html script.js
-```
-Be sure to add boilerplate HTML to your `index.html` file and link it to `script.js`.
-
-
-
-
-
-
 
 
 ### 1. Today's weather
