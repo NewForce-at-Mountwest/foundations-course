@@ -107,7 +107,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 ### 1. Student Names
 - In your JavaScript file, copy and paste the following array:
 ```js
-var cohortOneStudents = [Sable, David, Joey, Nick, Tommy, Connor, Charles, Russ, Bobby, Josh, Nikki, Matt, Dale, Sydney]
+var cohortOneStudents = ["Sable", "David", "Joey", "Nick", "Tommy", "Connor", "Charles", "Russ", "Bobby", "Josh", "Nikki", "Matt", "Dale", "Sydney"]
 ```
 - Use a for loop to print each student's name to the console.
 
