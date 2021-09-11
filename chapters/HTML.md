@@ -118,7 +118,7 @@ In your `index.html` file, create the following elements:
 
 HTML elements can have attributes that distinguish them from other elements or tell the how to behave.
 
-In the example above, imagine you needed to tell the difference between the two paragraphs. You could give them a `class` and/or an  `id`.
+In the example below, imagine you needed to tell the difference between the two paragraphs. You could give them a `class` and/or an  `id`.
 
 - Ids have to be unique.
 - Classes can be used for multiple elements
