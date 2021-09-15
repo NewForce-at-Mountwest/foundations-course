@@ -1,74 +1,56 @@
-# The DOM
+# Printing to the DOM
 
-So far we've only dealt with JavaScript in isolation. Let's learn how to use JavaScript to print data directly to our web page. 
+So far we've dealt with JavaScript in isolation from HTML and CSS. Let's learn how to combine them.
 
 
-When a web page is loaded, the browser creates a Document Object Model of the page. The DOM allows JavaScript to access and alter your HTML in the browser.
+When a web page is loaded, the browser creates something called a Document Object Model (DOM) of the page. It's basically a copy of your web page that gets stored in the browser's memory. (The word DOM is confusing. We get it. For now, any time you hear it you can just substitue in "how the website looks"). We can use JavaScript to access and change the DOM.
 
-Say you had the following HTML:
+## Setting up your project
+You will need two files:
+1. `index.html`
+3. `script.js`
+
+Once you have your files, use the `Shift` + `!` shortcut in your HTML document to generate your boilerplate HTML. Then add the following line of code before the closing body tag:
+
+```js
+<script src="script.js"></script>
+```
+This will link your JavaScript file to your HTML document so that your JS file loads in the browser. 
+_(Note: You don't need CSS for this chapter, but if you wanted to add some CSS you would have to add a `link` element inside the `<head>` tags of your HTML document as well.)_
+
+## Accessing the DOM
+Say you have the following HTML element:
 
 ```html
-<body>
   <h1 id="main-heading"></h1>
-</body>
 ```
 
-Let's use JavaScript to put some text in that empty `h1` element. 
+Empty, right? Super boring. Let's use JavaScript to put some fun text in that sad, lonely `h1` element. 
 
-First, we need to get a reference to it. With CSS, it's best practice to target elements with classes. With JavaScript, it's best to target them with id's. 
+First, we need JavaScript to know which element we're talking about.
 
 ```js
-var headingElement = document.querySelector("#main-heading");
+const headingElement = document.querySelector("#main-heading");
 ```
-
-Cool! We have a reference to our DOM element in our JavaScrpt file. It's stored in a variable called `headingElement`. Now let's put some text in it:
+## Printing to the DOM
+Now we have a reference to our DOM element in our JavaScrpt file. It's stored in a variable called `headingElement`. Let's put some text in it:
 ```js
-headingElement.innerHTML = "Hello, world!";
+headingElement.innerHTML = "TIME TO PARTY!";
 ```
-When we refresh, we should see a big old "Hello, world!" at the top of our page.
+We should see a big old "TIME TO PARTY" at the top of our page.
 
 (Note: The `innerHTML` property will overwrite anything that's already in the element you're targeting. If there had already been text in our `h1` element, this example code would've replaced it.) 
 *** 
 
 ## Lightning Exercise 
 ### Hello, world
-1. In your `index.html` file, add an `h1` element with an id of `#hello-container`.
-1. In your JavaScript file, declare a new variable called `greeting` and give it a value of "Hello, world"
-1. Use `document.querySelector` to target your `#hello-container`
-1. User the `.innerHTML` property to insert the value of your `greeting` variable into your `#hello-container` element.
+1. In your `index.html` file, add an `h2` element with an id of `#hello-container`.
+1. In your JavaScript file, target the `h2` element you just created by its id
+2. Use the `.innerHTML` property to print the text "Hello, world" into the H2 
 
 ***
 
-Let's look at a slightly more complex example. Let's say we run a restaurant store and want to feature our daily special on our website. Rather than hard-coding it into our HTML we should populate the `div` dynamically with JavaScript.
-
-Here's some sample HTML:
-```html
-<body>
-  <div id="daily-special">
-  </div>
-</body>
-```
-```js
-// The contents of this object will change depending on what today's special is
-var currentSpecial = {
-  name: "Fried Green Tomato BLT",
-  description: "So good you'll cry",
-  price: 9.99
-}
-
-// We'll use the object to build up an HTML string 
-var htmlString = `
-  <h3 class="dish-name">${currentSpecial.name}</h3>
-  <p class="dish-description">
-    ${currentSpecial.description}
-  </p>
-  <h5 class= "dish-price">${currentSpecial.price}</h5>
-`
-// Then we'll put the html string in the #daily-special div
-document.querySelector("#daily-special").innerHTML = htmlString;
-```
-
-Now, when the daily specia changes, we only need to change the contents of the object.
+## Pulling it all together
 
 Imagine we wanted to print the entire menu to the DOM. Let's start with an array of  menu items:
 ```js
@@ -87,21 +69,11 @@ for(var i = 0; i < menuItemsArray.length; i++){
 }
 ```
 
-Notice that we use `+=` here-- that's new! The `+=` operator _adds to_ the existing HTML content of `#menu-items-container`. Here's another way of writing it:
+Notice that we use `+=` here. The `+=` operator _adds to_ the existing HTML content of `#menu-items-container`. Here's another way of writing it:
 ```js
 document.querySelector("#menu-items-container").innerHTML =  document.querySelector("#menu-items-container").innerHTML + `<li>${menuItemsArray[i]}</li>`
 ```
 
-Here's how `+=` works in another context:
-```js
-var startingNumber = 2
-
-// Reassign startingNumber to be one more than itself
-startingNumber += 1 
-
-// Now the value of startingNumber is 3. You could also write this as:
-startingNumber = startingNumber + 1 
-```
 ***
 ## Lightning Exercise 
 ### Keeping track of chores
@@ -134,7 +106,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 
 - In your JavaScript file, copy and paste the following object:
 ```js
-var movieObject = {
+const movieObject = {
   title: "Star Wars: A New Hope",
   genre: "Science Fiction",
   releaseDate: "May 25, 1977"
@@ -188,7 +160,7 @@ Start with some basic HTML:
 ```
 In your JavaScript file, copy and paste the following array of objects: 
 ```js
-var movieSchedule = [
+let movieSchedule = [
   {
     title: "Ralph Breaks the Internet",
     rating: "PG",
@@ -238,7 +210,7 @@ var movieSchedule = [
  
  ## More Challenges: 
 
-### 5. Movie Schedule Take Two
+### 5. Movie Schedule: Revamped and Reloaded: The Scheduling
  - Revisit your movie schedule exercise from above.
  - Add a conditional so that you only print movies where the `currentlyPlaying` property is equal to `true`. 
  - Use flexbox to arrange your movie schedule side by side on your web page.
