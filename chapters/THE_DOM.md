@@ -30,7 +30,7 @@ Empty, right? Super boring. Let's use JavaScript to put some fun text in that sa
 First, we need JavaScript to know which element we're talking about.
 
 ```js
-const headingElement = document.querySelector("#main-heading");
+let headingElement = document.querySelector("#main-heading");
 ```
 ## Printing to the DOM
 Now we have a reference to our DOM element in our JavaScrpt file. It's stored in a variable called `headingElement`. Let's put some text in it:
@@ -54,7 +54,7 @@ We should see a big old "TIME TO PARTY" at the top of our page.
 
 Imagine we wanted to print the entire menu to the DOM. Let's start with an array of  menu items:
 ```js
-const menuItemsArray = ["Chicken tenders", "pizza", "spaghetti", "french fries", "pie"]
+let menuItemsArray = ["Chicken tenders", "pizza", "spaghetti", "french fries", "pie"]
 ```
 We can go ahead and add an unordered list container to our HTML file. This is where we'll put our list of menu items:
 ```html
@@ -106,7 +106,7 @@ Be sure to add boilerplate HTML to your `index.html` file and link it to `script
 
 - In your JavaScript file, copy and paste the following object:
 ```js
-const movieObject = {
+let movieObject = {
   title: "Star Wars: A New Hope",
   genre: "Science Fiction",
   releaseDate: "May 25, 1977"
@@ -118,7 +118,7 @@ const movieObject = {
 ### 2. Downtown Restaurants
 - Copy and paste the following array into your JavaScript file:
 ```js
-var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of Thailand", "Bahnhof", "Jim's Steak and Spaghetti House", "The Peddler", "Jewel City Seafood Market", "Black Sheep Burritos & Brews", "La Famiglia", "Le Bistro", "Charlie Graingers", "The Cellar Door"];
+let downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of Thailand", "Bahnhof", "Jim's Steak and Spaghetti House", "The Peddler", "Jewel City Seafood Market", "Black Sheep Burritos & Brews", "La Famiglia", "Le Bistro", "Charlie Graingers", "The Cellar Door"];
 ```
 - Copy and paste the following code into your `index.html` file:
 ```html
@@ -132,7 +132,7 @@ var downtownRestaurants = ["Backyard Pizza and Raw Bar", "The Bodega", "Surin of
 ### 3. Sandwich Toppings
 - Copy and paste the following array into your JavaScript file:
 ```js
-var sandwichToppings = ["pickles", "extra cheese", "lettuce", "tomatoes", "avocado", "bacon", "mayo", "mustard"]
+let sandwichToppings = ["pickles", "extra cheese", "lettuce", "tomatoes", "avocado", "bacon", "mayo", "mustard"]
 ```
 - Copy and paste the following code into your `index.html` file:
 ```html
@@ -233,7 +233,7 @@ let movieSchedule = [
 ```
 2. Copy and paste the following code in your JavaScript file:
 ```js
-var cohort1 = {
+let cohort1 = {
   name: "Cohort One",
   startDate: "January 15, 2018",
   endDate: "July 12, 2019",
@@ -241,7 +241,7 @@ var cohort1 = {
   techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
 }
 
-var cohort2 = {
+let cohort2 = {
  name: "Cohort Two",
  startDate: "August 15, 2019",
  endDate: "Feb 10, 2020",
@@ -249,7 +249,7 @@ var cohort2 = {
  techStack: ["HTML", "CSS", "JavaScript", "React", "C#", ".NET"]
 }
 
-var cohort3 = {
+let cohort3 = {
  name: "Cohort Three",
  startDate: "April 6, 2020",
  endDate: "August 20, 2020",
