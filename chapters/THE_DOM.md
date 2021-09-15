@@ -54,7 +54,7 @@ We should see a big old "TIME TO PARTY" at the top of our page.
 
 Imagine we wanted to print the entire menu to the DOM. Let's start with an array of  menu items:
 ```js
-var menuItemsArray = ["Chicken tenders", "pizza", "spaghetti", "french fries", "pie"]
+const menuItemsArray = ["Chicken tenders", "pizza", "spaghetti", "french fries", "pie"]
 ```
 We can go ahead and add an unordered list container to our HTML file. This is where we'll put our list of menu items:
 ```html
@@ -62,7 +62,7 @@ We can go ahead and add an unordered list container to our HTML file. This is wh
 ```
 Now our job is to loop through the menu items and add each one to the `#menu-items-container` element.
 ```js
-for(var i = 0; i < menuItemsArray.length; i++){
+for(let i = 0; i < menuItemsArray.length; i++){
   // target the menu items container and add a bullet for each item in the array
   document.querySelector("#menu-items-container").innerHTML += `<li>${menuItemsArray[i]}</li>`
 
