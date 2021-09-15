@@ -41,6 +41,7 @@ By the end of this course, you should be able to:
 1. [Intro to HTML](chapters/HTML.md)
 1. [Intro to CSS](chapters/CSS.md)
 1. [CSS Page Layout](chapters/CSS_LAYOUT.md)
+1. [Printing to the DOM](chapters/THE_DOM.md)
 
 
 
