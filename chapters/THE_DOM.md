@@ -285,7 +285,7 @@ function printHtmlString(htmlStringParameter, elementIdParameter){
 
 ### 7. Weather Data 
 
-1. Copy and paste the data from the Yahoo Weather API into your JS file. You can find it at the bottom of the [variables and data types chapter](./VARIABLES_AND_DATATYPES.md).
+1. Copy and paste the data from the Yahoo Weather API into your JS file. You can find it at the bottom of the [arrays and objects](./ARRAYS_AND_OBJECTS.md).
 
 1. Copy and paste the following HTML anywhere between the `<body>` tags of your `index.html` file.
 ```html
